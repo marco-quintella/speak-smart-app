@@ -7,7 +7,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../theme/colors';
 
-type Props = NativeStackScreenProps<any, 'StartScreen'>;
+export type StartScreenProps = NativeStackScreenProps<any, 'StartScreen'>;
 
 const style = StyleSheet.create({
   pageContainer: {
@@ -40,7 +40,7 @@ const style = StyleSheet.create({
   }
 });
 
-function StartScreen ({ navigation }: Props) {
+export default function StartScreen ({ navigation }: StartScreenProps) {
   return (
     <SafeAreaView style={style.pageContainer}>
       <View style={style.column}>
@@ -72,5 +72,3 @@ function StartScreen ({ navigation }: Props) {
     </SafeAreaView>
   );
 }
-
-export default StartScreen;

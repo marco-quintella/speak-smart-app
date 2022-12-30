@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { createTheme, ThemeProvider } from '@rneui/themed';
 import React from 'react';
 import { Provider } from 'react-redux';
@@ -18,9 +19,11 @@ export default function App () {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <AuthLayer>
-          <AppNavigator />
-        </AuthLayer>
+        <NavigationContainer>
+          <AuthLayer>
+            <AppNavigator />
+          </AuthLayer>
+        </NavigationContainer>
       </ThemeProvider>
     </Provider>
   );

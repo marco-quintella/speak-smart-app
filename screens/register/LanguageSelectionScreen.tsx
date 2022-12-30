@@ -11,9 +11,9 @@ import { db } from '../../plugins/firebase';
 import { setCurrentLanguage } from '../../store/language.reducer';
 import type { Language } from '../../types/language';
 
-type Props = NativeStackScreenProps<any, 'LanguageSelectionScreen'>;
+export type LanguageSelectionScreenProps = NativeStackScreenProps<any, 'LanguageSelectionScreen'>;
 
-export default function LanguageSelectionScreen ({ navigation }: Props) {
+export default function LanguageSelectionScreen ({ navigation }: LanguageSelectionScreenProps) {
   const [languages, setLanguages] = useState<Language[]>([]);
   const [languageList, setLanguageList] = useState<JSX.Element[]>([]);
   const [selectedLanguage, setSelectedLanguage] = useState<Language>();
