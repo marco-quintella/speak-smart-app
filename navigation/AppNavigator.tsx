@@ -3,7 +3,7 @@ import React from 'react';
 import HomeScreen, { HomeScreenProps } from '../screens/HomeScreen';
 import LanguageSelectionScreen, { LanguageSelectionScreenProps } from '../screens/register/LanguageSelectionScreen';
 import StartScreen, { StartScreenProps } from '../screens/StartScreen';
-import { store } from '../store';
+import { useAppSelector } from '../store/hooks';
 
 const screenOptions = {
   headerShown: false,
@@ -19,13 +19,7 @@ export type AppNavigatorParamList = {
 export type AppNavigatorNavigationProp = NativeStackNavigationProp<AppNavigatorParamList>;
 
 export default function AppNavigator () {
-
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
-
-  store.subscribe(() => {
-    const { user: { isAuthenticated: _isAuthenticated } } = store.getState();
-    if (_isAuthenticated && _isAuthenticated !== isAuthenticated) setIsAuthenticated(_isAuthenticated);
-  });
+  const isAuthenticated = useAppSelector(state => state.user.isAuthenticated);
 
   return !isAuthenticated ? (
     <Stack.Navigator screenOptions={screenOptions}>
