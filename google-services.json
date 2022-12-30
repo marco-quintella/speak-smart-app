@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "86631189717",
+    "firebase_url": "https://speaksmart-18d1e-default-rtdb.firebaseio.com",
+    "project_id": "speaksmart-18d1e",
+    "storage_bucket": "speaksmart-18d1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86631189717:android:1626d3e71ea5e833d4a65c",
+        "android_client_info": {
+          "package_name": "com.mqdev.speaksmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86631189717-g1k171n46qv4mj7k430v4gk1vpckn6q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjouL9-aoD-YU482s3sekL8Vr9X7AcSwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86631189717-g1k171n46qv4mj7k430v4gk1vpckn6q0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "86631189717-53e2a4ec22ke8n9b10gde8101drht77g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mqdev.speaksmart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

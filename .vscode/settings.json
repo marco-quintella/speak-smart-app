@@ -1,0 +1,7 @@
+{
+  "typescript.format.semicolons": "insert",
+  "cSpell.words": [
+    "reduxjs",
+    "rneui"
+  ],
+}
