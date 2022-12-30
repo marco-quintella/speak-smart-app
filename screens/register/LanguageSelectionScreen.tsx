@@ -28,7 +28,7 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
     fetchLanguages.then((snapshot) => {
       const _: Language[] = [];
       snapshot.forEach((doc) => {
-        _.push(doc.data() as Language);
+        _.push({ ...doc.data() as Language, id: doc.id });
       });
       setLanguages(_);
     });

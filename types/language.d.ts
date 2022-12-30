@@ -1,4 +1,5 @@
 export interface Language {
-  name: string;
-  flag: string;
+  id?: string;
+  name?: string;
+  flag?: string;
 }

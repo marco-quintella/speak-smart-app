@@ -1,15 +1,19 @@
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-import { Text } from '@rneui/themed';
+import { Header, Text } from '@rneui/themed';
+import React from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Flag from '../../components/Flag';
+import { useAppSelector } from '../../store/hooks';
 
 type Props = BottomTabScreenProps<any, 'PathScreen'>;
 
-
 export default function PathScreen ({ navigation }: Props) {
+  const language = useAppSelector(state => state.language);
   return (
     <SafeAreaView>
-      <View style={{ width: '100%', height: '100%' }}>
+      <View>
+        <Header leftComponent={<Flag />} />
         <Text>Path Screen</Text>
       </View>
     </SafeAreaView>
