@@ -10,8 +10,8 @@ import { useDispatch } from 'react-redux';
 import { AppNavigatorNavigationProp } from '../navigation/AppNavigator';
 import { setCurrentLanguage } from '../store/language.reducer';
 import { setAuthentication, setUser, setUserData } from '../store/user.reducer';
-import { defaultLanguageId } from '../utils/defaultLanguages';
-import { fillNewData, getFirebaseUser, getNewUserData, UserData } from '../utils/defaultUser';
+import { defaultLanguageId } from '../utils/languages';
+import { fillNewData, getFirebaseUser, getNewUserData, UserData } from '../utils/user';
 import { auth, db } from './firebase';
 
 export const AuthContext = React.createContext<{

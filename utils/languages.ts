@@ -21,6 +21,21 @@ export const setLanguage = async (id: string = defaultLanguageId) => {
   }));
 };
 
+export async function fetchLanguages () {
+  const ref = collection(db, 'languages');
+  const snapshot = await getDocs(ref);
+  if (snapshot.empty) {
+    console.log('No matching documents.');
+    return;
+  }
+  return snapshot.docs.map(doc => {
+    return {
+      ...doc.data() as Language,
+      id: doc.id,
+    };
+  });
+}
+
 export async function fetchLearningLanguages () {
   const ref = collection(db, 'languages');
   const _query = query(ref, where('learning', '==', true));

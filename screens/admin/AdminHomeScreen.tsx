@@ -1,9 +1,9 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header } from '@rneui/themed';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-type AdminHomeScreenProps = BottomTabScreenProps<any, 'AdminHomeScreen'>;
+export type AdminHomeScreenProps = NativeStackScreenProps<any, 'AdminHomeScreen'>;
 
 export default function AdminHomeScreen ({ navigation }: AdminHomeScreenProps) {
   return (
@@ -14,8 +14,15 @@ export default function AdminHomeScreen ({ navigation }: AdminHomeScreenProps) {
         }
         centerComponent={{ text: 'Admin Home Screen', style: { color: '#fff', fontSize: 20 } }}
       />
-      <View>
-        <Text>Admin Home Screen</Text>
+      <View
+        style={{
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginVertical: 16,
+          marginHorizontal: 8
+        }}
+      >
+        <Button title="Languages" containerStyle={{ width: '100%' }} onPress={() => navigation.navigate('AdminLanguagesScreen')} />
       </View>
     </SafeAreaView>
   );

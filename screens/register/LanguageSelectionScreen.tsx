@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { AuthContext } from '../../plugins/AuthLayer';
 import { setCurrentLanguage } from '../../store/language.reducer';
 import type { Language } from '../../types/language';
-import { fetchLearningLanguages } from '../../utils/defaultLanguages';
+import { fetchLearningLanguages } from '../../utils/languages';
 
 export type LanguageSelectionScreenProps = NativeStackScreenProps<any, 'LanguageSelectionScreen'>;
 
