@@ -1,11 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { UserData } from '../utils/defaultUser';
 
 const initialState: {
   user?: unknown;
   isAuthenticated?: boolean;
-  userData?: {
-    currentLanguage?: any;
-  };
+  userData?: UserData;
 } = {};
 
 const userSlice = createSlice({

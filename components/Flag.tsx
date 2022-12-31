@@ -1,5 +1,6 @@
 import { Image } from '@rneui/themed';
 import { useEffect, useState } from 'react';
+import { TouchableOpacity } from 'react-native';
 import { useAppSelector } from '../store/hooks';
 
 const images: Record<string, any> = {
@@ -13,8 +14,11 @@ export default function Flag () {
 
   useEffect(() => {
     setUri(language?.currentLanguage?.flag ? language?.currentLanguage?.flag : 'us');
-    console.log(uri);
   }, [language?.currentLanguage]);
 
-  return (<Image source={images[uri]} style={{ width: 48, height: 48 }} />);
+  return (
+    <TouchableOpacity>
+      <Image source={images[uri]} style={{ width: 32, height: 32 }} />
+    </TouchableOpacity>
+  );
 }

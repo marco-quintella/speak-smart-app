@@ -9,6 +9,8 @@ import { useDispatch } from 'react-redux';
 import { AppNavigatorNavigationProp } from '../navigation/AppNavigator';
 import { setCurrentLanguage } from '../store/language.reducer';
 import { setAuthentication, setUser, setUserData } from '../store/user.reducer';
+import { defaultLanguageId } from '../utils/defaultLanguages';
+import { fillNewData, getFirebaseUser, getNewUserData, UserData } from '../utils/defaultUser';
 import { auth, db } from './firebase';
 
 export const AuthContext = React.createContext<{
@@ -33,7 +35,7 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
     }
   }, [response]);
 
-  const setLanguage = async (id: string) => {
+  const setLanguage = async (id: string = defaultLanguageId) => {
     const docRef = doc(db, 'languages', id);
     const snapshot = await getDoc(docRef);
     const language = snapshot.data();
@@ -46,32 +48,25 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
 
   auth.onAuthStateChanged((user) => {
     try {
-      dispatch(setUser({
-        displayName: user?.displayName,
-        email: user?.email,
-        photoURL: user?.photoURL,
-        uid: user?.uid,
-      }));
+      dispatch(setUser(getFirebaseUser(user)));
       if (!!user) {
-        getDoc(doc(db, 'users', user.uid)).then(async (snapshot) => {
+        const userRef = doc(db, 'users', user.uid);
+        getDoc(userRef).then(async (snapshot) => {
           if (snapshot.exists() === false) {
-            const docRef = doc(db, 'languages', 'ADgfHLvXBaAJzzZaQiHX');
+            const docRef = doc(db, 'languages', defaultLanguageId);
             const newUserRef = doc(db, 'users', user.uid);
-            await setDoc(newUserRef, {
-              currentLanguage: docRef.id,
-            });
-            const userDoc = await getDoc(newUserRef);
-            const userDocData = userDoc.data();
-            dispatch(setUserData({
-              currentLanguage: userDocData?.currentLanguage
-            }));
-            // await setLanguage(userDocData?.currentLanguage);
+            const newUserData = getNewUserData({ languageId: docRef.id });
+            await setDoc(newUserRef, newUserData);
+            dispatch(setUserData(newUserData));
+            await setLanguage(newUserData?.currentLanguage);
           } else {
             const userDocData = snapshot.data();
-            dispatch(setUserData({
-              currentLanguage: userDocData?.currentLanguage
-            }));
-            await setLanguage(userDocData?.currentLanguage);
+            const userData = fillNewData(userDocData as UserData);
+            if (userData.new) {
+              setDoc(userRef, userData.user);
+            }
+            dispatch(setUserData(userData.user));
+            await setLanguage(userData.user.currentLanguage);
           }
           dispatch(setAuthentication(true));
         });
