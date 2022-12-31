@@ -1,3 +1,4 @@
+import { GOOGLE_AUTH_CLIENT_ID } from '@env';
 import { useNavigation } from '@react-navigation/native';
 import { AuthRequestPromptOptions, AuthSessionResult } from 'expo-auth-session';
 import * as Google from 'expo-auth-session/providers/google';
@@ -24,7 +25,7 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
   const navigation = useNavigation<AppNavigatorNavigationProp>();
 
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest(
-    { clientId: '86631189717-g1k171n46qv4mj7k430v4gk1vpckn6q0.apps.googleusercontent.com' },
+    { clientId: GOOGLE_AUTH_CLIENT_ID },
   );
 
   useEffect(() => {
