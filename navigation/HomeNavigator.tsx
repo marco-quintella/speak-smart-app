@@ -1,10 +1,11 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomTabNavigationOptions, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import PathScreen from '../screens/tabs/PathScreen';
 
 const Tab = createBottomTabNavigator();
 
-const screenOptions = {
+const screenOptions: BottomTabNavigationOptions = {
   headerShown: false,
+  tabBarShowLabel: false
 };
 
 export default function HomeNavigator () {
