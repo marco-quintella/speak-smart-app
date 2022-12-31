@@ -48,7 +48,8 @@ export default function PathScreen ({ navigation }: Props) {
             key={i}
             style={{
               flexDirection: 'row',
-              justifyContent: 'space-evenly'
+              justifyContent: 'space-evenly',
+              marginTop: i > 0 ? 16 : 0
             }}
           >
             {itemsInStep}
@@ -57,7 +58,7 @@ export default function PathScreen ({ navigation }: Props) {
       }
 
       return (
-        <View style={{ marginTop: 8, flexDirection: 'column' }}>
+        <View style={{ marginVertical: 16, marginHorizontal: 8, flexDirection: 'column' }}>
           {steps}
         </View>
       );
