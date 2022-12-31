@@ -1,15 +1,15 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { Button, CheckBox, Header, Icon, Input, Text } from '@rneui/themed';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { AdminNavigatorParamList } from '../../../navigation/AdminNavigator';
+import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
 import { db } from '../../../plugins/firebase';
 import colors from '../../../theme/colors';
 import { Language } from '../../../types/language';
 
-export type EditLanguagesScreenProps = NativeStackScreenProps<AdminNavigatorParamList, 'EditLanguagesScreen'>;
+export type EditLanguagesScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'EditLanguagesScreen'>;
 
 export default function EditLanguagesScreen ({ navigation, route }: EditLanguagesScreenProps) {
   const [language, setLanguage] = useState<Language | undefined>(route.params?.language ?? {
@@ -25,14 +25,16 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
   }>({});
 
   async function onSave () {
-    if (!language?.name) {
-      setError({ ...error, name: 'Name is required' });
+    if (!language) {
       return;
     }
-    if (!language?.flag) {
-      setError({ ...error, flag: 'Flag is required' });
-      return;
-    }
+
+    const errors = {
+      name: !language.name ? 'Name is required' : undefined,
+      flag: !language.flag ? 'Flag is required' : undefined,
+    };
+    setError(errors);
+    if (Object.values(errors).some(error => !!error)) return;
 
     if (route.params?.edit) {
       const ref = doc(collection(db, 'languages'), language?.id);

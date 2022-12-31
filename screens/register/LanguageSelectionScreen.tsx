@@ -5,12 +5,13 @@ import { useContext, useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch } from 'react-redux';
+import { AppNavigatorParamList } from '../../navigation/AppNavigator';
 import { AuthContext } from '../../plugins/AuthLayer';
 import { setCurrentLanguage } from '../../store/language.reducer';
 import type { Language } from '../../types/language';
 import { fetchLearningLanguages } from '../../utils/languages';
 
-export type LanguageSelectionScreenProps = NativeStackScreenProps<any, 'LanguageSelectionScreen'>;
+export type LanguageSelectionScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'LanguageSelectionScreen'>;
 
 export default function LanguageSelectionScreen ({ navigation }: LanguageSelectionScreenProps) {
   const [languages, setLanguages] = useState<Language[]>([]);

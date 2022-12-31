@@ -2,9 +2,10 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon } from '@rneui/themed';
 import { Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { AppNavigatorParamList } from '../navigation/AppNavigator';
 import colors from '../theme/colors';
 
-export type ActivityScreenProps = NativeStackScreenProps<any, 'ActivityScreen'>;
+export type ActivityScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'ActivityScreen'>;
 
 export default function ActivityScreen ({ navigation }: ActivityScreenProps) {
   return (

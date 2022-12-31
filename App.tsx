@@ -18,16 +18,17 @@ const theme = createTheme({
 
 export default function App () {
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <SafeAreaProvider>
+    <SafeAreaProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
           <NavigationContainer>
             <AuthLayer>
               <AppNavigator />
             </AuthLayer>
           </NavigationContainer>
-        </SafeAreaProvider>
-      </ThemeProvider>
-    </Provider>
+        </ThemeProvider>
+      </Provider>
+    </SafeAreaProvider>
+
   );
 }

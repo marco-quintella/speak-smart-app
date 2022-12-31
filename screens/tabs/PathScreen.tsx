@@ -8,11 +8,12 @@ import Flag from '../../components/Flag';
 import PathItem from '../../components/PathItem';
 import Stars from '../../components/Stars';
 import Streak from '../../components/Streak';
+import { HomeNavigatorParamsList } from '../../navigation/HomeNavigator';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { setLessons, setUserLessons } from '../../store/lessons.reducer';
-import { getLessons, getUserLessons } from '../../utils/lessons';
+import { fetchLessons, fetchUserLessons } from '../../utils/lessons';
 
-type Props = BottomTabScreenProps<any, 'PathScreen'>;
+type Props = BottomTabScreenProps<HomeNavigatorParamsList, 'PathScreen'>;
 
 export default function PathScreen ({ navigation }: Props) {
   const dispatch = useAppDispatch();
@@ -20,19 +21,19 @@ export default function PathScreen ({ navigation }: Props) {
   const userStore = useAppSelector(state => state.user);
   const lessonsStore = useAppSelector(state => state.lessons);
 
-  async function fetchLessons () {
-    const lessons = await getLessons(languageStore?.currentLanguage?.id);
+  async function getLessons () {
+    const lessons = await fetchLessons(languageStore?.currentLanguage?.id);
     if (lessons) dispatch(setLessons(lessons));
   }
 
-  async function fetchUserLessons () {
-    const lessons = await getUserLessons(userStore?.user?.uid, languageStore?.currentLanguage?.id);
+  async function getUserLessons () {
+    const lessons = await fetchUserLessons(userStore?.user?.uid, languageStore?.currentLanguage?.id);
     if (lessons) dispatch(setUserLessons(lessons));
   }
 
   useEffect(() => {
-    fetchLessons();
-    fetchUserLessons();
+    getLessons();
+    getUserLessons();
   }, [languageStore?.currentLanguage?.id]);
 
   function pathStructure () {

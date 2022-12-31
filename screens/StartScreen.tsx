@@ -5,9 +5,10 @@ import {
   StyleSheet, Text, View
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { AppNavigatorParamList } from '../navigation/AppNavigator';
 import colors from '../theme/colors';
 
-export type StartScreenProps = NativeStackScreenProps<any, 'StartScreen'>;
+export type StartScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'StartScreen'>;
 
 const style = StyleSheet.create({
   pageContainer: {

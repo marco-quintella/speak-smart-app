@@ -3,7 +3,7 @@ import { db } from '../plugins/firebase';
 import type { Lesson } from '../types/lessons';
 
 
-export async function getLessons (languageId?: string) {
+export async function fetchLessons (languageId?: string) {
   try {
     if (!languageId) return;
     const lessonsRef = collection(db, 'lessons');
@@ -23,7 +23,7 @@ export async function getLessons (languageId?: string) {
   }
 }
 
-export async function getUserLessons (userId?: string, language?: string) {
+export async function fetchUserLessons (userId?: string, language?: string) {
   try {
     if (!userId || !language) return;
     const lessonsRef = collection(db, 'users', userId, 'lessons');
