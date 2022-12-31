@@ -1,5 +1,5 @@
 
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { GestureResponderEvent, Image, Text, TouchableOpacity, View } from 'react-native';
 import { G, Path, Svg } from 'react-native-svg';
 import type { Lesson, UserLesson } from '../types/lessons';
 import { PathImages } from '../utils/images';
@@ -7,6 +7,7 @@ import { PathImages } from '../utils/images';
 export default function PathItem (props: {
   lesson: Lesson;
   userLesson?: UserLesson;
+  onPress?: ((event: GestureResponderEvent) => void);
 }) {
   const size = 80;
   const padding = 4;
@@ -68,7 +69,7 @@ export default function PathItem (props: {
   };
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={props.onPress}>
       <Svg width={sizeWithPadding} height={sizeWithPadding}>
         <G>
           {backgroundPath()}

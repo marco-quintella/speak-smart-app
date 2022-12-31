@@ -1,5 +1,6 @@
 import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React from 'react';
+import ActivityScreen from '../screens/ActivityScreen';
 import HomeScreen, { HomeScreenProps } from '../screens/HomeScreen';
 import LanguageSelectionScreen, { LanguageSelectionScreenProps } from '../screens/register/LanguageSelectionScreen';
 import StartScreen, { StartScreenProps } from '../screens/StartScreen';
@@ -29,6 +30,7 @@ export default function AppNavigator () {
   ) : (
     <Stack.Navigator screenOptions={screenOptions}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="ActivityScreen" component={ActivityScreen} />
     </Stack.Navigator>
   );
 }

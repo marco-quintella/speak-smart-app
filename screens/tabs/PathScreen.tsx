@@ -47,7 +47,7 @@ export default function PathScreen ({ navigation }: Props) {
         const itemsInStep: ReactNode[] = [];
         lessonsInStep.forEach(l => {
           const userLesson = lessonsStore?.userLessons?.find(ul => ul.lessonId === l.id);
-          itemsInStep.push(<PathItem key={l.order} lesson={l} userLesson={userLesson} />);
+          itemsInStep.push(<PathItem key={l.order} lesson={l} userLesson={userLesson} onPress={() => navigation.navigate('ActivityScreen')} />);
         });
         steps.push(
           <View
