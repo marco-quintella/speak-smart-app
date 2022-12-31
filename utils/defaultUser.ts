@@ -1,12 +1,6 @@
-import { User } from 'firebase/auth';
+import type { User } from 'firebase/auth';
+import type { FirebaseUser, UserData } from '../types/user';
 import { currentWeekNumber } from './date';
-
-export interface FirebaseUser {
-  displayName: string | null | undefined;
-  email: string | null | undefined;
-  photoURL: string | null | undefined;
-  uid: string | undefined;
-}
 
 export function getFirebaseUser (
   user: User | null | undefined
@@ -17,14 +11,6 @@ export function getFirebaseUser (
     photoURL: user?.photoURL,
     uid: user?.uid,
   };
-}
-
-export interface UserData {
-  currentLanguage?: string;
-  stars?: Record<number, number>;
-  streak?: number;
-  apples?: number;
-  displayName?: string;
 }
 
 export function getNewUserData (options: {
@@ -38,6 +24,7 @@ export function getNewUserData (options: {
     streak: 0,
     apples: 0,
     displayName: 'New User',
+    isAdmin: false,
   };
 }
 
