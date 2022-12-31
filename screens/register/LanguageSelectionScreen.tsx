@@ -1,15 +1,14 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Icon } from '@rneui/base';
 import { Button, Header, Text } from '@rneui/themed';
-import { collection, getDocs } from 'firebase/firestore';
 import { useContext, useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch } from 'react-redux';
 import { AuthContext } from '../../plugins/AuthLayer';
-import { db } from '../../plugins/firebase';
 import { setCurrentLanguage } from '../../store/language.reducer';
 import type { Language } from '../../types/language';
+import { fetchLearningLanguages } from '../../utils/defaultLanguages';
 
 export type LanguageSelectionScreenProps = NativeStackScreenProps<any, 'LanguageSelectionScreen'>;
 
@@ -22,16 +21,14 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
   const authContext = useContext(AuthContext);
   const dispatch = useDispatch();
 
-  const fetchLanguages = getDocs(collection(db, 'languages'));
+  async function fetchLanguages () {
+    const languages = await fetchLearningLanguages();
+    if (!languages) return;
+    setLanguages(languages);
+  }
 
   useEffect(() => {
-    fetchLanguages.then((snapshot) => {
-      const _: Language[] = [];
-      snapshot.forEach((doc) => {
-        _.push({ ...doc.data() as Language, id: doc.id });
-      });
-      setLanguages(_);
-    });
+    fetchLanguages();
   }, []);
 
   useEffect(() => {
