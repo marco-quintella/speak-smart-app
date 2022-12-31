@@ -1,6 +1,7 @@
+import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon, Text } from '@rneui/themed';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Flag from '../../components/Flag';
@@ -11,7 +12,7 @@ import { capitalize } from '../../utils/strings';
 
 export type AdminLanguagesScreenProps = NativeStackScreenProps<any, 'AdminLanguagesScreen'>;
 
-export default function AdminLanguagesScreen ({ navigation }: AdminLanguagesScreenProps) {
+export default function AdminLanguagesScreen ({ navigation, route }: AdminLanguagesScreenProps) {
   const [languages, setLanguages] = useState<Language[]>([]);
 
   async function getLanguages () {
@@ -20,19 +21,27 @@ export default function AdminLanguagesScreen ({ navigation }: AdminLanguagesScre
     setLanguages(_languages);
   }
 
-  useEffect(() => {
+  useFocusEffect(() => {
     getLanguages();
-  }, []);
+  });
 
   function languagesList () {
-    const add = <Button key='add' title="New" containerStyle={{ width: '100%' }} />;
-    return languages.map((language, index) => {
+    const add = <Button
+      key='add'
+      title="New Language"
+      containerStyle={{ width: '100%' }}
+      titleStyle={{ fontSize: 16, fontWeight: 'bold' }}
+      onPress={() => navigation.navigate('EditLanguagesScreen', { edit: false })}
+    />;;
+    return [add, ...languages.map((language, index) => {
       return (<Button
-        key={index} containerStyle={{ marginTop: index !== 0 ? 16 : 0, width: '100%' }}>
+        key={index} containerStyle={{ marginTop: 16, width: '100%' }}
+        onPress={() => navigation.navigate('EditLanguagesScreen', { edit: true, language })}
+      >
         <Flag language={language} button={false} />
         <Text style={{ color: colors.foreText, fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
       </Button>);
-    });
+    })];
   }
 
   return (

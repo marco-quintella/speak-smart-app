@@ -11,7 +11,7 @@ const images: Record<string, any> = {
 };
 
 export default function Flag ({ button = true, language }: {
-  button: boolean;
+  button?: boolean;
   language?: Language;
 }) {
   const languageStore = useAppSelector(state => state.language);

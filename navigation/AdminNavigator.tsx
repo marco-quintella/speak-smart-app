@@ -2,28 +2,32 @@ import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-na
 import React from 'react';
 import AdminHomeScreen from '../screens/admin/AdminHomeScreen';
 import AdminLanguagesScreen from '../screens/admin/AdminLanguagesScreen';
-import { HomeScreenProps } from '../screens/HomeScreen';
-import { LanguageSelectionScreenProps } from '../screens/register/LanguageSelectionScreen';
-import { StartScreenProps } from '../screens/StartScreen';
+import EditLanguagesScreen from '../screens/admin/languages/EditLanguageScreen';
+import type { Language } from '../types/language';
 
 const screenOptions = {
   headerShown: false,
 };
 
-const Stack = createNativeStackNavigator();
-
 export type AdminNavigatorParamList = {
-  StartScreen?: StartScreenProps;
-  LanguageSelectionScreen?: LanguageSelectionScreenProps;
-  HomeScreen?: HomeScreenProps;
+  AdminHomeScreen: undefined;
+  AdminLanguagesScreen: undefined;
+  EditLanguagesScreen: {
+    edit?: boolean;
+    language?: Language;
+  };
 };
+
+const Stack = createNativeStackNavigator<AdminNavigatorParamList>();
+
 export type AdminNavigatorNavigationProp = NativeStackNavigationProp<AdminNavigatorParamList>;
 
-export default function AdminNavigator () {
+export default function AdminNavigator (props: AdminNavigatorNavigationProp) {
   return (
-    <Stack.Navigator screenOptions={screenOptions}>
+    <Stack.Navigator screenOptions={screenOptions} initialRouteName="AdminHomeScreen">
       <Stack.Screen name="AdminHomeScreen" component={AdminHomeScreen} />
       <Stack.Screen name="AdminLanguagesScreen" component={AdminLanguagesScreen} />
+      <Stack.Screen name="EditLanguagesScreen" component={EditLanguagesScreen} />
     </Stack.Navigator>
   );
 }
