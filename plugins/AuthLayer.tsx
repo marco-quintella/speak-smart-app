@@ -56,6 +56,7 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
             const docRef = doc(db, 'languages', defaultLanguageId);
             const newUserRef = doc(db, 'users', user.uid);
             const newUserData = getNewUserData({ languageId: docRef.id });
+            if (user.displayName) newUserData.displayName = user.displayName;
             await setDoc(newUserRef, newUserData);
             dispatch(setUserData(newUserData));
             await setLanguage(newUserData?.currentLanguage);
@@ -68,6 +69,7 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
             dispatch(setUserData(userData.user));
             await setLanguage(userData.user.currentLanguage);
           }
+          console.log('Logging in user ' + user.displayName);
           dispatch(setAuthentication(true));
         });
       };

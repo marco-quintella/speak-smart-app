@@ -24,6 +24,7 @@ export interface UserData {
   stars?: Record<number, number>;
   streak?: number;
   apples?: number;
+  displayName?: string;
 }
 
 export function getNewUserData (options: {
@@ -35,7 +36,8 @@ export function getNewUserData (options: {
       [currentWeekNumber()]: 0
     },
     streak: 0,
-    apples: 0
+    apples: 0,
+    displayName: 'New User',
   };
 }
 

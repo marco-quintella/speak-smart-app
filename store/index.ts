@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import languageReducer from './language.reducer';
+import lessonsReducer from './lessons.reducer';
 import userReducer from './user.reducer';
 
 export const store = configureStore({
   reducer: {
     user: userReducer,
-    language: languageReducer
+    language: languageReducer,
+    lessons: lessonsReducer,
   }
 });
 

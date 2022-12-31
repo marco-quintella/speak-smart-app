@@ -1,11 +1,12 @@
 
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { G, Path, Svg } from 'react-native-svg';
-import type { Lesson } from '../types/lessons';
+import type { Lesson, UserLesson } from '../types/lessons';
 import { PathImages } from '../utils/images';
 
 export default function PathItem (props: {
   lesson: Lesson;
+  userLesson?: UserLesson;
 }) {
   const size = 80;
   const padding = 4;
@@ -13,8 +14,8 @@ export default function PathItem (props: {
   const iconSize = 50;
   const initialAngle = 135;
 
-  const steps = props.lesson.steps[0];
-  const completedSteps = 1;
+  const steps = props.lesson.steps[props.userLesson?.level ?? 0];
+  const completedSteps = props.userLesson?.step ?? 0;
 
   function polarToCartesian (centerX: number, centerY: number, radius: number, angleInDegrees: number) {
     var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
@@ -65,7 +66,6 @@ export default function PathItem (props: {
     }
     return paths;
   };
-
 
   return (
     <TouchableOpacity>

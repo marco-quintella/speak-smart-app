@@ -22,3 +22,15 @@ export async function getLessons (languageId?: string) {
     console.error(e);
   }
 }
+
+export async function getUserLessons (userId?: string, language?: string) {
+  try {
+    if (!userId || !language) return;
+    const lessonsRef = collection(db, 'users', userId, 'lessons');
+    const lessonsQuery = await getDocs(query(lessonsRef, where('language', '==', language)));
+    if (lessonsQuery.empty) return [];
+    return lessonsQuery.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+  } catch (e) {
+    console.error(e);
+  }
+}
