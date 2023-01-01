@@ -1,21 +1,19 @@
+import { MaterialIcons } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Icon } from '@rneui/base';
-import { Button, Header, Text } from '@rneui/themed';
+import { Box, Button, HStack, Icon, IconButton, ScrollView, Text, View, VStack } from 'native-base';
 import { useContext, useEffect, useState } from 'react';
-import { ScrollView, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch } from 'react-redux';
-import { AppNavigatorParamList } from '../../navigation/AppNavigator';
-import { AuthContext } from '../../plugins/AuthLayer';
+import { AppNavigatorParamList } from '../../navigation';
+import { AuthContext } from '../../plugins';
 import { setCurrentLanguage } from '../../store/language.reducer';
 import type { Language } from '../../types/language';
 import { fetchLearningLanguages } from '../../utils/languages';
+import { capitalize } from '../../utils/strings';
 
 export type LanguageSelectionScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'LanguageSelectionScreen'>;
 
 export default function LanguageSelectionScreen ({ navigation }: LanguageSelectionScreenProps) {
   const [languages, setLanguages] = useState<Language[]>([]);
-  const [languageList, setLanguageList] = useState<JSX.Element[]>([]);
   const [selectedLanguage, setSelectedLanguage] = useState<Language>();
   const [userInfo, setUserInfo] = useState<any>(null);
 
@@ -32,16 +30,6 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
     fetchLanguages();
   }, []);
 
-  useEffect(() => {
-    setLanguageList(languages.map((language) =>
-      <Button
-        title={language.name}
-        key={language.name}
-        containerStyle={{ marginBottom: 16, opacity: !!selectedLanguage?.name ? selectedLanguage?.name === language.name ? 1 : 0.7 : 1 }}
-        onPress={() => { setSelectedLanguage(language); }}
-      />));
-  }, [selectedLanguage, languages]);
-
   const onSave = () => {
     try {
       if (selectedLanguage) {
@@ -53,43 +41,64 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
     }
   };
 
-  return (
-    <SafeAreaView style={{ flexDirection: 'column', flex: 1 }}>
-      <View style={{ flexDirection: 'column', flexGrow: 1 }}>
-        <Header
-          leftComponent={<Button icon={<Icon name="chevron-left" color="white" onPress={() => navigation.goBack()} />} />}
-          centerComponent={{ text: 'Registrar', style: { color: '#fff', alignItems: 'center', fontSize: 24, paddingTop: 4 } }}
-        />
-        <View style={{
-          borderRadius: 8,
-          borderWidth: 1,
-          margin: 16,
-          padding: 16,
-          borderColor: 'darkgrey',
-          flex: 0
-        }}>
-          <Text>O que você quer aprender?</Text>
-        </View>
-        <ScrollView>
-          <Text style={{
-            fontSize: 16,
-            marginHorizontal: 16,
-            marginBottom: 16
-          }}>
-            Para quem fala português:
+  function languageList () {
+    return (
+      languages.map((language) =>
+        <Button
+          key={language.name}
+          opacity={!!selectedLanguage?.id ? selectedLanguage?.id === language.id ? 1 : 0.7 : 1}
+          onPress={() => { setSelectedLanguage(language); }}
+        >
+          <Text fontSize={16} fontWeight='semibold' color='white'>
+            {capitalize(language.name)}
           </Text>
-          <View style={{
-            marginHorizontal: 16,
-            marginBottom: 16,
-          }}>
-            {languageList}
-          </View>
-        </ScrollView>
+        </Button>)
+    );
+  }
+
+  return (
+    <Box safeArea style={{ flexDirection: 'column', flex: 1 }}>
+      <HStack bg="primary.600" alignItems='center' justifyContent='space-between' height={12}>
+        <IconButton
+          icon={<Icon size="md" as={MaterialIcons} name="chevron-left" color="white" />}
+          onPress={() => navigation.goBack()}
+          width={12}
+        />
+        <Text color='white' fontSize={20} fontWeight='bold'>Registrar</Text>
+        <View width={12} />
+      </HStack>
+      <Box
+        borderRadius={8}
+        borderWidth={1}
+        margin={4}
+        padding={4}
+        borderColor='darkgrey'
+        _text={{ fontSize: 16, fontWeight: 'semibold' }}
+      >
+        O que você quer aprender?
+      </Box>
+      <ScrollView>
+        <Text
+          fontSize={16}
+          marginX={4}
+          marginBottom={4}
+        >
+          Para quem fala português:
+        </Text>
+        <VStack space={4} paddingX={4}>
+          {languageList()}
+        </VStack>
+      </ScrollView>
+      <View borderColor='gray.200' padding={4}>
+        <Button
+          fontSize={16}
+          _text={{
+            fontSize: 16,
+            fontWeight: 'bold',
+          }}
+          onPress={() => onSave()}>Continuar</Button>
       </View>
-      <View style={{ borderTopWidth: 1, borderTopColor: 'darkgrey' }}>
-        <Button title="Continuar" containerStyle={{ margin: 16 }} onPress={() => onSave()} />
-      </View>
-    </SafeAreaView>
+    </Box >
   );
 };
 

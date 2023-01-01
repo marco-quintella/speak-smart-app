@@ -1,28 +1,24 @@
 import { GOOGLE_AUTH_CLIENT_ID } from '@env';
-import { useNavigation } from '@react-navigation/native';
 import { AuthRequestPromptOptions, AuthSessionResult } from 'expo-auth-session';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import React, { useEffect } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { AppNavigatorNavigationProp } from '../navigation/AppNavigator';
-import { setCurrentLanguage } from '../store/language.reducer';
-import { setAuthentication, setUser, setUserData } from '../store/user.reducer';
-import { defaultLanguageId } from '../utils/languages';
-import { fillNewData, getFirebaseUser, getNewUserData, UserData } from '../utils/user';
+import { setAuthentication, setCurrentLanguage, setUser, setUserData } from '../store';
+import { UserData } from '../types';
+import { defaultLanguageId, fillNewData, getFirebaseUser, getNewUserData } from '../utils';
 import { auth, db } from './firebase';
 
 export const AuthContext = React.createContext<{
   promptAsync?: (options?: AuthRequestPromptOptions | undefined) => Promise<AuthSessionResult>;
 }>({});
 
-export default function AuthLayer ({ children }: { children: React.ReactNode; }) {
+export default function AuthLayer ({ children, onAuthenticated }: { children: ReactNode, onAuthenticated: () => void; }) {
   WebBrowser.maybeCompleteAuthSession();
 
   const dispatch = useDispatch();
-  const navigation = useNavigation<AppNavigatorNavigationProp>();
 
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest(
     { clientId: GOOGLE_AUTH_CLIENT_ID },
@@ -72,6 +68,7 @@ export default function AuthLayer ({ children }: { children: React.ReactNode; })
           }
           console.log('Logging in user ' + user.displayName);
           dispatch(setAuthentication(true));
+          onAuthenticated();
         });
       };
     } catch (error) {

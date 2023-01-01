@@ -45,12 +45,12 @@ export default function HomeNavigator () {
   function AdminRoute () {
     return userStore?.userData?.isAdmin
       ? [
-        <Tab.Screen name="AdminHomeScreen" component={AdminHomeScreen} options={{ tabBarIcon: () => <Image source={require('../assets/icons/manager.png')} style={{ width: 30, height: 30 }} /> }} />,
-        <Tab.Screen name="AdminLanguagesScreen" component={AdminLanguagesScreen} options={{ tabBarButton: () => null }} />,
-        <Tab.Screen name="EditLanguagesScreen" component={EditLanguagesScreen} options={{ tabBarButton: () => null }} />,
-        <Tab.Screen name="AdminLessonsSelectLanguage" component={AdminLessonsSelectLanguage} options={{ tabBarButton: () => null }} />,
-        <Tab.Screen name="AdminLessonsListScreen" component={AdminLessonsListScreen} options={{ tabBarButton: () => null }} />,
-        <Tab.Screen name="EditLessonsScreen" component={EditLessonsScreen} options={{ tabBarButton: () => null }} />,
+        <Tab.Screen key="AdminHomeScreen" name="AdminHomeScreen" component={AdminHomeScreen} options={{ tabBarIcon: () => <Image source={require('../assets/icons/manager.png')} style={{ width: 30, height: 30 }} /> }} />,
+        <Tab.Screen key="AdminLanguagesScreen" name="AdminLanguagesScreen" component={AdminLanguagesScreen} options={{ tabBarButton: () => null }} />,
+        <Tab.Screen key="EditLanguagesScreen" name="EditLanguagesScreen" component={EditLanguagesScreen} options={{ tabBarButton: () => null }} />,
+        <Tab.Screen key="AdminLessonsSelectLanguage" name="AdminLessonsSelectLanguage" component={AdminLessonsSelectLanguage} options={{ tabBarButton: () => null }} />,
+        <Tab.Screen key="AdminLessonsListScreen" name="AdminLessonsListScreen" component={AdminLessonsListScreen} options={{ tabBarButton: () => null }} />,
+        <Tab.Screen key="EditLessonsScreen" name="EditLessonsScreen" component={EditLessonsScreen} options={{ tabBarButton: () => null }} />,
       ]
       : null;
   }
