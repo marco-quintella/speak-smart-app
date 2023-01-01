@@ -1,6 +1,5 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Header } from '@rneui/themed';
-import { Box, ScrollView } from 'native-base';
+import { Box, HStack, ScrollView } from 'native-base';
 import React, { ReactNode, useEffect } from 'react';
 import { View } from 'react-native';
 import Apples from '../../components/Apples';
@@ -75,18 +74,12 @@ export default function PathScreen ({ navigation, route }: Props) {
 
   return (
     <Box safeArea height='100%'>
-      <View>
-        <Header
-          leftComponent={<Flag />}
-          centerComponent={
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-evenly' }}>
-              <Stars />
-              <Streak />
-            </View>
-          }
-          rightComponent={<Apples />}
-        />
-      </View>
+      <HStack bg="primary.600" alignItems='center' justifyContent='space-between' height={12}>
+        <Flag />
+        <Stars />
+        <Streak />
+        <Apples />
+      </HStack>
       <ScrollView>
         {pathStructure()}
       </ScrollView>
