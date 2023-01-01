@@ -1,15 +1,15 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, CheckBox, Header, Icon, Input, Text } from '@rneui/themed';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
+import BottomNav from '../../../components/BottomNav';
+import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import { db } from '../../../plugins/firebase';
-import colors from '../../../theme/colors';
 import { Language } from '../../../types/language';
 
-export type EditLanguagesScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'EditLanguagesScreen'>;
+export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;
 
 export default function EditLanguagesScreen ({ navigation, route }: EditLanguagesScreenProps) {
   const [language, setLanguage] = useState<Language | undefined>(route.params?.language ?? {
@@ -51,7 +51,7 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
   return (
     <SafeAreaView>
       <Header
-        leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color={colors.foreText} /></Button>}
+        leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color='white' /></Button>}
         centerComponent={{ text: 'Edit Language Screen', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
         centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
       />
@@ -85,6 +85,7 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
         />
         <Button title="Save" containerStyle={{ marginTop: 16, width: '100%' }} onPress={onSave} />
       </View>
+      <BottomNav />
     </SafeAreaView>
   );
 }

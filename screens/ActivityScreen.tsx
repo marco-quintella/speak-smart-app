@@ -1,25 +1,15 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Header, Icon } from '@rneui/themed';
-import { Text, View } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { AppNavigatorParamList } from '../navigation/AppNavigator';
-import colors from '../theme/colors';
+import { Box, Text } from 'native-base';
+import { Header } from '../components';
+import { AppNavigatorParamList } from '../navigation';
 
 export type ActivityScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'ActivityScreen'>;
 
 export default function ActivityScreen ({ navigation }: ActivityScreenProps) {
   return (
-    <SafeAreaProvider>
-      <View>
-        <Header
-          leftComponent={
-            <Button onPress={() => navigation.goBack()}>
-              <Icon name="chevron-left" color={colors.foreText} />
-            </Button>
-          }
-        />
-        <Text>Activity Screen</Text>
-      </View>
-    </SafeAreaProvider>
+    <Box safeArea>
+      <Header title="Activity Screen" icon='chevron-left' onPress={() => navigation.goBack()} />
+      <Text>Activity Screen</Text>
+    </Box>
   );
 }

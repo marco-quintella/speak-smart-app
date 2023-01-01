@@ -1,15 +1,15 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon, Input } from '@rneui/themed';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 import { ReactNode, useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
+import { BottomNav } from '../../../components';
+import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import { db } from '../../../plugins/firebase';
-import colors from '../../../theme/colors';
 import { Lesson } from '../../../types/lessons';
 
-export type EditLessonsScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'EditLessonsScreen'>;
+export type EditLessonsScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLessonsScreen'>;
 
 export default function EditLessonsScreen ({ navigation, route }: EditLessonsScreenProps) {
   const [lesson, setLesson] = useState<Partial<Lesson>>(route.params?.lesson ?? {
@@ -101,7 +101,7 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
     <SafeAreaView style={{ flexDirection: 'column' }}>
       <View style={{ flexGrow: 1, flexDirection: 'column' }}>
         <Header
-          leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color={colors.foreText} /></Button>}
+          leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color='white' /></Button>}
           centerComponent={{ text: 'Lessons List', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
           centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
         />
@@ -157,6 +157,7 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
           <Button title="Save" containerStyle={{ marginTop: 16, width: '100%' }} onPress={onSave} />
         </ScrollView>
       </View>
+      <BottomNav />
     </SafeAreaView>
   );
 }

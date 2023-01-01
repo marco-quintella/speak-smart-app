@@ -1,31 +1,29 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-import { Button, Header } from '@rneui/themed';
-import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { HomeNavigatorParamsList } from '../../navigation/HomeNavigator';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { Box, Button, ScrollView, VStack } from 'native-base';
+import { Header } from '../../components';
+import BottomNav from '../../components/BottomNav';
+import { AppNavigatorParamList } from '../../navigation/AppNavigator';
 
-export type AdminHomeScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'AdminHomeScreen'>;
+export type AdminHomeScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminHomeScreen'>;
 
-export default function AdminHomeScreen ({ navigation }: AdminHomeScreenProps) {
+export default function AdminHomeScreen ({ navigation, route }: AdminHomeScreenProps) {
   return (
-    <SafeAreaView>
+    <Box safeArea height='100%'>
       <Header
-        leftComponent={
-          <Button onPress={() => navigation.goBack()} title="Back" />
-        }
-        centerComponent={{ text: 'Admin Home Screen', style: { color: '#fff', fontSize: 20 } }}
+        icon='chevron-left'
+        onPress={() => navigation.goBack()}
+        title='Admin'
       />
-      <View
-        style={{
-          flexDirection: 'column',
-          alignItems: 'center',
-          marginVertical: 16,
-          marginHorizontal: 8
-        }}
-      >
-        <Button title="Languages" containerStyle={{ width: '100%' }} onPress={() => navigation.navigate('AdminLanguagesScreen')} />
-        <Button title="Lessons" containerStyle={{ width: '100%', marginTop: 16 }} onPress={() => navigation.navigate('AdminLessonsSelectLanguage')} />
-      </View>
-    </SafeAreaView>
+      <ScrollView>
+        <VStack
+          padding={4}
+          space={4}
+        >
+          <Button onPress={() => navigation.navigate('AdminLanguagesScreen')}>Languages</Button>
+          <Button onPress={() => navigation.navigate('AdminLessonsSelectLanguage')} >Lessons</Button>
+        </VStack>
+      </ScrollView>
+      <BottomNav />
+    </Box>
   );
 }

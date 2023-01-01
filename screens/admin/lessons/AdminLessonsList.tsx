@@ -1,14 +1,14 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon, Text } from '@rneui/themed';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
-import colors from '../../../theme/colors';
+import { BottomNav } from '../../../components';
+import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import type { Lesson } from '../../../types/lessons';
 import { fetchLessons } from '../../../utils/lessons';
 
-export type AdminLessonsListScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'AdminLessonsListScreen'>;
+export type AdminLessonsListScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLessonsListScreen'>;
 
 export default function AdminLessonsListScreen ({ navigation, route }: AdminLessonsListScreenProps) {
   const language = route.params?.language;
@@ -33,11 +33,11 @@ export default function AdminLessonsListScreen ({ navigation, route }: AdminLess
     const add = <Button key='add' title="New Lesson" containerStyle={{ width: '100%' }} titleStyle={{ fontSize: 16, fontWeight: 'bold' }} onPress={() => navigation.navigate('EditLessonsScreen', { edit: false })} />;
     return [add, ...lessons.map((lesson, index) => {
       return (<Button key={index} containerStyle={{ marginTop: 16, width: '100%' }} buttonStyle={{ opacity: 1 - lesson.order / 5 }} onPress={() => navigation.navigate('EditLessonsScreen', { edit: true, lesson })}>
-        <Text style={{ color: colors.foreText, fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{lesson?.title}</Text>
-        <Text style={{ marginLeft: 8, fontWeight: 'bold', color: colors.foreText, fontStyle: 'italic' }}>Step:</Text>
-        <Text style={{ color: colors.foreText, marginLeft: 4, fontStyle: 'italic' }}>{lesson?.step}</Text>
-        <Text style={{ marginLeft: 8, fontWeight: 'bold', color: colors.foreText, fontStyle: 'italic' }}>Order:</Text>
-        <Text style={{ color: colors.foreText, marginLeft: 4, fontStyle: 'italic' }}>{lesson?.order}</Text>
+        <Text style={{ color: 'white', fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{lesson?.title}</Text>
+        <Text style={{ marginLeft: 8, fontWeight: 'bold', color: 'white', fontStyle: 'italic' }}>Step:</Text>
+        <Text style={{ color: 'white', marginLeft: 4, fontStyle: 'italic' }}>{lesson?.step}</Text>
+        <Text style={{ marginLeft: 8, fontWeight: 'bold', color: 'white', fontStyle: 'italic' }}>Order:</Text>
+        <Text style={{ color: 'white', marginLeft: 4, fontStyle: 'italic' }}>{lesson?.order}</Text>
       </Button>);
     })];
   };
@@ -45,7 +45,7 @@ export default function AdminLessonsListScreen ({ navigation, route }: AdminLess
   return (
     <SafeAreaView>
       <Header
-        leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color={colors.foreText} /></Button>}
+        leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color={'white'} /></Button>}
         centerComponent={{ text: 'Lessons List', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
         centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
       />
@@ -59,6 +59,7 @@ export default function AdminLessonsListScreen ({ navigation, route }: AdminLess
       >
         {lessonsList()}
       </View>
+      <BottomNav />
     </SafeAreaView>
   );
 }

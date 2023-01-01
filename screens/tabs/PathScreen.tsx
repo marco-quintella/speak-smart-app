@@ -1,21 +1,22 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Header } from '@rneui/themed';
+import { Box, ScrollView } from 'native-base';
 import React, { ReactNode, useEffect } from 'react';
 import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import Apples from '../../components/Apples';
+import BottomNav from '../../components/BottomNav';
 import Flag from '../../components/Flag';
 import PathItem from '../../components/PathItem';
 import Stars from '../../components/Stars';
 import Streak from '../../components/Streak';
-import { HomeNavigatorParamsList } from '../../navigation/HomeNavigator';
+import { AppNavigatorParamList } from '../../navigation/AppNavigator';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { setLessons, setUserLessons } from '../../store/lessons.reducer';
 import { fetchLessons, fetchUserLessons } from '../../utils/lessons';
 
-type Props = BottomTabScreenProps<HomeNavigatorParamsList, 'PathScreen'>;
+type Props = NativeStackScreenProps<AppNavigatorParamList, 'PathScreen'>;
 
-export default function PathScreen ({ navigation }: Props) {
+export default function PathScreen ({ navigation, route }: Props) {
   const dispatch = useAppDispatch();
   const languageStore = useAppSelector(state => state.language);
   const userStore = useAppSelector(state => state.user);
@@ -73,7 +74,7 @@ export default function PathScreen ({ navigation }: Props) {
   }
 
   return (
-    <SafeAreaView>
+    <Box safeArea height='100%'>
       <View>
         <Header
           leftComponent={<Flag />}
@@ -85,8 +86,11 @@ export default function PathScreen ({ navigation }: Props) {
           }
           rightComponent={<Apples />}
         />
-        {pathStructure()}
       </View>
-    </SafeAreaView>
+      <ScrollView>
+        {pathStructure()}
+      </ScrollView>
+      <BottomNav />
+    </Box>
   );
 }

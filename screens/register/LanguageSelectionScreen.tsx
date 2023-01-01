@@ -1,8 +1,8 @@
-import { MaterialIcons } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Box, Button, HStack, Icon, IconButton, ScrollView, Text, View, VStack } from 'native-base';
+import { Box, Button, ScrollView, Text, View, VStack } from 'native-base';
 import { useContext, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Header } from '../../components';
 import { AppNavigatorParamList } from '../../navigation';
 import { AuthContext } from '../../plugins';
 import { setCurrentLanguage } from '../../store/language.reducer';
@@ -58,15 +58,7 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
 
   return (
     <Box safeArea style={{ flexDirection: 'column', flex: 1 }}>
-      <HStack bg="primary.600" alignItems='center' justifyContent='space-between' height={12}>
-        <IconButton
-          icon={<Icon size="md" as={MaterialIcons} name="chevron-left" color="white" />}
-          onPress={() => navigation.goBack()}
-          width={12}
-        />
-        <Text color='white' fontSize={20} fontWeight='bold'>Registrar</Text>
-        <View width={12} />
-      </HStack>
+      <Header title='Registrar' icon='chevron-left' onPress={() => navigation.goBack()} />
       <Box
         borderRadius={8}
         borderWidth={1}

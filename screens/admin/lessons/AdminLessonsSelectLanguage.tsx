@@ -1,16 +1,16 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon, Text } from '@rneui/themed';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { BottomNav } from '../../../components';
 import Flag from '../../../components/Flag';
-import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
-import colors from '../../../theme/colors';
+import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import { Language } from '../../../types/language';
 import { fetchLearningLanguages } from '../../../utils/languages';
 import { capitalize } from '../../../utils/strings';
 
-export type AdminLessonsSelectLanguageProps = BottomTabScreenProps<HomeNavigatorParamsList, 'AdminLessonsSelectLanguage'>;
+export type AdminLessonsSelectLanguageProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLessonsSelectLanguage'>;
 
 export default function AdminLessonsSelectLanguage ({ navigation, route }: AdminLessonsSelectLanguageProps) {
   const [languages, setLanguages] = useState<Language[]>([]);
@@ -35,7 +35,7 @@ export default function AdminLessonsSelectLanguage ({ navigation, route }: Admin
         onPress={() => navigation.navigate('AdminLessonsListScreen', { language })}
       >
         <Flag language={language} button={false} />
-        <Text style={{ color: colors.foreText, fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
+        <Text style={{ color: 'white', fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
       </Button>);
     });
   }
@@ -45,7 +45,7 @@ export default function AdminLessonsSelectLanguage ({ navigation, route }: Admin
       <Header
         leftComponent={
           <Button onPress={() => navigation.goBack()}>
-            <Icon name="chevron-left" color={colors.foreText} />
+            <Icon name="chevron-left" color='white' />
           </Button>
         }
         centerComponent={{ text: 'Admin Lessons', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
@@ -62,6 +62,7 @@ export default function AdminLessonsSelectLanguage ({ navigation, route }: Admin
         <Text style={{ fontWeight: 'bold' }}>Select a language</Text>
         {languagesList()}
       </View>
+      <BottomNav />
     </SafeAreaView>
   );
 }

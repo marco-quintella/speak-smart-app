@@ -1,16 +1,16 @@
-import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Header, Icon, Text } from '@rneui/themed';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import BottomNav from '../../../components/BottomNav';
 import Flag from '../../../components/Flag';
-import { HomeNavigatorParamsList } from '../../../navigation/HomeNavigator';
-import colors from '../../../theme/colors';
+import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import { Language } from '../../../types/language';
 import { fetchLanguages } from '../../../utils/languages';
 import { capitalize } from '../../../utils/strings';
 
-export type AdminLanguagesScreenProps = BottomTabScreenProps<HomeNavigatorParamsList, 'AdminLanguagesScreen'>;
+export type AdminLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLanguagesScreen'>;
 
 export default function AdminLanguagesScreen ({ navigation, route }: AdminLanguagesScreenProps) {
   const [languages, setLanguages] = useState<Language[]>([]);
@@ -42,7 +42,7 @@ export default function AdminLanguagesScreen ({ navigation, route }: AdminLangua
         onPress={() => navigation.navigate('EditLanguagesScreen', { edit: true, language })}
       >
         <Flag language={language} button={false} />
-        <Text style={{ color: colors.foreText, fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
+        <Text style={{ color: 'white', fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
       </Button>);
     })];
   }
@@ -52,7 +52,7 @@ export default function AdminLanguagesScreen ({ navigation, route }: AdminLangua
       <Header
         leftComponent={
           <Button onPress={() => navigation.goBack()}>
-            <Icon name="chevron-left" color={colors.foreText} />
+            <Icon name="chevron-left" color='white' />
           </Button>
         }
         centerComponent={{ text: 'Admin Languages Screen', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
@@ -68,6 +68,7 @@ export default function AdminLanguagesScreen ({ navigation, route }: AdminLangua
       >
         {languagesList()}
       </View>
+      <BottomNav />
     </SafeAreaView>
   );
 }
