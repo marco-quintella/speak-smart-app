@@ -1,8 +1,9 @@
 
-import { GestureResponderEvent, Image, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Image, Text, View } from 'native-base';
+import { GestureResponderEvent } from 'react-native';
 import { G, Path, Svg } from 'react-native-svg';
-import type { Lesson, UserLesson } from '../types/lessons';
-import { PathImages } from '../utils/images';
+import type { Lesson, UserLesson } from '../types';
+import { PathImages } from '../utils';
 
 export default function PathItem (props: {
   lesson: Lesson;
@@ -69,7 +70,7 @@ export default function PathItem (props: {
   };
 
   return (
-    <TouchableOpacity onPress={props.onPress}>
+    <Button variant='ghost' onPress={props.onPress}>
       <Svg width={sizeWithPadding} height={sizeWithPadding}>
         <G>
           {backgroundPath()}
@@ -84,16 +85,16 @@ export default function PathItem (props: {
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <Image source={PathImages[props.lesson.icon]} style={{ width: iconSize, height: iconSize }} />
+        <Image alt='Path Icon' source={PathImages[props.lesson.icon]} style={{ width: iconSize, height: iconSize }} />
       </View>
       <View style={{
         position: 'absolute',
         left: size - 20,
         top: size - 20,
       }}>
-        <Image source={require('../assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
+        <Image alt='Streak Icon' source={require('../assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
       </View>
       <Text style={{ textAlign: 'center', marginTop: 4 }}>{props.lesson.title}</Text>
-    </TouchableOpacity>
+    </Button>
   );
 }
