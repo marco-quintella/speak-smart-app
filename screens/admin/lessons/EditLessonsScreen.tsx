@@ -1,10 +1,8 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Header, Icon, Input } from '@rneui/themed';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
+import { Box, Button, FormControl, Input, ScrollView, Text, VStack } from 'native-base';
 import { ReactNode, useState } from 'react';
-import { ScrollView, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { BottomNav } from '../../../components';
+import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
 import { db } from '../../../plugins/firebase';
 import { Lesson } from '../../../types/lessons';
@@ -41,9 +39,9 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
       icon: !lesson.icon || lesson.icon === '' ? 'Icon is required' : undefined,
       language: !lesson.language ? 'Language is required' : undefined,
       levels: !lesson.levels ? 'Levels is required' : lesson.levels === 0 ? 'Levels must be greater than 0' : undefined,
-      order: !lesson.order ? 'Order is required' : undefined,
+      order: lesson?.order === undefined || lesson?.order === null ? 'Order is required' : undefined,
       title: !lesson.title || lesson.title === '' ? 'Title is required' : undefined,
-      step: !lesson.step ? 'Step is required' : undefined,
+      step: lesson?.step === undefined || lesson?.step === null ? 'Step is required' : undefined,
       steps: !lesson.steps ? 'Steps is required' : undefined,
     };
     setError(errors);
@@ -61,7 +59,7 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
     navigation.goBack();
   }
 
-  function setNumber (key: keyof Lesson, value?: string) {
+  function setNumber (key: keyof Lesson, value?: string, allowZero: boolean = false) {
     if (!value) { setLesson({ ...lesson, [key]: undefined }); return; }
     setLesson({ ...lesson, [key]: parseInt(value.replace(/[^0-9]/g, '')) });
   }
@@ -75,89 +73,105 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
     } else {
       steps[stepNumber] = parseInt(value.replace(/[^0-9]/g, ''));
     }
+    console.log({ stepNumber, value, steps });
     setLesson({ ...lesson, steps });
   }
+
 
   function steps () {
     const steps: ReactNode[] = [];
     if (!lesson.levels) return steps;
     for (let i = 0; i < lesson.levels; i++) {
       steps.push(
-        <Input
-          key={i}
-          label={<Text style={{ fontWeight: 'bold' }}>Number of Steps for Level {i + 1}</Text>}
-          containerStyle={{ marginTop: 16 }}
-          placeholder='e.g. 3'
-          keyboardType='numeric'
-          defaultValue={lesson?.steps?.[i]?.toString() ?? '1'}
-          onChangeText={text => setSteps(i, text)}
-          errorMessage={lesson?.steps?.[i] === 0 ? 'Steps must be greater than 0' : undefined}
-        />);
+        <FormControl key={i} isRequired isInvalid={lesson?.steps?.[i] === 0}>
+          <FormControl.Label>Number of Steps for Level {i + 1}</FormControl.Label>
+          <Input
+            placeholder='e.g. 3'
+            keyboardType='numeric'
+            defaultValue={lesson?.steps?.[i]?.toString() ?? '1'}
+            onChangeText={text => setSteps(i, text)}
+          />
+          <FormControl.ErrorMessage>{lesson?.steps?.[i] === 0 ? 'Steps must be greater than 0' : undefined}</FormControl.ErrorMessage>
+        </FormControl>
+      );
     }
     return steps;
   };
 
   return (
-    <SafeAreaView style={{ flexDirection: 'column' }}>
-      <View style={{ flexGrow: 1, flexDirection: 'column' }}>
-        <Header
-          leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color='white' /></Button>}
-          centerComponent={{ text: 'Lessons List', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
-          centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
-        />
-        <ScrollView contentContainerStyle={{ paddingBottom: 186, paddingTop: 16, paddingHorizontal: 8 }}>
+    <Box safeArea h='100%'>
+      <Header title={route.params?.edit ? 'Edit Lesson' : 'Add Lesson'} icon='chevron-left' onPress={() => navigation.goBack()} />
+      <ScrollView>
+        <VStack space={4} padding={4}>
           <Text>{JSON.stringify(lesson)}</Text>
-          <Input
-            label={<Text style={{ fontWeight: 'bold' }}>Title</Text>}
-            containerStyle={{ marginTop: 16 }}
-            placeholder='e.g. greetings'
-            defaultValue={lesson?.title}
-            onChangeText={text => setLesson({ ...lesson, title: text })}
-            errorMessage={error.title}
-          />
-          <Input
-            label={<Text style={{ fontWeight: 'bold' }}>Icon Slug</Text>}
-            containerStyle={{ marginTop: 16 }}
-            placeholder='e.g. greet'
-            defaultValue={lesson?.icon}
-            onChangeText={text => setLesson({ ...lesson, icon: text })}
-            errorMessage={error.icon}
-          />
-          <Input
-            label={<Text style={{ fontWeight: 'bold' }}>Path Step</Text>}
-            containerStyle={{ marginTop: 16 }}
-            placeholder='e.g. 3'
-            keyboardType='numeric'
-            defaultValue={lesson?.step?.toString() ?? '1'}
-            onChangeText={text => setNumber('step', text)}
-            errorMessage={error.step}
-          />
-          <Input
-            label={<Text style={{ fontWeight: 'bold' }}>Path Step Order</Text>}
-            containerStyle={{ marginTop: 16 }}
-            placeholder='e.g. 3'
-            keyboardType='numeric'
-            defaultValue={lesson?.order?.toString() ?? '1'}
-            onChangeText={text => setNumber('order', text)}
-            errorMessage={error.order}
-          />
-          <Input
-            label={<Text style={{ fontWeight: 'bold' }}>Number of Levels</Text>}
-            containerStyle={{ marginTop: 16 }}
-            placeholder='e.g. 3'
-            keyboardType='numeric'
-            defaultValue={lesson?.levels?.toString() ?? '1'}
-            onChangeText={text => setNumber('levels', text)}
-            errorMessage={error.levels}
-          />
-          <View style={{ backgroundColor: 'gainsboro', borderRadius: 8 }}>
-            {steps()}
-          </View>
-
-          <Button title="Save" containerStyle={{ marginTop: 16, width: '100%' }} onPress={onSave} />
-        </ScrollView>
-      </View>
-      <BottomNav />
-    </SafeAreaView>
+          <FormControl isRequired isInvalid={!!error.title}>
+            <FormControl.Label>Title</FormControl.Label>
+            <Input
+              placeholder='e.g. greetings'
+              defaultValue={lesson?.title}
+              onChangeText={text => setLesson({ ...lesson, title: text })}
+            />
+            <FormControl.ErrorMessage>{error.title}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl isRequired isInvalid={!!error.icon}>
+            <FormControl.Label>Icon Slug</FormControl.Label>
+            <Input
+              placeholder='e.g. greet'
+              defaultValue={lesson?.icon}
+              onChangeText={text => setLesson({ ...lesson, icon: text })}
+            />
+            <FormControl.ErrorMessage>{error.icon}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl isRequired isInvalid={!!error.step}>
+            <FormControl.Label>Path Step</FormControl.Label>
+            <Input
+              placeholder='e.g. 3'
+              keyboardType='numeric'
+              defaultValue={lesson?.step?.toString() ?? '1'}
+              onChangeText={text => setNumber('step', text)}
+            />
+            <FormControl.ErrorMessage>{error.step}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl isRequired isInvalid={!!error.order}>
+            <FormControl.Label>Path Step Order</FormControl.Label>
+            <Input
+              placeholder='e.g. 3'
+              keyboardType='numeric'
+              defaultValue={lesson?.order?.toString() ?? '1'}
+              onChangeText={text => setNumber('order', text)}
+            />
+            <FormControl.ErrorMessage>{error.order}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl isRequired isInvalid={!!error.levels}>
+            <FormControl.Label>Number of Levels</FormControl.Label>
+            <Input
+              placeholder='e.g. 3'
+              keyboardType='numeric'
+              defaultValue={lesson?.levels?.toString() ?? '1'}
+              onChangeText={text => {
+                if (text === '0') return;
+                const int = parseInt(text);
+                let arr = lesson.steps ? [...lesson.steps] : [];
+                if (arr.length > int) {
+                  arr = arr.slice(0, int - 1);
+                }
+                for (let i = 0; i < int; i++) {
+                  if (!arr[i]) arr[i] = 1;
+                }
+                console.log({ arr, lesson });
+                setLesson({ ...lesson, steps: arr, levels: int });
+              }}
+            />
+            <FormControl.ErrorMessage>{error.levels}</FormControl.ErrorMessage>
+          </FormControl>
+          <Box bg='gray.200' borderRadius={4}>
+            <VStack space={4} p={2}>
+              {steps()}
+            </VStack>
+          </Box>
+          <Button onPress={onSave}>Save</Button>
+        </VStack>
+      </ScrollView>
+    </Box >
   );
 }
