@@ -6,7 +6,11 @@ const initialState: {
   user?: User;
   isAuthenticated?: boolean;
   userData?: UserData;
-} = {};
+} = {
+  user: undefined,
+  isAuthenticated: undefined,
+  userData: undefined
+};
 
 const userSlice = createSlice({
   name: 'user',

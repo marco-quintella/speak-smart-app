@@ -15,7 +15,7 @@ export const AuthContext = React.createContext<{
   promptAsync?: (options?: AuthRequestPromptOptions | undefined) => Promise<AuthSessionResult>;
 }>({});
 
-export default function AuthLayer ({ children, onAuthenticated }: { children: ReactNode, onAuthenticated: () => void; }) {
+export default function AuthLayer ({ children, onAuthenticated }: { children: ReactNode, onAuthenticated: (value: boolean) => void; }) {
   WebBrowser.maybeCompleteAuthSession();
 
   const dispatch = useDispatch();
@@ -68,9 +68,12 @@ export default function AuthLayer ({ children, onAuthenticated }: { children: Re
           }
           console.log('Logging in user ' + user.displayName);
           dispatch(setAuthentication(true));
-          onAuthenticated();
+          onAuthenticated(true);
         });
-      };
+      } else {
+        dispatch(setAuthentication(false));
+        onAuthenticated(false);
+      }
     } catch (error) {
       console.error(error);
     }

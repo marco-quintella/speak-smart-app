@@ -17,31 +17,33 @@ export const colors = {
   },
 };
 
+export const fonts = {
+  'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
+  'Inter-BlackItalic': require('./assets/fonts/Inter-BlackItalic.otf'),
+  'Inter-Bold': require('./assets/fonts/Inter-Bold.otf'),
+  'Inter-BoldItalic': require('./assets/fonts/Inter-BoldItalic.otf'),
+  'Inter-ExtraBold': require('./assets/fonts/Inter-ExtraBold.otf'),
+  'Inter-ExtraBoldItalic': require('./assets/fonts/Inter-ExtraBoldItalic.otf'),
+  'Inter-ExtraLight': require('./assets/fonts/Inter-ExtraLight.otf'),
+  'Inter-ExtraLightItalic': require('./assets/fonts/Inter-ExtraLightItalic.otf'),
+  'Inter-Italic': require('./assets/fonts/Inter-Italic.otf'),
+  'Inter-Light': require('./assets/fonts/Inter-Light.otf'),
+  'Inter-LightItalic': require('./assets/fonts/Inter-LightItalic.otf'),
+  'Inter-Medium': require('./assets/fonts/Inter-Medium.otf'),
+  'Inter-MediumItalic': require('./assets/fonts/Inter-MediumItalic.otf'),
+  'Inter-Regular': require('./assets/fonts/Inter-Regular.otf'),
+  'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.otf'),
+  'Inter-SemiBoldItalic': require('./assets/fonts/Inter-SemiBoldItalic.otf'),
+  'Inter-Thin': require('./assets/fonts/Inter-Thin.otf'),
+  'Inter-ThinItalic': require('./assets/fonts/Inter-ThinItalic.otf'),
+};
+
 export default function App () {
   SplashScreen.preventAutoHideAsync();
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | undefined>(undefined);
 
-  const [fontsLoaded] = useFonts({
-    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
-    'Inter-BlackItalic': require('./assets/fonts/Inter-BlackItalic.otf'),
-    'Inter-Bold': require('./assets/fonts/Inter-Bold.otf'),
-    'Inter-BoldItalic': require('./assets/fonts/Inter-BoldItalic.otf'),
-    'Inter-ExtraBold': require('./assets/fonts/Inter-ExtraBold.otf'),
-    'Inter-ExtraBoldItalic': require('./assets/fonts/Inter-ExtraBoldItalic.otf'),
-    'Inter-ExtraLight': require('./assets/fonts/Inter-ExtraLight.otf'),
-    'Inter-ExtraLightItalic': require('./assets/fonts/Inter-ExtraLightItalic.otf'),
-    'Inter-Italic': require('./assets/fonts/Inter-Italic.otf'),
-    'Inter-Light': require('./assets/fonts/Inter-Light.otf'),
-    'Inter-LightItalic': require('./assets/fonts/Inter-LightItalic.otf'),
-    'Inter-Medium': require('./assets/fonts/Inter-Medium.otf'),
-    'Inter-MediumItalic': require('./assets/fonts/Inter-MediumItalic.otf'),
-    'Inter-Regular': require('./assets/fonts/Inter-Regular.otf'),
-    'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.otf'),
-    'Inter-SemiBoldItalic': require('./assets/fonts/Inter-SemiBoldItalic.otf'),
-    'Inter-Thin': require('./assets/fonts/Inter-Thin.otf'),
-    'Inter-ThinItalic': require('./assets/fonts/Inter-ThinItalic.otf'),
-  });
+  const [fontsLoaded] = useFonts(fonts);
 
   const theme = extendTheme({
     colors: colors,
@@ -93,14 +95,20 @@ export default function App () {
     components: {
       Button: {
         defaultProps: {
-          colorScheme: 'primary'
+          colorScheme: 'primary',
+        }
+      },
+      Text: {
+        defaultProps: {
+          fontFamily: 'body'
         }
       }
     }
   });
 
   useEffect(() => {
-    if (fontsLoaded && isAuthenticated) {
+    console.log({ fontsLoaded, isAuthenticated });
+    if (fontsLoaded && isAuthenticated !== undefined) {
       setTimeout(() => {
         SplashScreen.hideAsync();
       }, 500);
@@ -116,10 +124,7 @@ export default function App () {
       <Provider store={store}>
         <ThemeProvider>
           <NavigationContainer>
-            <AuthLayer onAuthenticated={() => {
-              console.log('onAuthenticated');
-              setIsAuthenticated(true);
-            }}>
+            <AuthLayer onAuthenticated={(value) => setIsAuthenticated(value)}>
               <AppNavigator />
             </AuthLayer>
           </NavigationContainer>

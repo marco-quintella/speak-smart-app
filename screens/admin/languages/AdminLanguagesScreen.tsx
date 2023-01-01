@@ -1,14 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Header, Icon, Text } from '@rneui/themed';
+import { Box, Button, HStack, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import BottomNav from '../../../components/BottomNav';
-import Flag from '../../../components/Flag';
-import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
-import { Language } from '../../../types/language';
-import { fetchLanguages } from '../../../utils/languages';
-import { capitalize } from '../../../utils/strings';
+import { BottomNav, Flag, Header } from '../../../components';
+import { AppNavigatorParamList } from '../../../navigation';
+import { Language } from '../../../types';
+import { capitalize, fetchLanguages } from '../../../utils';
 
 export type AdminLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLanguagesScreen'>;
 
@@ -31,44 +27,43 @@ export default function AdminLanguagesScreen ({ navigation, route }: AdminLangua
   function languagesList () {
     const add = <Button
       key='add'
-      title="New Language"
-      containerStyle={{ width: '100%' }}
-      titleStyle={{ fontSize: 16, fontWeight: 'bold' }}
+      h='12'
       onPress={() => navigation.navigate('EditLanguagesScreen', { edit: false })}
-    />;
+      _text={{ color: 'white', fontSize: 16, fontWeight: '600' }}
+    >
+      New Language
+    </Button>;
     return [add, ...languages.map((language, index) => {
-      return (<Button
-        key={index} containerStyle={{ marginTop: 16, width: '100%' }}
-        onPress={() => navigation.navigate('EditLanguagesScreen', { edit: true, language })}
-      >
-        <Flag language={language} button={false} />
-        <Text style={{ color: 'white', fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
-      </Button>);
+      return (
+        <Button
+          key={index}
+          h='12'
+          onPress={() => navigation.navigate('EditLanguagesScreen', { edit: true, language })}
+        >
+          <HStack direction='row' alignItems='center' space={2}>
+            <Flag language={language} button={false} />
+            <Text fontWeight={600} color='white' fontSize={16}>{capitalize(language?.name)}</Text>
+          </HStack>
+        </Button>);
     })];
   }
 
   return (
-    <SafeAreaView>
+    <Box safeArea height='100%'>
       <Header
-        leftComponent={
-          <Button onPress={() => navigation.goBack()}>
-            <Icon name="chevron-left" color='white' />
-          </Button>
-        }
-        centerComponent={{ text: 'Admin Languages Screen', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
-        centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
+        icon='chevron-left'
+        onPress={() => navigation.goBack()}
+        title='Languages'
       />
-      <View
-        style={{
-          flexDirection: 'column',
-          alignItems: 'center',
-          marginVertical: 16,
-          marginHorizontal: 8
-        }}
-      >
-        {languagesList()}
-      </View>
+      <ScrollView>
+        <VStack
+          space={4}
+          padding={4}
+        >
+          {languagesList()}
+        </VStack>
+      </ScrollView>
       <BottomNav />
-    </SafeAreaView>
+    </Box>
   );
 }

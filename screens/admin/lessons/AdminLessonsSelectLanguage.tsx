@@ -1,14 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Header, Icon, Text } from '@rneui/themed';
+import { Box, Button, HStack, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { BottomNav } from '../../../components';
-import Flag from '../../../components/Flag';
-import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
-import { Language } from '../../../types/language';
-import { fetchLearningLanguages } from '../../../utils/languages';
-import { capitalize } from '../../../utils/strings';
+import { BottomNav, Flag, Header } from '../../../components';
+import { AppNavigatorParamList } from '../../../navigation';
+import type { Language } from '../../../types';
+import { capitalize, fetchLearningLanguages } from '../../../utils';
 
 export type AdminLessonsSelectLanguageProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLessonsSelectLanguage'>;
 
@@ -31,38 +27,27 @@ export default function AdminLessonsSelectLanguage ({ navigation, route }: Admin
   function languagesList () {
     return languages.map((language, index) => {
       return (<Button
-        key={index} containerStyle={{ marginTop: 16, width: '100%' }}
+        key={index}
         onPress={() => navigation.navigate('AdminLessonsListScreen', { language })}
+        h={12}
       >
-        <Flag language={language} button={false} />
-        <Text style={{ color: 'white', fontSize: 16, fontWeight: '700', marginLeft: 8 }} >{capitalize(language?.name)}</Text>
+        <HStack alignItems='center' space={2}>
+          <Flag language={language} button={false} />
+          <Text style={{ color: 'white', fontSize: 16, fontWeight: '700' }} >{capitalize(language?.name)}</Text>
+        </HStack>
       </Button>);
     });
   }
 
   return (
-    <SafeAreaView>
-      <Header
-        leftComponent={
-          <Button onPress={() => navigation.goBack()}>
-            <Icon name="chevron-left" color='white' />
-          </Button>
-        }
-        centerComponent={{ text: 'Admin Lessons', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
-        centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
-      />
-      <View
-        style={{
-          flexDirection: 'column',
-          alignItems: 'center',
-          marginVertical: 16,
-          marginHorizontal: 8
-        }}
-      >
-        <Text style={{ fontWeight: 'bold' }}>Select a language</Text>
-        {languagesList()}
-      </View>
+    <Box safeArea height='100%'>
+      <Header icon='chevron-left' onPress={() => navigation.goBack()} title='Select a language' />
+      <ScrollView>
+        <VStack space={4} padding={4}>
+          {languagesList()}
+        </VStack>
+      </ScrollView>
       <BottomNav />
-    </SafeAreaView>
+    </Box>
   );
 }

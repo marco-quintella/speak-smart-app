@@ -1,13 +1,11 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, CheckBox, Header, Icon, Input, Text } from '@rneui/themed';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
+import { Box, Button, FormControl, HStack, Input, ScrollView, Switch, Text, VStack } from 'native-base';
 import { useState } from 'react';
-import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import BottomNav from '../../../components/BottomNav';
-import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
-import { db } from '../../../plugins/firebase';
-import { Language } from '../../../types/language';
+import { Header } from '../../../components';
+import { AppNavigatorParamList } from '../../../navigation';
+import { db } from '../../../plugins';
+import { Language } from '../../../types';
 
 export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;
 
@@ -23,6 +21,11 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
     name?: string;
     flag?: string;
   }>({});
+
+  function setValue (key: keyof Language, value: any) {
+    console.log({ language });
+    setLanguage(Object.assign({}, language, { [key]: value }));
+  }
 
   async function onSave () {
     if (!language) {
@@ -49,43 +52,45 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
   }
 
   return (
-    <SafeAreaView>
+    <Box safeArea flexDirection='column' height='100%'>
       <Header
-        leftComponent={<Button onPress={() => navigation.goBack()}><Icon name="chevron-left" color='white' /></Button>}
-        centerComponent={{ text: 'Edit Language Screen', style: { color: '#fff', fontSize: 19, fontWeight: 'bold' } }}
-        centerContainerStyle={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' }}
+        icon='chevron-left'
+        onPress={() => navigation.goBack()}
+        title={route.params?.edit ? `Edit ${language?.name}` : 'New Language'}
       />
-      <View style={{ flexDirection: 'column', marginHorizontal: 8, marginVertical: 16 }}>
-        <Text style={{ fontWeight: 'bold' }}>Language: {language?.id}</Text>
-        <Input
-          label={<Text style={{ fontWeight: 'bold' }}>Name</Text>}
-          containerStyle={{ marginTop: 16 }}
-          placeholder='e.g. english'
-          defaultValue={language?.name}
-          onChangeText={text => setLanguage({ ...language, name: text })}
-        />
-        <Input
-          label={<Text style={{ fontWeight: 'bold' }}>Flag Slug</Text>}
-          containerStyle={{ marginTop: 16 }}
-          placeholder='e.g. en'
-          defaultValue={language?.flag}
-          onChangeText={text => setLanguage({ ...language, flag: text })}
-        />
-        <CheckBox
-          title="Is Learning Language"
-          checked={language?.learning ?? false}
-          onPress={() => setLanguage({ ...language, learning: !language?.learning })}
-          containerStyle={{ backgroundColor: 'transparent' }}
-        />
-        <CheckBox
-          title="Is App Language"
-          checked={language?.app ?? false}
-          onPress={() => setLanguage({ ...language, app: !language?.app })}
-          containerStyle={{ backgroundColor: 'transparent' }}
-        />
-        <Button title="Save" containerStyle={{ marginTop: 16, width: '100%' }} onPress={onSave} />
-      </View>
-      <BottomNav />
-    </SafeAreaView>
+      <ScrollView _contentContainerStyle={{ flex: 1 }}>
+        <VStack padding={4} space={4} flex={1}>
+          <FormControl isRequired isInvalid={!!error.name}>
+            <FormControl.Label>Name</FormControl.Label>
+            <Input
+              placeholder='e.g. english'
+              defaultValue={language?.name}
+              onChangeText={text => setValue('name', text)}
+            />
+            <FormControl.ErrorMessage>{error.name}</FormControl.ErrorMessage>
+          </FormControl>
+          <FormControl isRequired isInvalid={!!error.flag}>
+            <FormControl.Label>Flag Slug</FormControl.Label>
+            <Input
+              placeholder='e.g. en'
+              defaultValue={language?.flag}
+              onChangeText={text => setValue('flag', text)}
+            />
+            <FormControl.ErrorMessage>{error.flag}</FormControl.ErrorMessage>
+          </FormControl>
+          <HStack space={2} alignItems='center'>
+            <Switch defaultIsChecked={language?.learning} onValueChange={isSelected => setValue('learning', isSelected)} />
+            <Text>Is Learning Language</Text>
+          </HStack>
+          <HStack space={2} alignItems='center'>
+            <Switch defaultIsChecked={language?.app} onValueChange={isSelected => setValue('app', isSelected)} />
+            <Text>Is App Language</Text>
+          </HStack>
+        </VStack>
+        <VStack space={4} padding={4}>
+          <Button onPress={onSave}>Save</Button>
+        </VStack>
+      </ScrollView>
+    </Box >
   );
 }
