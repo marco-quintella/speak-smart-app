@@ -81,7 +81,7 @@ export default function PathScreen ({ navigation, route }: Props) {
           centerComponent={
             <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-evenly' }}>
               <Stars />
-              <Streak style={{ marginLeft: 16 }} />
+              <Streak />
             </View>
           }
           rightComponent={<Apples />}

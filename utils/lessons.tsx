@@ -10,7 +10,7 @@ export async function fetchLessons (languageId?: string) {
     const lessonsQuery = query(lessonsRef, where('language', '==', languageId), orderBy('step', 'asc'), orderBy('order', 'asc'));
     const snapshot = await getDocs(lessonsQuery);
     if (snapshot.empty) {
-      console.log('No matching documents.');
+      console.error('No matching documents.');
       return;
     }
     const result: Lesson[] = [];

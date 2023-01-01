@@ -1,13 +1,15 @@
-import { Image, StyleProp, Text, TouchableOpacity, ViewStyle } from 'react-native';
+import { Button, HStack, Image, Text } from 'native-base';
 import { useAppSelector } from '../store/hooks';
 
-export default function Streak (props: { style: StyleProp<ViewStyle>; }) {
+export default function Streak () {
   const userStore = useAppSelector(state => state.user);
 
   return (
-    <TouchableOpacity style={[{ flexDirection: 'row', alignItems: 'center' }, props.style]}>
-      <Image source={require('../assets/icons/explosion.png')} style={{ width: 28, height: 28, marginRight: 8 }} />
-      <Text style={{ fontSize: 20, color: 'white' }}>{userStore.userData?.streak ?? 0}</Text>
-    </TouchableOpacity>
+    <Button variant='ghost'>
+      <HStack alignItems='center' space={2}>
+        <Image alt='Streak Icon' source={require('../assets/icons/explosion.png')} style={{ width: 28, height: 28 }} />
+        <Text style={{ fontSize: 20, color: 'white' }}>{userStore.userData?.streak ?? 0}</Text>
+      </HStack>
+    </Button>
   );
 }

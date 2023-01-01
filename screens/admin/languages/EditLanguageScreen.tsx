@@ -23,7 +23,6 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
   }>({});
 
   function setValue (key: keyof Language, value: any) {
-    console.log({ language });
     setLanguage(Object.assign({}, language, { [key]: value }));
   }
 

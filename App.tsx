@@ -107,7 +107,6 @@ export default function App () {
   });
 
   useEffect(() => {
-    console.log({ fontsLoaded, isAuthenticated });
     if (fontsLoaded && isAuthenticated !== undefined) {
       setTimeout(() => {
         SplashScreen.hideAsync();

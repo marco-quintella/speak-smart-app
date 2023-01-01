@@ -25,7 +25,7 @@ export async function fetchLanguages () {
   const ref = collection(db, 'languages');
   const snapshot = await getDocs(ref);
   if (snapshot.empty) {
-    console.log('No matching documents.');
+    console.error('No matching documents.');
     return;
   }
   return snapshot.docs.map(doc => {
@@ -41,7 +41,7 @@ export async function fetchLearningLanguages () {
   const _query = query(ref, where('learning', '==', true));
   const snapshot = await getDocs(_query);
   if (snapshot.empty) {
-    console.log('No matching documents.');
+    console.error('No matching documents.');
     return;
   }
   return snapshot.docs.map(doc => {
@@ -57,7 +57,7 @@ export async function fetchAppLanguages () {
   const _query = query(ref, where('app', '==', true));
   const snapshot = await getDocs(_query);
   if (snapshot.empty) {
-    console.log('No matching documents.');
+    console.error('No matching documents.');
     return;
   }
   return snapshot.docs.map(doc => {

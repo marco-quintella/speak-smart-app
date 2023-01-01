@@ -73,7 +73,6 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
     } else {
       steps[stepNumber] = parseInt(value.replace(/[^0-9]/g, ''));
     }
-    console.log({ stepNumber, value, steps });
     setLesson({ ...lesson, steps });
   }
 
@@ -158,7 +157,6 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
                 for (let i = 0; i < int; i++) {
                   if (!arr[i]) arr[i] = 1;
                 }
-                console.log({ arr, lesson });
                 setLesson({ ...lesson, steps: arr, levels: int });
               }}
             />

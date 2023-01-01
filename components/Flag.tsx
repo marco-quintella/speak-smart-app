@@ -1,8 +1,7 @@
-import { Image } from '@rneui/themed';
+import { Button, Image, View } from 'native-base';
 import { useEffect, useState } from 'react';
-import { TouchableOpacity, View } from 'react-native';
-import { useAppSelector } from '../store/hooks';
-import { Language } from '../types/language';
+import { useAppSelector } from '../store';
+import { Language } from '../types';
 
 const images: Record<string, any> = {
   us: require('../assets/flags/united-states-of-america.png'),
@@ -23,13 +22,13 @@ export default function Flag ({ button = true, language }: {
     setUri(_language()?.flag ?? 'us');
   }, [language, languageStore.currentLanguage?.flag]);
 
-  const image = () => <Image source={images[uri]} style={{ width: 32, height: 32 }} />;
+  const image = () => <Image alt='Flag Icon' source={require('../assets/flags/united-states-of-america.png')} style={{ width: 32, height: 32 }} />;
 
   return button
     ? (
-      <TouchableOpacity>
+      <Button variant='ghost'>
         {image()}
-      </TouchableOpacity>
+      </Button>
     )
     : (
       <View>
