@@ -1,6 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
-import { Box, Button, FormControl, Input, ScrollView, Text, VStack } from 'native-base';
+import { Box, Button, FormControl, Input, ScrollView, VStack } from 'native-base';
 import { ReactNode, useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation/AppNavigator';
@@ -11,11 +11,11 @@ export type EditLessonsScreenProps = NativeStackScreenProps<AppNavigatorParamLis
 
 export default function EditLessonsScreen ({ navigation, route }: EditLessonsScreenProps) {
   const [lesson, setLesson] = useState<Partial<Lesson>>(route.params?.lesson ?? {
-    icon: '',
-    language: '',
+    icon: undefined,
+    language: route.params?.language?.id,
     levels: 1,
     order: 0,
-    title: '',
+    title: undefined,
     step: 0,
     steps: [1],
   });
@@ -102,7 +102,6 @@ export default function EditLessonsScreen ({ navigation, route }: EditLessonsScr
       <Header title={route.params?.edit ? 'Edit Lesson' : 'Add Lesson'} icon='chevron-left' onPress={() => navigation.goBack()} />
       <ScrollView>
         <VStack space={4} padding={4}>
-          <Text>{JSON.stringify(lesson)}</Text>
           <FormControl isRequired isInvalid={!!error.title}>
             <FormControl.Label>Title</FormControl.Label>
             <Input

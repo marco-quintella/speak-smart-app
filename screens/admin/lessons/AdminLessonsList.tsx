@@ -29,9 +29,9 @@ export default function AdminLessonsListScreen ({ navigation, route }: AdminLess
   }, [navigation]);
 
   const lessonsList = () => {
-    const add = <Button key='add' _text={{ fontWeight: '600' }} onPress={() => navigation.navigate('EditLessonsScreen', { edit: false })}>New Lesson</Button>;
+    const add = <Button key='add' _text={{ fontWeight: '600' }} onPress={() => navigation.navigate('EditLessonsScreen', { edit: false, language })}>New Lesson</Button>;
     return [add, ...lessons.map((lesson, index) => {
-      return (<Button key={index} onPress={() => navigation.navigate('EditLessonsScreen', { edit: true, lesson })}>
+      return (<Button key={index} onPress={() => navigation.navigate('EditLessonsScreen', { edit: true, lesson, language })}>
         <HStack space={2}>
           <Text color='white' fontWeight={700}>{lesson?.title}</Text>
           <Text color='white' fontWeight={500} fontStyle='italic'>Step:</Text>

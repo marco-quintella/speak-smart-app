@@ -33,6 +33,7 @@ export type AppNavigatorParamList = {
   EditLessonsScreen: {
     edit?: boolean;
     lesson?: Lesson;
+    language?: Language;
   };
 };
 
