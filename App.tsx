@@ -1,5 +1,4 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { ThemeProvider } from '@rneui/themed';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { extendTheme, NativeBaseProvider } from 'native-base';
@@ -121,13 +120,11 @@ export default function App () {
   return (
     <NativeBaseProvider theme={theme}>
       <Provider store={store}>
-        <ThemeProvider>
-          <NavigationContainer>
-            <AuthLayer onAuthenticated={(value) => setIsAuthenticated(value)}>
-              <AppNavigator />
-            </AuthLayer>
-          </NavigationContainer>
-        </ThemeProvider>
+        <NavigationContainer>
+          <AuthLayer onAuthenticated={(value) => setIsAuthenticated(value)}>
+            <AppNavigator />
+          </AuthLayer>
+        </NavigationContainer>
       </Provider>
     </NativeBaseProvider>
   );
