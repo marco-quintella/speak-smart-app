@@ -38,7 +38,11 @@ export default function AdminLanguagesScreen ({ navigation, route }: AdminLangua
         <Button
           key={index}
           h='12'
-          onPress={() => navigation.navigate('EditLanguagesScreen', { edit: true, language })}
+          onPress={() => navigation.navigate('EditLanguagesScreen', {
+            edit: true,
+            language,
+            languages
+          })}
         >
           <HStack direction='row' alignItems='center' space={2}>
             <Flag language={language} button={false} />

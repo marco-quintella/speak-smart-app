@@ -1,9 +1,10 @@
 import { Button, Image, View } from 'native-base';
 import { useEffect, useState } from 'react';
 import { useAppSelector } from '../store';
-import { Language } from '../types';
+import type { Language } from '../types';
+import { capitalize } from '../utils';
 
-const images: Record<string, any> = {
+const images: Record<string, NodeRequire> = {
   us: require('../assets/flags/united-states-of-america.png'),
   brazil: require('../assets/flags/brazil.png'),
   spain: require('../assets/flags/spain.png'),
@@ -16,13 +17,13 @@ export default function Flag ({ button = true, language }: {
   const languageStore = useAppSelector(state => state.language);
   const _language = () => language ? language : languageStore.currentLanguage;
 
-  const [uri, setUri] = useState(require('../assets/flags/united-states-of-america.png'));
+  const [uri, setUri] = useState(images[_language()?.flag ?? 'us']);
 
   useEffect(() => {
-    setUri(_language()?.flag ?? 'us');
+    setUri(images[_language()?.flag ?? 'us']);
   }, [language, languageStore.currentLanguage?.flag]);
 
-  const image = () => <Image alt='Flag Icon' source={require('../assets/flags/united-states-of-america.png')} style={{ width: 32, height: 32 }} />;
+  const image = () => <Image alt={`${capitalize(_language?.name)} Icon`} source={uri} style={{ width: 32, height: 32 }} />;
 
   return button
     ? (

@@ -8,7 +8,9 @@ export async function fetchCourseById (courseId: string) {
   const docRef = doc(coursesCollection, courseId);
   const snapshot = await getDoc(docRef);
   if (!snapshot.exists()) {
-    console.error('No matching documents.');
+    console.error('No matching documents in fetchCourseById.', {
+      courseId,
+    });
     return;
   }
   const data = snapshot.data();

@@ -1,6 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
-import { Box, Button, FormControl, HStack, Input, ScrollView, Switch, Text, VStack } from 'native-base';
+import { Box, Button, FormControl, Input, ScrollView, Text, VStack } from 'native-base';
 import { useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
@@ -10,12 +10,13 @@ import { Language } from '../../../types';
 export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;
 
 export default function EditLanguagesScreen ({ navigation, route }: EditLanguagesScreenProps) {
-  const [language, setLanguage] = useState<Language | undefined>(route.params?.language ?? {
-    learning: false,
-    app: false,
-    name: '',
-    flag: ''
-  });
+  const [language, setLanguage] = useState<Partial<Language> | undefined>(
+    route.params?.language ?? {
+      name: '',
+      flag: '',
+      translations: {},
+    }
+  );
 
   const [error, setError] = useState<{
     name?: string;
@@ -24,6 +25,11 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
 
   function setValue (key: keyof Language, value: any) {
     setLanguage(Object.assign({}, language, { [key]: value }));
+  }
+
+  function setTranslation (lang: string, value: string) {
+    const translations = Object.assign({}, language?.translations, { [lang]: value });
+    setLanguage(Object.assign({}, language, { translations }));
   }
 
   async function onSave () {
@@ -77,14 +83,17 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
             />
             <FormControl.ErrorMessage>{error.flag}</FormControl.ErrorMessage>
           </FormControl>
-          <HStack space={2} alignItems='center'>
-            <Switch defaultIsChecked={language?.learning} onValueChange={isSelected => setValue('learning', isSelected)} />
-            <Text>Is Learning Language</Text>
-          </HStack>
-          <HStack space={2} alignItems='center'>
-            <Switch defaultIsChecked={language?.app} onValueChange={isSelected => setValue('app', isSelected)} />
-            <Text>Is App Language</Text>
-          </HStack>
+          <Text fontSize='md' fontWeight='bold'>Translations</Text>
+          {route.params?.languages?.filter(lang => lang.id !== language?.id).map(lang => (
+            <FormControl isRequired key={lang.id}>
+              <FormControl.Label>{lang.name}</FormControl.Label>
+              <Input
+                placeholder='e.g. english'
+                defaultValue={language?.translations?.[lang.id]}
+                onChangeText={text => setTranslation(lang.id, text)}
+              />
+            </FormControl>
+          ))}
         </VStack>
         <VStack space={4} padding={4}>
           <Button onPress={onSave}>Save</Button>

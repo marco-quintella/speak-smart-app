@@ -1,4 +1,4 @@
-import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { db } from '../plugins/firebase';
 import type { Language } from '../types/language';
 
@@ -28,39 +28,7 @@ export async function fetchLanguages () {
   const ref = collection(db, 'languages');
   const snapshot = await getDocs(ref);
   if (snapshot.empty) {
-    console.error('No matching documents.');
-    return;
-  }
-  return snapshot.docs.map(doc => {
-    return {
-      ...doc.data() as Language,
-      id: doc.id,
-    };
-  });
-}
-
-export async function fetchLearningLanguages () {
-  const ref = collection(db, 'languages');
-  const _query = query(ref, where('learning', '==', true));
-  const snapshot = await getDocs(_query);
-  if (snapshot.empty) {
-    console.error('No matching documents.');
-    return;
-  }
-  return snapshot.docs.map(doc => {
-    return {
-      ...doc.data() as Language,
-      id: doc.id,
-    };
-  });
-}
-
-export async function fetchAppLanguages () {
-  const ref = collection(db, 'languages');
-  const _query = query(ref, where('app', '==', true));
-  const snapshot = await getDocs(_query);
-  if (snapshot.empty) {
-    console.error('No matching documents.');
+    console.error('No matching documents in fetchLanguages.');
     return;
   }
   return snapshot.docs.map(doc => {

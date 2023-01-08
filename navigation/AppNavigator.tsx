@@ -9,7 +9,7 @@ import AdminLessonsSelectLanguage from '../screens/admin/lessons/AdminLessonsSel
 import EditLessonsScreen from '../screens/admin/lessons/EditLessonsScreen';
 import PathScreen from '../screens/tabs/PathScreen';
 import { useAppSelector } from '../store/hooks';
-import type { Language, Lesson } from '../types';
+import type { Language } from '../types';
 
 const screenOptions = {
   headerShown: false,
@@ -25,6 +25,7 @@ export type AppNavigatorParamList = {
   EditLanguagesScreen: {
     edit?: boolean;
     language?: Language;
+    languages?: Language[];
   };
   AdminLessonsSelectLanguage: undefined;
   AdminLessonsListScreen: {
@@ -32,7 +33,6 @@ export type AppNavigatorParamList = {
   };
   EditLessonsScreen: {
     edit?: boolean;
-    lesson?: Lesson;
     language?: Language;
   };
 };
