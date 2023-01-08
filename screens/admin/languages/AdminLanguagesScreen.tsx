@@ -3,23 +3,29 @@ import { Box, Button, HStack, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
 import { BottomNav, Flag, Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
+import { setLanguages } from '../../../store';
+import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { Language } from '../../../types';
 import { capitalize, fetchLanguages } from '../../../utils';
-
 export type AdminLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLanguagesScreen'>;
 
 export default function AdminLanguagesScreen ({ navigation, route }: AdminLanguagesScreenProps) {
-  const [languages, setLanguages] = useState<Language[]>([]);
+  const dispatch = useAppDispatch();
+  const languagesStore = useAppSelector(state => state.language);
+
+  const [languages, _setLanguages] = useState<Language[]>(languagesStore?.languages ?? []);
 
   async function getLanguages () {
     const _languages = await fetchLanguages();
     if (!_languages) return;
-    setLanguages(_languages);
+    _setLanguages(_languages);
+    dispatch(setLanguages(_languages));
   }
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      getLanguages();
+      _setLanguages(languagesStore?.languages ?? []);
+      (!languages || languages.length === 0) && getLanguages();
     });
     return unsubscribe;
   }, []);

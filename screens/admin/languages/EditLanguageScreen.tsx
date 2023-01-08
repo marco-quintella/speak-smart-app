@@ -5,15 +5,20 @@ import { useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
 import { db } from '../../../plugins/firebase';
+import { setLanguages } from '../../../store';
+import { useAppDispatch } from '../../../store/hooks';
 import { Language } from '../../../types';
+import { fetchLanguages } from '../../../utils';
 
 export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;
 
 export default function EditLanguagesScreen ({ navigation, route }: EditLanguagesScreenProps) {
+  const dispatch = useAppDispatch();
+
   const [language, setLanguage] = useState<Partial<Language> | undefined>(
     route.params?.language ?? {
-      name: '',
-      flag: '',
+      name: undefined,
+      flag: undefined,
       translations: {},
     }
   );
@@ -53,6 +58,7 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
       await addDoc(ref, language);
     }
 
+    dispatch(setLanguages(await fetchLanguages()));
     navigation.goBack();
   }
 
@@ -63,7 +69,7 @@ export default function EditLanguagesScreen ({ navigation, route }: EditLanguage
         onPress={() => navigation.goBack()}
         title={route.params?.edit ? `Edit ${language?.name}` : 'New Language'}
       />
-      <ScrollView _contentContainerStyle={{ flex: 1 }}>
+      <ScrollView>
         <VStack padding={4} space={4} flex={1}>
           <FormControl isRequired isInvalid={!!error.name}>
             <FormControl.Label>Name</FormControl.Label>

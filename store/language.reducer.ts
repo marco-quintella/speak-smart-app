@@ -5,6 +5,9 @@ import type { Language } from '../types/language';
 const initialState: {
   currentLanguage?: Language;
   currentCourse?: Course;
+
+  languages?: Language[];
+  courses?: Course[];
 } = {};
 
 const languageSlice = createSlice({
@@ -16,9 +19,15 @@ const languageSlice = createSlice({
     },
     setCurrentCourse: (state, action) => {
       state.currentCourse = action.payload;
+    },
+    setLanguages: (state, action) => {
+      state.languages = action.payload;
+    },
+    setCourses: (state, action) => {
+      state.courses = action.payload;
     }
   }
 });
 
-export const { setCurrentLanguage, setCurrentCourse } = languageSlice.actions;
+export const { setCurrentLanguage, setCurrentCourse, setLanguages, setCourses } = languageSlice.actions;
 export default languageSlice.reducer;

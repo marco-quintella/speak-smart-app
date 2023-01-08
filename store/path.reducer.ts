@@ -2,10 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 import type { Unit } from '../types';
 
 const initialState: {
-  units: Unit[];
-} = {
-  units: []
-};
+  units?: Unit[];
+} = {};
 
 const pathSlice = createSlice({
   name: 'path',

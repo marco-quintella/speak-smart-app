@@ -3,6 +3,8 @@ import { Box, Button, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
+import { setCourses, useAppDispatch } from '../../../store';
+import { useAppSelector } from '../../../store/hooks';
 import { Course } from '../../../types';
 import { capitalize } from '../../../utils';
 import { fetchCourses } from '../../../utils/courses';
@@ -10,17 +12,22 @@ import { fetchCourses } from '../../../utils/courses';
 export type AdminCoursesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminCoursesScreen'>;
 
 export default function AdminCoursesScreen ({ navigation }: AdminCoursesScreenProps) {
-  const [courses, setCourses] = useState<Course[]>([]);
+  const dispatch = useAppDispatch();
+  const languageStore = useAppSelector(state => state.language);
+
+  const [courses, _setCourses] = useState<Course[]>(languageStore?.courses ?? []);
 
   async function getCourses () {
     const _courses = await fetchCourses();
     if (!_courses) return;
-    setCourses(_courses);
+    _setCourses(_courses);
+    dispatch(setCourses(_courses));
   }
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      getCourses();
+      _setCourses(languageStore?.courses ?? []);
+      if (!courses || courses.length === 0) getCourses();
     });
     return unsubscribe;
   });
@@ -29,7 +36,7 @@ export default function AdminCoursesScreen ({ navigation }: AdminCoursesScreenPr
     const add = <Button
       key='add'
       h='12'
-      onPress={() => { }}
+      onPress={() => navigation.navigate('EditCoursesScreen', { edit: false })}
     >
       New Course
     </Button>;
@@ -39,7 +46,7 @@ export default function AdminCoursesScreen ({ navigation }: AdminCoursesScreenPr
         <Button
           key={index}
           h='12'
-          onPress={() => { }}
+          onPress={() => navigation.navigate('EditCoursesScreen', { edit: true, course })}
         >
           <Text color='white'>
             {course.id} - {capitalize(course.title)}

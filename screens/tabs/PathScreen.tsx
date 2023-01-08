@@ -8,7 +8,9 @@ import Stars from '../../components/Stars';
 import Streak from '../../components/Streak';
 import UnitHeader from '../../components/UnitHeader';
 import { AppNavigatorParamList } from '../../navigation';
-import { setUnits, useAppDispatch, useAppSelector } from '../../store';
+import { setCourses, setLanguages, setUnits, useAppDispatch, useAppSelector } from '../../store';
+import { fetchLanguages } from '../../utils';
+import { fetchCourses } from '../../utils/courses';
 import { fetchUnitsByCourse } from '../../utils/units';
 
 type Props = NativeStackScreenProps<AppNavigatorParamList, 'PathScreen'>;
@@ -22,6 +24,14 @@ export default function PathScreen ({ navigation, route }: Props) {
     const units = await fetchUnitsByCourse(languageStore?.currentCourse?.id);
     if (units) dispatch(setUnits(units));
   }
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', async () => {
+      !languageStore?.languages && dispatch(setLanguages(await fetchLanguages()));
+      !languageStore?.courses && dispatch(setCourses(await fetchCourses()));
+    });
+    return unsubscribe;
+  }, []);
 
   useEffect(() => {
     getUnits();
