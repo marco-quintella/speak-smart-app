@@ -1,0 +1,5358 @@
+{
+  "id": "hOlpdCzd3PtlI3fT",
+  "learningLanguage": "en",
+  "fromLanguage": "pt",
+  "type": "LESSON",
+  "challenges": [
+    {
+      "prompt": "chá",
+      "choices": [
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562",
+          "phrase": "milk",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/d66a0d5b3c279d4f245a91f297d610d6",
+          "hint": "leite"
+        },
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/18a521f1507cb86689faa5b2e8277703",
+          "phrase": "tea",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/18a521f1507cb86689faa5b2e8277703",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c",
+          "hint": "chá"
+        },
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/6fd84b8a838c43c4a84b44b08b10177e",
+          "phrase": "coffee",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/6fd84b8a838c43c4a84b44b08b10177e",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5c4b35c4e7a5d8b8d32fb1e9d1fff6d3",
+          "hint": "café"
+        }
+      ],
+      "correctIndex": 1,
+      "type": "select",
+      "id": "1fcea09b1edc46ab80071a42079a307c",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.93906504,
+        "content_length": 3,
+        "tagged_kc_ids": [
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.93906504,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 3
+        },
+        "highlight": [
+          "tea"
+        ],
+        "hint": "chá",
+        "phrase": "tea",
+        "solution_key": "7c502d3e0f614b3ba48987bea06790e0",
+        "source_language": "en",
+        "specific_type": "name_example",
+        "language": "en",
+        "lexeme_ids_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "type": "select",
+        "lexemes_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [
+        "tea"
+      ],
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "name_example",
+        "generatorId": "7c502d3e0f614b3ba48987bea06790e0"
+      }
+    },
+    {
+      "prompt": "café",
+      "choices": [
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/6fd84b8a838c43c4a84b44b08b10177e",
+          "phrase": "coffee",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/6fd84b8a838c43c4a84b44b08b10177e",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5c4b35c4e7a5d8b8d32fb1e9d1fff6d3",
+          "hint": "café"
+        },
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/18a521f1507cb86689faa5b2e8277703",
+          "phrase": "tea",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/18a521f1507cb86689faa5b2e8277703",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c",
+          "hint": "chá"
+        },
+        {
+          "image": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be",
+          "phrase": "water",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/213353ff7f5c63e6e963919b73981557",
+          "hint": "água"
+        }
+      ],
+      "correctIndex": 0,
+      "type": "select",
+      "id": "8a0e98801e374a5a81cf94abed394265",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9268613,
+        "content_length": 6,
+        "tagged_kc_ids": [
+          "6038e9e38135d6b7920f57303400e321"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9268613,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 6
+        },
+        "highlight": [
+          "coffee"
+        ],
+        "hint": "café",
+        "phrase": "coffee",
+        "solution_key": "6038e9e38135d6b7920f57303400e321",
+        "source_language": "en",
+        "specific_type": "name_example",
+        "language": "en",
+        "lexeme_ids_to_update": [
+          "6038e9e38135d6b7920f57303400e321"
+        ],
+        "type": "select",
+        "lexemes_to_update": [
+          "6038e9e38135d6b7920f57303400e321"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [
+        "coffee"
+      ],
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "name_example",
+        "generatorId": "6038e9e38135d6b7920f57303400e321"
+      }
+    },
+    {
+      "choices": [
+        {
+          "text": "clean",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/cc8da02e0d973b63e1f91261e81228e0"
+        },
+        {
+          "text": "con",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/3e7b4c95fe63c74cd958c01e0c9d868c"
+        },
+        {
+          "text": "neat",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/057708eb0d19076528a0e3e22fcc969f"
+        },
+        {
+          "text": "not",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/0c2c84c90cf9d200ed687cd1a9aae021"
+        }
+      ],
+      "correctIndex": 2,
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/057708eb0d19076528a0e3e22fcc969f",
+      "type": "selectTranscription",
+      "id": "c96edabefb044e29a11e12abd49819f5",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.93782234,
+        "content_length": 4,
+        "tagged_kc_ids": [
+          "f18f17117af199ac619fe968c4cd22b2"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.93782234,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 4
+        },
+        "correct_index": 2,
+        "choices": [
+          {
+            "text": "clean",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/cc8da02e0d973b63e1f91261e81228e0"
+          },
+          {
+            "text": "con",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/3e7b4c95fe63c74cd958c01e0c9d868c"
+          },
+          {
+            "text": "neat",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/057708eb0d19076528a0e3e22fcc969f"
+          },
+          {
+            "text": "not",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/0c2c84c90cf9d200ed687cd1a9aae021"
+          }
+        ],
+        "solution_key": "f18f17117af199ac619fe968c4cd22b2",
+        "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/057708eb0d19076528a0e3e22fcc969f",
+        "source_language": "en",
+        "learning_language": "en",
+        "specific_type": "select_transcription",
+        "lexeme_ids_to_update": [
+          "f18f17117af199ac619fe968c4cd22b2"
+        ],
+        "type": "select_transcription",
+        "lexemes_to_update": [
+          "f18f17117af199ac619fe968c4cd22b2"
+        ],
+        "generic_lexeme_map": {},
+        "from_language": "pt"
+      },
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "select_transcription",
+        "generatorId": "57e35b0be80044ce47c60d27e7a7877a"
+      }
+    },
+    {
+      "choices": [
+        {
+          "text": "pad",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/101f32624ff8fb179b09a75bf62b147a"
+        },
+        {
+          "text": "pan",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/599a6a619a04f09e24945e12705a1155"
+        },
+        {
+          "text": "hat",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/dbad0b2dafc0b80b9d8b64e99d252997"
+        },
+        {
+          "text": "help",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/5bb37525120159fd5faa7794489ea562"
+        }
+      ],
+      "correctIndex": 2,
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/dbad0b2dafc0b80b9d8b64e99d252997",
+      "type": "selectTranscription",
+      "id": "357f9be0befd4bc09e260198b071d127",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.67354184,
+        "content_length": 3,
+        "tagged_kc_ids": [
+          "e5db04b6bb2aec22dca1d08fa02dcfef"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.67354184,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 3
+        },
+        "correct_index": 2,
+        "choices": [
+          {
+            "text": "pad",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/101f32624ff8fb179b09a75bf62b147a"
+          },
+          {
+            "text": "pan",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/599a6a619a04f09e24945e12705a1155"
+          },
+          {
+            "text": "hat",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/dbad0b2dafc0b80b9d8b64e99d252997"
+          },
+          {
+            "text": "help",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/5bb37525120159fd5faa7794489ea562"
+          }
+        ],
+        "solution_key": "e5db04b6bb2aec22dca1d08fa02dcfef",
+        "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/dbad0b2dafc0b80b9d8b64e99d252997",
+        "source_language": "en",
+        "learning_language": "en",
+        "specific_type": "select_transcription",
+        "lexeme_ids_to_update": [
+          "e5db04b6bb2aec22dca1d08fa02dcfef"
+        ],
+        "type": "select_transcription",
+        "lexemes_to_update": [
+          "e5db04b6bb2aec22dca1d08fa02dcfef"
+        ],
+        "generic_lexeme_map": {},
+        "from_language": "pt"
+      },
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "select_transcription",
+        "generatorId": "f62ff8922c0689e80042e331d043b197"
+      }
+    },
+    {
+      "prompt": "Hello!",
+      "correctSolutions": [
+        "Olá!"
+      ],
+      "compactTranslations": [
+        "Olá!",
+        "[Olá/Oi/Ei/Alô]!"
+      ],
+      "correctTokens": [
+        "Olá"
+      ],
+      "wrongTokens": [
+        "sim",
+        "por favor",
+        "de nada",
+        "por"
+      ],
+      "choices": [
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "sim"
+        },
+        {
+          "text": "por favor"
+        },
+        {
+          "text": "de nada"
+        },
+        {
+          "text": "por"
+        }
+      ],
+      "correctIndices": [
+        0
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "alô",
+              "orig": "Alô!"
+            },
+            {
+              "to": 2,
+              "lenient": "ei",
+              "orig": "Ei!"
+            },
+            {
+              "to": 2,
+              "lenient": "oi",
+              "orig": "Oi!"
+            },
+            {
+              "to": 2,
+              "lenient": "olá",
+              "orig": "Olá!"
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "764e3dc3b4ba7256526f0b66c33d778d",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/vikramen/a444e4d9d9c0cb1d2702ee2aa909970e",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "olá"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "oi"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "alô"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "!"
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/vikramen/1d1cd0a9a8695e2b9551cf6eaea3997e",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/61e19bb4a1ff1d94e58d58b33db58c36",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/61e19bb4a1ff1d94e58d58b33db58c36",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/52a5a774c4de18f4a4e8c91d91788347"
+        },
+        "gender": "MALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Vikram_CORRECT_Cropped_Disco.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Dan_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Vikram_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "3c8ca85cd81541bc9eb1c4c17fef4cee",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 254,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 1,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.98502743,
+        "content_length": 6,
+        "tagged_kc_ids": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.98502743,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 6,
+          "num_correct_answer_tokens": 1
+        },
+        "highlight": [
+          "Hello"
+        ],
+        "sentence": "Hello!",
+        "solution_key": "68e7b107f4643ed0a0f7cf7bb681a08c",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Olá"
+        ],
+        "translation": "Olá!",
+        "wrong_tokens": [
+          "sim",
+          "por favor",
+          "de nada",
+          "por"
+        ],
+        "text": "Hello!",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [
+        "Hello"
+      ],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "68e7b107f4643ed0a0f7cf7bb681a08c",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "68e7b107f4643ed0a0f7cf7bb681a08c"
+      }
+    },
+    {
+      "prompt": "olá",
+      "choices": [
+        "hello",
+        "and",
+        "tea"
+      ],
+      "correctIndex": 0,
+      "options": [
+        {
+          "text": "hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/1d65e941c0b68b2ca7755a1383a92db1"
+        },
+        {
+          "text": "and",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/55db7471f85413aea462d10d6ecb80f4"
+        },
+        {
+          "text": "tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c"
+        }
+      ],
+      "type": "assist",
+      "id": "e1779ba284264843a7c6182a98d68013",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.98794353,
+        "content_length": 5,
+        "tagged_kc_ids": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.98794353,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 5
+        },
+        "highlight": [],
+        "learning_language": "en",
+        "other_options": [
+          "and",
+          "tea"
+        ],
+        "solution_key": "764e3dc3b4ba7256526f0b66c33d778d",
+        "translation": "olá",
+        "ui_language": "pt",
+        "word": "hello",
+        "language": "en",
+        "specific_type": "assist",
+        "lexeme_ids_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "type": "assist",
+        "lexemes_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "assist",
+        "generatorId": "764e3dc3b4ba7256526f0b66c33d778d"
+      }
+    },
+    {
+      "prompt": "Hello.",
+      "correctTokens": [
+        "Hello"
+      ],
+      "wrongTokens": [
+        "yes",
+        "water",
+        "no",
+        "sugar"
+      ],
+      "choices": [
+        {
+          "text": "Hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/68544a04ae4502ac014342338234ebd4"
+        },
+        {
+          "text": "yes",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/8eff9a0dc6c96cd19937a7c4c995c133"
+        },
+        {
+          "text": "water",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/213353ff7f5c63e6e963919b73981557"
+        },
+        {
+          "text": "no",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/9fdbb4ede9f6e6fd7908138701eef163"
+        },
+        {
+          "text": "sugar",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/f874fb5e233c75cb93d9224d658d77ac"
+        }
+      ],
+      "correctIndices": [
+        0
+      ],
+      "solutionTranslation": "Olá.",
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/dcb367d7b1af457e9a68e9d393d298b9",
+      "slowTts": "https://d1vq87e9lcf771.cloudfront.net/miranda/7179abd9bf5397ba1867f1bea6f75f7a",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "hello",
+              "orig": "Hello."
+            },
+            {
+              "to": 2,
+              "lenient": "hallo",
+              "type": "typo",
+              "orig": "Hello."
+            },
+            {
+              "to": 2,
+              "lenient": "hallo",
+              "auto": true,
+              "orig": "Hallo"
+            },
+            {
+              "to": 2,
+              "lenient": "hullo",
+              "auto": true,
+              "orig": "Hullo"
+            }
+          ],
+          []
+        ],
+        "language": "en",
+        "whitespaceDelimited": true
+      },
+      "type": "listenTap",
+      "id": "842f1b85a6554a5d84b829f785129724",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 306,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9580922,
+        "content_length": 6,
+        "tagged_kc_ids": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9580922,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 6
+        },
+        "highlight": [],
+        "language": "en",
+        "language_name": "English",
+        "solution_key": "32be3690a6da9b630dc977062a99af66",
+        "solution_translation": "Olá.",
+        "source_language": "en",
+        "text": "Hello.",
+        "tokens": [
+          "Hello"
+        ],
+        "wrong_tokens": [
+          "yes",
+          "water",
+          "no",
+          "sugar"
+        ],
+        "specific_type": "listen_tap",
+        "lexeme_ids_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "type": "listen_tap",
+        "lexemes_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "32be3690a6da9b630dc977062a99af66",
+      "challengeGeneratorIdentifier": {
+        "specificType": "listen_tap",
+        "generatorId": "32be3690a6da9b630dc977062a99af66"
+      }
+    },
+    {
+      "prompt": "Please.",
+      "correctSolutions": [
+        "Por favor."
+      ],
+      "compactTranslations": [
+        "Por favor.",
+        "[Por favor/Por obséquio/Por gentileza/Faz favor/Se faz favor]."
+      ],
+      "correctTokens": [
+        "Por",
+        "favor"
+      ],
+      "wrongTokens": [
+        "obrigado",
+        "adeus",
+        "chá",
+        "sim"
+      ],
+      "choices": [
+        {
+          "text": "Por"
+        },
+        {
+          "text": "favor"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "chá"
+        },
+        {
+          "text": "sim"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz",
+              "orig": "Faz"
+            },
+            {
+              "to": 2,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 2,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 4,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 4,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 8,
+              "lenient": "se",
+              "orig": "Se"
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 10,
+              "lenient": "favor",
+              "orig": "favor."
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 10,
+              "lenient": "gentileza",
+              "orig": "gentileza."
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 10,
+              "lenient": "obséquio",
+              "orig": "obséquio."
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz"
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "ee83763629a0d5a538c07e65bfd65593",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/lilyen/8c15267e6f9c9e204b89d1bbf6c6e7a1",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "por favor"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "agradam a"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "dou prazer a"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/lilyen/9d229a4566739ed7f811dec171cf8eaf",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/861252b26a49194f2a98ee58e7c373f8",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/861252b26a49194f2a98ee58e7c373f8",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/81ca92172d70599306b16bcb87799195"
+        },
+        "gender": "FEMALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Violet_CORRECT_Cropped.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Violet_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Lily_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "f73925684215446c942096baa026abfc",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 723,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 2,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.8427472,
+        "content_length": 7,
+        "tagged_kc_ids": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.8427472,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 7,
+          "num_correct_answer_tokens": 2
+        },
+        "highlight": [
+          "Please"
+        ],
+        "sentence": "Please.",
+        "solution_key": "441b0d80198b82dbb19b6f215c596be2",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Por",
+          "favor"
+        ],
+        "translation": "Por favor.",
+        "wrong_tokens": [
+          "obrigado",
+          "adeus",
+          "chá",
+          "sim"
+        ],
+        "text": "Please.",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [
+        "Please"
+      ],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "441b0d80198b82dbb19b6f215c596be2",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "441b0d80198b82dbb19b6f215c596be2"
+      }
+    },
+    {
+      "prompt": "por favor",
+      "choices": [
+        "hello",
+        "tea",
+        "please"
+      ],
+      "correctIndex": 2,
+      "options": [
+        {
+          "text": "hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/1d65e941c0b68b2ca7755a1383a92db1"
+        },
+        {
+          "text": "tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c"
+        },
+        {
+          "text": "please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/48f829ed57b69aea7e873c4228ae7a24"
+        }
+      ],
+      "type": "assist",
+      "id": "5033300dda3a4e6f8884bd9e80bf55d9",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9826634,
+        "content_length": 6,
+        "tagged_kc_ids": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9826634,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 6
+        },
+        "highlight": [],
+        "learning_language": "en",
+        "other_options": [
+          "hello",
+          "tea"
+        ],
+        "solution_key": "ee83763629a0d5a538c07e65bfd65593",
+        "translation": "por favor",
+        "ui_language": "pt",
+        "word": "please",
+        "language": "en",
+        "specific_type": "assist",
+        "lexeme_ids_to_update": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "type": "assist",
+        "lexemes_to_update": [
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "assist",
+        "generatorId": "ee83763629a0d5a538c07e65bfd65593"
+      }
+    },
+    {
+      "prompt": "Coffee, please.",
+      "correctSolutions": [
+        "Café, por favor."
+      ],
+      "compactTranslations": [
+        "Café, por favor.",
+        "[Um/] café, [por favor/por obséquio/por gentileza/faz favor/se faz favor].",
+        "[Por favor/Por obséquio/Por gentileza/Faz favor/Se faz favor], [um/] café."
+      ],
+      "correctTokens": [
+        "Café",
+        "por",
+        "favor"
+      ],
+      "wrongTokens": [
+        "sim",
+        "olá",
+        "adeus",
+        "obrigado"
+      ],
+      "choices": [
+        {
+          "text": "Café"
+        },
+        {
+          "text": "por"
+        },
+        {
+          "text": "favor"
+        },
+        {
+          "text": "sim"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "obrigado"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz",
+              "orig": "Faz"
+            },
+            {
+              "to": 6,
+              "lenient": "faz",
+              "orig": "Faz"
+            },
+            {
+              "to": 2,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 2,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 10,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 10,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 12,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 12,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 14,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 14,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 16,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 16,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 18,
+              "lenient": "se",
+              "orig": "Se"
+            },
+            {
+              "to": 20,
+              "lenient": "se",
+              "orig": "Se"
+            },
+            {
+              "to": 22,
+              "lenient": "café",
+              "orig": "Café,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 22,
+              "lenient": "cafe",
+              "orig": "Café,",
+              "type": "accent"
+            },
+            {
+              "to": 26,
+              "lenient": ""
+            },
+            {
+              "to": 35,
+              "lenient": "um",
+              "orig": "Um"
+            },
+            {
+              "to": 35,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "favor",
+              "orig": "favor,"
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "café",
+              "orig": "café."
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "favor",
+              "orig": "favor,"
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "um"
+            },
+            {
+              "to": 4,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 11,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "gentileza",
+              "orig": "gentileza,"
+            }
+          ],
+          [
+            {
+              "to": 13,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "gentileza",
+              "orig": "gentileza,"
+            }
+          ],
+          [
+            {
+              "to": 15,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "obséquio",
+              "orig": "obséquio,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 4,
+              "lenient": "obsequio",
+              "orig": "obséquio,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "obséquio",
+              "orig": "obséquio,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 8,
+              "lenient": "obsequio",
+              "orig": "obséquio,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 19,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 21,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 6,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 23,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": "por"
+            },
+            {
+              "to": 24,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "favor",
+              "orig": "favor."
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "café",
+              "orig": "café,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 27,
+              "lenient": "cafe",
+              "orig": "café,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 28,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": "faz"
+            },
+            {
+              "to": 24,
+              "lenient": "por"
+            },
+            {
+              "to": 24,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 29,
+              "lenient": "por"
+            },
+            {
+              "to": 29,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 31,
+              "lenient": "por"
+            },
+            {
+              "to": 31,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 33,
+              "lenient": "se"
+            }
+          ],
+          [
+            {
+              "to": 30,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "gentileza",
+              "orig": "gentileza."
+            }
+          ],
+          [
+            {
+              "to": 32,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "obséquio",
+              "orig": "obséquio."
+            }
+          ],
+          [
+            {
+              "to": 34,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 36,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "café",
+              "orig": "café,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 27,
+              "lenient": "cafe",
+              "orig": "café,",
+              "type": "accent"
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "6038e9e38135d6b7920f57303400e321",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "ee83763629a0d5a538c07e65bfd65593",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Coffee",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/linen/15db9f72310e77908429e736029e8c7d",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "café"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": ","
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/linen/7d23ef54184aecaaf539f15ea1e7b818",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "por favor"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "agradam a"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "dou prazer a"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/linen/7f3a7d1d31a86a8ee9d253842a144d53",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/3f195e9533fc5e4f61a32eba3f03a8cf",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/3f195e9533fc5e4f61a32eba3f03a8cf",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/85c5ecb885f7073a3aebeb775946e329"
+        },
+        "gender": "FEMALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Kai_CORRECT_Cropped.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Kai_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Lin_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "c4e412c5fc5c4663ab18628ee387871e",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 2876,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 3,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.8650373,
+        "content_length": 15,
+        "tagged_kc_ids": [
+          "6038e9e38135d6b7920f57303400e321",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.8650373,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 15,
+          "num_correct_answer_tokens": 3
+        },
+        "highlight": [],
+        "sentence": "Coffee, please.",
+        "solution_key": "f7bbd2f63da90becd834ab555e3c7f6e",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Café",
+          "por",
+          "favor"
+        ],
+        "translation": "Café, por favor.",
+        "wrong_tokens": [
+          "sim",
+          "olá",
+          "adeus",
+          "obrigado"
+        ],
+        "text": "Coffee, please.",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "f7bbd2f63da90becd834ab555e3c7f6e",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "f7bbd2f63da90becd834ab555e3c7f6e"
+      }
+    },
+    {
+      "prompt": "Coffee and tea",
+      "correctSolutions": [
+        "Café e chá."
+      ],
+      "compactTranslations": [
+        "Café e chá.",
+        "[Um/] café [bem como/assim como/e também] [um/] chá.",
+        "[Um/] café e [um/] chá [também/]."
+      ],
+      "correctTokens": [
+        "Café",
+        "e",
+        "chá"
+      ],
+      "wrongTokens": [
+        "por",
+        "de nada",
+        "adeus",
+        "favor"
+      ],
+      "choices": [
+        {
+          "text": "Café"
+        },
+        {
+          "text": "e"
+        },
+        {
+          "text": "chá"
+        },
+        {
+          "text": "por"
+        },
+        {
+          "text": "de nada"
+        },
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "favor"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": ""
+            },
+            {
+              "to": 21,
+              "lenient": "um",
+              "orig": "Um"
+            },
+            {
+              "to": 23,
+              "lenient": "café",
+              "orig": "Café"
+            },
+            {
+              "to": 21,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "café"
+            },
+            {
+              "to": 13,
+              "lenient": "café"
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "asim",
+              "type": "typo",
+              "orig": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "bem"
+            },
+            {
+              "to": 11,
+              "lenient": "e"
+            },
+            {
+              "to": 11,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 6,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "como"
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": ""
+            },
+            {
+              "to": 10,
+              "lenient": "um"
+            },
+            {
+              "to": 10,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "chá",
+              "orig": "chá."
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 12,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "também"
+            }
+          ],
+          [
+            {
+              "to": 14,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 15,
+              "lenient": "e"
+            },
+            {
+              "to": 15,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 16,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": ""
+            },
+            {
+              "to": 20,
+              "lenient": "um"
+            },
+            {
+              "to": 20,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 18,
+              "lenient": "chá"
+            }
+          ],
+          [
+            {
+              "to": 19,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "",
+              "orig": "."
+            },
+            {
+              "to": 27,
+              "lenient": "também",
+              "orig": "também."
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 22,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "café"
+            },
+            {
+              "to": 13,
+              "lenient": "café"
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "e"
+            },
+            {
+              "to": 25,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 26,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "chá",
+              "orig": "chá."
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "6038e9e38135d6b7920f57303400e321",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "0d9244f805fd55af1281a1bcb1a2cba6",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "7c502d3e0f614b3ba48987bea06790e0",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Coffee",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/30ec7d09b0b9555e6db6a8e8abe85620",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "café"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "and",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/d20f8298a95dc91df62b03c41c045084",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "e"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/3ea16dc739c37faffd849d7557d72f7f",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "chá"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/fee3f656e8582b3a119f1311e80aa05b",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/f4639160abfb44c54829ebeb62c0542d"
+        },
+        "gender": "MALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Mo_CORRECT_Cropped.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Mo_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Oscar_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "3416ae09a4a64bd39fad4470ad463a7a",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 1424,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 3,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9098291,
+        "content_length": 14,
+        "tagged_kc_ids": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9098291,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 14,
+          "num_correct_answer_tokens": 3
+        },
+        "highlight": [
+          "and"
+        ],
+        "sentence": "Coffee and tea",
+        "solution_key": "1edabd482d7bf248f622c8daeb7abcb9",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Café",
+          "e",
+          "chá"
+        ],
+        "translation": "Café e chá.",
+        "wrong_tokens": [
+          "por",
+          "de nada",
+          "adeus",
+          "favor"
+        ],
+        "text": "Coffee and tea",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [
+        "and"
+      ],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "1edabd482d7bf248f622c8daeb7abcb9",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "1edabd482d7bf248f622c8daeb7abcb9"
+      }
+    },
+    {
+      "prompt": "e",
+      "choices": [
+        "hello",
+        "and",
+        "tea"
+      ],
+      "correctIndex": 1,
+      "options": [
+        {
+          "text": "hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/harrison/1d65e941c0b68b2ca7755a1383a92db1"
+        },
+        {
+          "text": "and",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/3642ddb2554e44e12cf7136989720ec6"
+        },
+        {
+          "text": "tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c"
+        }
+      ],
+      "type": "assist",
+      "id": "fd22083ae1784866b31d89ecb9fb4be2",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "birdbrain_source": "birdbrain_v2",
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9750342,
+        "content_length": 3,
+        "tagged_kc_ids": [
+          "0d9244f805fd55af1281a1bcb1a2cba6"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9750342,
+          "birdbrain_source": "birdbrain_v2",
+          "content_length": 3
+        },
+        "highlight": [],
+        "learning_language": "en",
+        "other_options": [
+          "hello",
+          "tea"
+        ],
+        "solution_key": "0d9244f805fd55af1281a1bcb1a2cba6",
+        "translation": "e",
+        "ui_language": "pt",
+        "word": "and",
+        "language": "en",
+        "specific_type": "assist",
+        "lexeme_ids_to_update": [
+          "0d9244f805fd55af1281a1bcb1a2cba6"
+        ],
+        "type": "assist",
+        "lexemes_to_update": [
+          "0d9244f805fd55af1281a1bcb1a2cba6"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "challengeGeneratorIdentifier": {
+        "specificType": "assist",
+        "generatorId": "0d9244f805fd55af1281a1bcb1a2cba6"
+      }
+    },
+    {
+      "prompt": "Coffee and tea.",
+      "correctSolutions": [
+        "Café e chá."
+      ],
+      "compactTranslations": [
+        "Café e chá.",
+        "[Um/] café [bem como/assim como/e também] [um/] chá.",
+        "[Um/] café e [um/] chá [também/]."
+      ],
+      "correctTokens": [
+        "Café",
+        "e",
+        "chá"
+      ],
+      "wrongTokens": [
+        "sim",
+        "olá",
+        "não",
+        "por favor"
+      ],
+      "choices": [
+        {
+          "text": "Café"
+        },
+        {
+          "text": "e"
+        },
+        {
+          "text": "chá"
+        },
+        {
+          "text": "sim"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "não"
+        },
+        {
+          "text": "por favor"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": ""
+            },
+            {
+              "to": 21,
+              "lenient": "um",
+              "orig": "Um"
+            },
+            {
+              "to": 23,
+              "lenient": "café",
+              "orig": "Café"
+            },
+            {
+              "to": 21,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "café"
+            },
+            {
+              "to": 13,
+              "lenient": "café"
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "asim",
+              "type": "typo",
+              "orig": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "bem"
+            },
+            {
+              "to": 11,
+              "lenient": "e"
+            },
+            {
+              "to": 11,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 6,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "como"
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": ""
+            },
+            {
+              "to": 10,
+              "lenient": "um"
+            },
+            {
+              "to": 10,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "chá",
+              "orig": "chá."
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 12,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "também"
+            }
+          ],
+          [
+            {
+              "to": 14,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 15,
+              "lenient": "e"
+            },
+            {
+              "to": 15,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 16,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": ""
+            },
+            {
+              "to": 20,
+              "lenient": "um"
+            },
+            {
+              "to": 20,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 18,
+              "lenient": "chá"
+            }
+          ],
+          [
+            {
+              "to": 19,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "",
+              "orig": "."
+            },
+            {
+              "to": 27,
+              "lenient": "também",
+              "orig": "também."
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 22,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "café"
+            },
+            {
+              "to": 13,
+              "lenient": "café"
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "e"
+            },
+            {
+              "to": 25,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 26,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "chá",
+              "orig": "chá."
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "6038e9e38135d6b7920f57303400e321",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "0d9244f805fd55af1281a1bcb1a2cba6",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "7c502d3e0f614b3ba48987bea06790e0",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Coffee",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/5c26d4d3b38b26d9df32616651b0d39a",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "café"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "and",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/fc4745d46396483301cb4224870ead20",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "e"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/b75e35d331576eab9b747992628cc40f",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "chá"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/29b9951c35c7d3b7fec0164ea6973d38",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/3f4adf80c0b6e9a0dc438f3ba8119703",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/3f4adf80c0b6e9a0dc438f3ba8119703",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/6d99bc8306bdaacc3c8acc911214c557"
+        },
+        "gender": "FEMALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Zari_CORRECT_Cropped_Spin.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Pink_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Zari_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "2d2faaf7f2c549929c5dc51ebcef2ffb",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 1424,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 3,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.89973295,
+        "content_length": 15,
+        "tagged_kc_ids": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.89973295,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 15,
+          "num_correct_answer_tokens": 3
+        },
+        "highlight": [],
+        "sentence": "Coffee and tea.",
+        "solution_key": "5343acf5c7aa38ff4b09f65653e9ea2e",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Café",
+          "e",
+          "chá"
+        ],
+        "translation": "Café e chá.",
+        "wrong_tokens": [
+          "sim",
+          "olá",
+          "não",
+          "por favor"
+        ],
+        "text": "Coffee and tea.",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "6038e9e38135d6b7920f57303400e321",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "7c502d3e0f614b3ba48987bea06790e0"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "5343acf5c7aa38ff4b09f65653e9ea2e",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "5343acf5c7aa38ff4b09f65653e9ea2e"
+      }
+    },
+    {
+      "prompt": "Tea and coffee.",
+      "correctSolutions": [
+        "Chá e café."
+      ],
+      "compactTranslations": [
+        "Chá e café.",
+        "[Um/] chá e [um/] café [também/].",
+        "[Um/] chá [bem como/assim como/e também] [um/] café."
+      ],
+      "correctTokens": [
+        "Chá",
+        "e",
+        "café"
+      ],
+      "wrongTokens": [
+        "não",
+        "por",
+        "obrigado",
+        "por favor"
+      ],
+      "choices": [
+        {
+          "text": "Chá"
+        },
+        {
+          "text": "e"
+        },
+        {
+          "text": "café"
+        },
+        {
+          "text": "não"
+        },
+        {
+          "text": "por"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "por favor"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": ""
+            },
+            {
+              "to": 21,
+              "lenient": "um",
+              "orig": "Um"
+            },
+            {
+              "to": 23,
+              "lenient": "chá",
+              "orig": "Chá"
+            },
+            {
+              "to": 21,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "chá"
+            },
+            {
+              "to": 13,
+              "lenient": "chá"
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "asim",
+              "type": "typo",
+              "orig": "assim"
+            },
+            {
+              "to": 5,
+              "lenient": "bem"
+            },
+            {
+              "to": 11,
+              "lenient": "e"
+            },
+            {
+              "to": 11,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 6,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "como"
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": ""
+            },
+            {
+              "to": 10,
+              "lenient": "um"
+            },
+            {
+              "to": 10,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "café",
+              "orig": "café."
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 12,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "também"
+            }
+          ],
+          [
+            {
+              "to": 14,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 15,
+              "lenient": "e"
+            },
+            {
+              "to": 15,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 16,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": ""
+            },
+            {
+              "to": 20,
+              "lenient": "um"
+            },
+            {
+              "to": 20,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 18,
+              "lenient": "café"
+            }
+          ],
+          [
+            {
+              "to": 19,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "",
+              "orig": "."
+            },
+            {
+              "to": 27,
+              "lenient": "também",
+              "orig": "também."
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 22,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": "chá"
+            },
+            {
+              "to": 13,
+              "lenient": "chá"
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "e"
+            },
+            {
+              "to": 25,
+              "lenient": "eh",
+              "type": "typo",
+              "orig": "e"
+            }
+          ],
+          [
+            {
+              "to": 26,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 27,
+              "lenient": "café",
+              "orig": "café."
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "7c502d3e0f614b3ba48987bea06790e0",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "0d9244f805fd55af1281a1bcb1a2cba6",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "6038e9e38135d6b7920f57303400e321",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/eddyen/583f299988a289dc687a96665bfeecdb",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "chá"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "and",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/eddyen/f8bbe7530cfb5e8dbaf1ad18c2a005d0",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "e"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "coffee",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/eddyen/37a5d19960f33d6f3f4c9c51719592d1",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "café"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/eddyen/49422585d72dd90dd0c9d9087c3be046",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/b53f870ed38105349d4d83edf682d77f",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/b53f870ed38105349d4d83edf682d77f",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/096d0b1f6280b962cd7080a7736dd2bb"
+        },
+        "gender": "MALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Coach_CORRECT_Cropped.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Coach_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Eddy_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "b0d9c3c3b4bb45ee9b97ad9fe20cb64c",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 1423,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 3,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.88874245,
+        "content_length": 15,
+        "tagged_kc_ids": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "6038e9e38135d6b7920f57303400e321"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.88874245,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 15,
+          "num_correct_answer_tokens": 3
+        },
+        "highlight": [],
+        "sentence": "Tea and coffee.",
+        "solution_key": "fd9c2ba869a4df6a6618de09cd2e1539",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Chá",
+          "e",
+          "café"
+        ],
+        "translation": "Chá e café.",
+        "wrong_tokens": [
+          "não",
+          "por",
+          "obrigado",
+          "por favor"
+        ],
+        "text": "Tea and coffee.",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "6038e9e38135d6b7920f57303400e321"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "0d9244f805fd55af1281a1bcb1a2cba6",
+          "6038e9e38135d6b7920f57303400e321"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "fd9c2ba869a4df6a6618de09cd2e1539",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "fd9c2ba869a4df6a6618de09cd2e1539"
+      }
+    },
+    {
+      "prompt": "Tea, please.",
+      "correctSolutions": [
+        "Chá, por favor."
+      ],
+      "compactTranslations": [
+        "Chá, por favor.",
+        "[Um/] chá, [por favor/por obséquio/por gentileza/faz favor/se faz favor].",
+        "[Por favor/Por obséquio/Por gentileza/Faz favor/Se faz favor], [um/] chá."
+      ],
+      "correctTokens": [
+        "Chá",
+        "por",
+        "favor"
+      ],
+      "wrongTokens": [
+        "não",
+        "e",
+        "adeus",
+        "obrigado"
+      ],
+      "choices": [
+        {
+          "text": "Chá"
+        },
+        {
+          "text": "por"
+        },
+        {
+          "text": "favor"
+        },
+        {
+          "text": "não"
+        },
+        {
+          "text": "e"
+        },
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "obrigado"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "sourceLanguage": "en",
+      "targetLanguage": "pt",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz",
+              "orig": "Faz"
+            },
+            {
+              "to": 6,
+              "lenient": "faz",
+              "orig": "Faz"
+            },
+            {
+              "to": 2,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 2,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 6,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 10,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 10,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 12,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 12,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 14,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 14,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 16,
+              "lenient": "por",
+              "orig": "Por"
+            },
+            {
+              "to": 16,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "Por"
+            },
+            {
+              "to": 18,
+              "lenient": "se",
+              "orig": "Se"
+            },
+            {
+              "to": 20,
+              "lenient": "se",
+              "orig": "Se"
+            },
+            {
+              "to": 22,
+              "lenient": ""
+            },
+            {
+              "to": 33,
+              "lenient": "um",
+              "orig": "Um"
+            },
+            {
+              "to": 35,
+              "lenient": "chá",
+              "orig": "Chá,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 35,
+              "lenient": "cha",
+              "orig": "Chá,",
+              "type": "accent"
+            },
+            {
+              "to": 33,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "favor",
+              "orig": "favor,"
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "chá",
+              "orig": "chá."
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "favor",
+              "orig": "favor,"
+            }
+          ],
+          [
+            {
+              "to": 9,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "um"
+            },
+            {
+              "to": 4,
+              "lenient": "1",
+              "auto": true
+            }
+          ],
+          [
+            {
+              "to": 11,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "gentileza",
+              "orig": "gentileza,"
+            }
+          ],
+          [
+            {
+              "to": 13,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "gentileza",
+              "orig": "gentileza,"
+            }
+          ],
+          [
+            {
+              "to": 15,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": "obséquio",
+              "orig": "obséquio,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 4,
+              "lenient": "obsequio",
+              "orig": "obséquio,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 17,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "obséquio",
+              "orig": "obséquio,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 8,
+              "lenient": "obsequio",
+              "orig": "obséquio,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 19,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 21,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 6,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 23,
+              "lenient": "chá",
+              "orig": "chá,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 23,
+              "lenient": "cha",
+              "orig": "chá,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 24,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "faz"
+            },
+            {
+              "to": 25,
+              "lenient": "por"
+            },
+            {
+              "to": 25,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 27,
+              "lenient": "por"
+            },
+            {
+              "to": 27,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 29,
+              "lenient": "por"
+            },
+            {
+              "to": 29,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            },
+            {
+              "to": 31,
+              "lenient": "se"
+            }
+          ],
+          [
+            {
+              "to": 26,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "favor",
+              "orig": "favor."
+            }
+          ],
+          [
+            {
+              "to": 28,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "gentileza",
+              "orig": "gentileza."
+            }
+          ],
+          [
+            {
+              "to": 30,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 37,
+              "lenient": "obséquio",
+              "orig": "obséquio."
+            }
+          ],
+          [
+            {
+              "to": 32,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "faz"
+            }
+          ],
+          [
+            {
+              "to": 34,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 23,
+              "lenient": "chá",
+              "orig": "chá,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 23,
+              "lenient": "cha",
+              "orig": "chá,",
+              "type": "accent"
+            }
+          ],
+          [
+            {
+              "to": 36,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 25,
+              "lenient": "por"
+            },
+            {
+              "to": 25,
+              "lenient": "pkr",
+              "type": "typo",
+              "orig": "por"
+            }
+          ],
+          []
+        ],
+        "language": "pt",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "7c502d3e0f614b3ba48987bea06790e0",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "ee83763629a0d5a538c07e65bfd65593",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/beaen/c61275f591b9ca5f6de11f9276eb3747",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "chá"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": ","
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/beaen/57d53fc1017d148b77875df7c12186b0",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "por favor"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "agradam a"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "dou prazer a"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/beaen/d88f37560278567805e9cc4b20f97c18",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/b24ffc3b19f1fc9ffbc108d1d3936dd8",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/b24ffc3b19f1fc9ffbc108d1d3936dd8",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/50af330449fbbaf257fc9868c4321586"
+        },
+        "gender": "FEMALE",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Bea_CORRECT_Cropped_ShoulderBrush.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Bea_INCORRECT_Cropped_V2.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Bea_IDLE_Cropped_V2.json"
+      },
+      "type": "translate",
+      "id": "53123b106ce74f168e7f0af55c55710b",
+      "challengeResponseTrackingProperties": {
+        "level_session_index": 0,
+        "grading_graph_size": 2862,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 3,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.8431922,
+        "content_length": 12,
+        "tagged_kc_ids": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.8431922,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 12,
+          "num_correct_answer_tokens": 3
+        },
+        "highlight": [],
+        "sentence": "Tea, please.",
+        "solution_key": "94afa6b80caf0114dffeb8927f53a377",
+        "source_language": "en",
+        "target_language": "pt",
+        "tokens": [
+          "Chá",
+          "por",
+          "favor"
+        ],
+        "translation": "Chá, por favor.",
+        "wrong_tokens": [
+          "não",
+          "e",
+          "adeus",
+          "obrigado"
+        ],
+        "text": "Tea, please.",
+        "specific_type": "tap",
+        "lexeme_ids_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "94afa6b80caf0114dffeb8927f53a377",
+      "challengeGeneratorIdentifier": {
+        "specificType": "tap",
+        "generatorId": "94afa6b80caf0114dffeb8927f53a377"
+      }
+    }
+  ],
+  "adaptiveChallenges": [
+    {
+      "prompt": "Chá, por favor.",
+      "correctSolutions": [
+        "Tea, please."
+      ],
+      "compactTranslations": [
+        "Tea, please.",
+        "[A/Some/] tea, please.",
+        "Please, [a/some/] tea."
+      ],
+      "correctTokens": [
+        "Tea",
+        "please"
+      ],
+      "wrongTokens": [
+        "three",
+        "you're welcome",
+        "thank you",
+        "hat"
+      ],
+      "choices": [
+        {
+          "text": "Tea",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/7826259ded480105cc492703ef9ed674"
+        },
+        {
+          "text": "please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/884cd3c643f18082cf71259e6c4504ab"
+        },
+        {
+          "text": "three",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/8cacffb45a1ce2f342e58389e576bc6a"
+        },
+        {
+          "text": "you're welcome",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/be547ad7bdb1b6863e2864bb75a0ffa4"
+        },
+        {
+          "text": "thank you",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/fafac37dbe23c702c19a5a508ae77d57"
+        },
+        {
+          "text": "hat",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/dae4083ad057e929d1fc2016786293d7"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1
+      ],
+      "sourceLanguage": "pt",
+      "targetLanguage": "en",
+      "solutionTts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/979fda9bbda1239c35a6b9e416c50f92",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "please",
+              "orig": "Please,"
+            },
+            {
+              "to": 6,
+              "lenient": ""
+            },
+            {
+              "to": 9,
+              "lenient": "a",
+              "orig": "A"
+            },
+            {
+              "to": 9,
+              "lenient": "an",
+              "type": "typo",
+              "orig": "A"
+            },
+            {
+              "to": 9,
+              "lenient": "some",
+              "orig": "Some"
+            },
+            {
+              "to": 7,
+              "lenient": "tea",
+              "orig": "Tea,"
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": ""
+            },
+            {
+              "to": 5,
+              "lenient": "a"
+            },
+            {
+              "to": 5,
+              "lenient": "an",
+              "type": "typo",
+              "orig": "a"
+            },
+            {
+              "to": 5,
+              "lenient": "some"
+            }
+          ],
+          [
+            {
+              "to": 11,
+              "lenient": "tea",
+              "orig": "tea."
+            }
+          ],
+          [
+            {
+              "to": 4,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "tea",
+              "orig": "tea,"
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 11,
+              "lenient": "please",
+              "orig": "please."
+            }
+          ],
+          [
+            {
+              "to": 10,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": "tea",
+              "orig": "tea,"
+            }
+          ],
+          []
+        ],
+        "language": "en",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "7c502d3e0f614b3ba48987bea06790e0",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "ee83763629a0d5a538c07e65bfd65593",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Chá",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "tea"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": ","
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "por",
+          "hintTable": {
+            "headers": [
+              "por",
+              "favor"
+            ],
+            "rows": [
+              [
+                {
+                  "colspan": 2,
+                  "hint": "please"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "a"
+                },
+                {
+                  "colspan": 1
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "through"
+                },
+                {
+                  "colspan": 1
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "with"
+                },
+                {
+                  "colspan": 1
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "favor",
+          "hintTable": {
+            "headers": [
+              "por",
+              "favor"
+            ],
+            "rows": [
+              [
+                {
+                  "colspan": 2,
+                  "hint": "please"
+                }
+              ],
+              [
+                {
+                  "colspan": 1
+                },
+                {
+                  "colspan": 1,
+                  "hint": "favor"
+                }
+              ],
+              [
+                {
+                  "colspan": 1
+                },
+                {
+                  "colspan": 1,
+                  "hint": "favour"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "."
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/ricardo/75feb476e41cfaba327888f8e5459d64",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/f4639160abfb44c54829ebeb62c0542d"
+        },
+        "gender": "male",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Oscar_CORRECT_Cropped_Coffee.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Mo_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Oscar_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "2b92cf4cfa534d45b1b05117be0e4078",
+      "challengeResponseTrackingProperties": {
+        "best_solution": "Tea, please.",
+        "level_session_index": 0,
+        "grading_graph_size": 722,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 2,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9058572,
+        "content_length": 12,
+        "tagged_kc_ids": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9058572,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 12,
+          "best_solution": "Tea, please.",
+          "num_correct_answer_tokens": 2
+        },
+        "highlight": [],
+        "indicator_type": {
+          "name": "HARD_CHALLENGE"
+        },
+        "sentence": "Chá, por favor.",
+        "solution_key": "fe265e56c8f4cb5b4914152184e03324",
+        "source_language": "pt",
+        "target_language": "en",
+        "tokens": [
+          "Tea",
+          "please"
+        ],
+        "translation": "Tea, please.",
+        "wrong_tokens": [
+          "three",
+          "you're welcome",
+          "thank you",
+          "hat"
+        ],
+        "text": "Chá, por favor.",
+        "specific_type": "reverse_tap",
+        "lexeme_ids_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "7c502d3e0f614b3ba48987bea06790e0",
+          "ee83763629a0d5a538c07e65bfd65593"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "fe265e56c8f4cb5b4914152184e03324",
+      "challengeGeneratorIdentifier": {
+        "specificType": "reverse_tap",
+        "generatorId": "fe265e56c8f4cb5b4914152184e03324"
+      },
+      "indicatorType": "HARD_CHALLENGE"
+    },
+    {
+      "prompt": "Olá, Julia!",
+      "correctSolutions": [
+        "Hello, Julia!"
+      ],
+      "compactTranslations": [
+        "Hello, Julia!",
+        "[Hi/Hello/Hey/Hullo/Hallo], [Julia/Júlia/Julie]!"
+      ],
+      "correctTokens": [
+        "Hello",
+        "Julia"
+      ],
+      "wrongTokens": [
+        "or",
+        "please",
+        "water",
+        "neat"
+      ],
+      "choices": [
+        {
+          "text": "Hello",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/5658bb6937b73d77d677ddc38d5fac27"
+        },
+        {
+          "text": "Julia",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/b7d90f9eee9a4eb3e16c37d02d82955d"
+        },
+        {
+          "text": "or",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/e93a91d1c806f2b6fc10827f09ad06b1"
+        },
+        {
+          "text": "please",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/a35e931141b8ca879d0e0b448eb6b67c"
+        },
+        {
+          "text": "water",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/6d3e79ae98ecb09d49b2a13edc61270b"
+        },
+        {
+          "text": "neat",
+          "tts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/11685cd7e20d99284ce7064c0f58206d"
+        }
+      ],
+      "correctIndices": [
+        0,
+        1
+      ],
+      "sourceLanguage": "pt",
+      "targetLanguage": "en",
+      "solutionTts": "https://d1vq87e9lcf771.cloudfront.net/falstaffen/8e242ea330707892ebdf4ead2a9cd3a1",
+      "grader": {
+        "version": 0,
+        "vertices": [
+          [
+            {
+              "to": 1,
+              "lenient": ""
+            }
+          ],
+          [
+            {
+              "to": 2,
+              "lenient": "hallo",
+              "orig": "Hallo,"
+            },
+            {
+              "to": 4,
+              "lenient": "hallo",
+              "orig": "Hallo,"
+            },
+            {
+              "to": 6,
+              "lenient": "hallo",
+              "orig": "Hallo,"
+            },
+            {
+              "to": 2,
+              "lenient": "hello",
+              "orig": "Hello,"
+            },
+            {
+              "to": 2,
+              "lenient": "hallo",
+              "type": "typo",
+              "orig": "Hello,"
+            },
+            {
+              "to": 4,
+              "lenient": "hello",
+              "orig": "Hello,"
+            },
+            {
+              "to": 4,
+              "lenient": "hallo",
+              "type": "typo",
+              "orig": "Hello,"
+            },
+            {
+              "to": 6,
+              "lenient": "hello",
+              "orig": "Hello,"
+            },
+            {
+              "to": 6,
+              "lenient": "hallo",
+              "type": "typo",
+              "orig": "Hello,"
+            },
+            {
+              "to": 2,
+              "lenient": "hey",
+              "orig": "Hey,"
+            },
+            {
+              "to": 4,
+              "lenient": "hey",
+              "orig": "Hey,"
+            },
+            {
+              "to": 6,
+              "lenient": "hey",
+              "orig": "Hey,"
+            },
+            {
+              "to": 2,
+              "lenient": "hi",
+              "orig": "Hi,"
+            },
+            {
+              "to": 2,
+              "lenient": "hı",
+              "orig": "Hı,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 2,
+              "lenient": "hi",
+              "orig": "Hı,",
+              "type": "accent"
+            },
+            {
+              "to": 2,
+              "lenient": "hı"
+            },
+            {
+              "to": 2,
+              "lenient": "hi̇",
+              "orig": "Hi̇,"
+            },
+            {
+              "to": 2,
+              "lenient": "hi̇"
+            },
+            {
+              "to": 4,
+              "lenient": "hi",
+              "orig": "Hi,"
+            },
+            {
+              "to": 4,
+              "lenient": "hı",
+              "orig": "Hı,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 4,
+              "lenient": "hi",
+              "orig": "Hı,",
+              "type": "accent"
+            },
+            {
+              "to": 4,
+              "lenient": "hı"
+            },
+            {
+              "to": 4,
+              "lenient": "hi̇",
+              "orig": "Hi̇,"
+            },
+            {
+              "to": 4,
+              "lenient": "hi̇"
+            },
+            {
+              "to": 6,
+              "lenient": "hi",
+              "orig": "Hi,"
+            },
+            {
+              "to": 6,
+              "lenient": "hı",
+              "orig": "Hı,"
+            },
+            {
+              "weight": 1e-12,
+              "to": 6,
+              "lenient": "hi",
+              "orig": "Hı,",
+              "type": "accent"
+            },
+            {
+              "to": 6,
+              "lenient": "hı"
+            },
+            {
+              "to": 6,
+              "lenient": "hi̇",
+              "orig": "Hi̇,"
+            },
+            {
+              "to": 6,
+              "lenient": "hi̇"
+            },
+            {
+              "to": 2,
+              "lenient": "hullo",
+              "orig": "Hullo,"
+            },
+            {
+              "to": 4,
+              "lenient": "hullo",
+              "orig": "Hullo,"
+            },
+            {
+              "to": 6,
+              "lenient": "hullo",
+              "orig": "Hullo,"
+            }
+          ],
+          [
+            {
+              "to": 3,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "julia",
+              "orig": "Julia!"
+            },
+            {
+              "to": 8,
+              "lenient": "juli̇a"
+            },
+            {
+              "to": 8,
+              "lenient": "juli̇a",
+              "orig": "Juli̇a!"
+            },
+            {
+              "to": 8,
+              "lenient": "julıa",
+              "orig": "Julıa!"
+            },
+            {
+              "to": 8,
+              "lenient": "julıa"
+            }
+          ],
+          [
+            {
+              "to": 5,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "julie",
+              "orig": "Julie!"
+            },
+            {
+              "to": 8,
+              "lenient": "juli̇e",
+              "orig": "Juli̇e!"
+            },
+            {
+              "to": 8,
+              "lenient": "julıe"
+            },
+            {
+              "to": 8,
+              "lenient": "juli̇e"
+            },
+            {
+              "to": 8,
+              "lenient": "julıe",
+              "orig": "Julıe!"
+            }
+          ],
+          [
+            {
+              "to": 7,
+              "lenient": " "
+            }
+          ],
+          [
+            {
+              "to": 8,
+              "lenient": "júlia",
+              "orig": "Júlia!"
+            },
+            {
+              "to": 8,
+              "lenient": "júlıa",
+              "orig": "Júlıa!"
+            },
+            {
+              "to": 8,
+              "lenient": "júli̇a",
+              "orig": "Júli̇a!"
+            },
+            {
+              "to": 8,
+              "lenient": "júli̇a"
+            },
+            {
+              "to": 8,
+              "lenient": "júlıa"
+            }
+          ],
+          []
+        ],
+        "language": "en",
+        "whitespaceDelimited": true
+      },
+      "taggedKcIds": [
+        {
+          "legacyId": "764e3dc3b4ba7256526f0b66c33d778d",
+          "kcTypeStr": "lex"
+        },
+        {
+          "legacyId": "e637e8d4a93ac48ed76491ce6ce5ca0b",
+          "kcTypeStr": "lex"
+        }
+      ],
+      "tokens": [
+        {
+          "value": "Olá",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "hello"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "hi"
+                }
+              ],
+              [
+                {
+                  "colspan": 1,
+                  "hint": "hey"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": ","
+        },
+        {
+          "value": " "
+        },
+        {
+          "value": "Julia",
+          "hintTable": {
+            "headers": [],
+            "rows": [
+              [
+                {
+                  "colspan": 1,
+                  "hint": "Julia"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "value": "!"
+        }
+      ],
+      "tts": "https://d1vq87e9lcf771.cloudfront.net/ricardo/011c50c7bcbe9612c0c5243204e59a1e",
+      "character": {
+        "url": "https://d2pur3iezf4d1j.cloudfront.net/images/51d3bded9ecbd8bf6e9869041c437ba9",
+        "image": {
+          "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/51d3bded9ecbd8bf6e9869041c437ba9",
+          "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/0f284113af41f7f7296263183701a13b"
+        },
+        "gender": "male",
+        "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Bear_CORRECT_Cropped.json",
+        "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Bear_INCORRECT_Cropped.json",
+        "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Falstaff_IDLE_Cropped.json"
+      },
+      "type": "translate",
+      "id": "2002fd4d5d8a435a937bba14841a11fd",
+      "challengeResponseTrackingProperties": {
+        "best_solution": "Hello, Julia!",
+        "level_session_index": 0,
+        "grading_graph_size": 2155,
+        "num_tap_distractors": 4,
+        "birdbrain_source": "birdbrain_v2",
+        "num_correct_answer_tokens": 2,
+        "generation_timestamp": 1673124421519,
+        "is_v2": true,
+        "birdbrain_probability": 0.9721372,
+        "content_length": 13,
+        "tagged_kc_ids": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ]
+      },
+      "metadata": {
+        "challenge_construction_insights": {
+          "birdbrain_probability": 0.9721372,
+          "birdbrain_source": "birdbrain_v2",
+          "num_tap_distractors": 4,
+          "content_length": 13,
+          "best_solution": "Hello, Julia!",
+          "num_correct_answer_tokens": 2
+        },
+        "highlight": [],
+        "indicator_type": {
+          "name": "HARD_CHALLENGE"
+        },
+        "sentence": "Olá, Julia!",
+        "solution_key": "2a337e1d9569d805c09ffd20a86d1677",
+        "source_language": "pt",
+        "target_language": "en",
+        "tokens": [
+          "Hello",
+          "Julia"
+        ],
+        "translation": "Hello, Julia!",
+        "wrong_tokens": [
+          "or",
+          "please",
+          "water",
+          "neat"
+        ],
+        "text": "Olá, Julia!",
+        "specific_type": "reverse_tap",
+        "lexeme_ids_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "type": "translate",
+        "lexemes_to_update": [
+          "764e3dc3b4ba7256526f0b66c33d778d"
+        ],
+        "generic_lexeme_map": {},
+        "num_comments": 0,
+        "learning_language": "en",
+        "from_language": "pt"
+      },
+      "newWords": [],
+      "progressUpdates": [],
+      "sentenceDiscussionId": "2a337e1d9569d805c09ffd20a86d1677",
+      "challengeGeneratorIdentifier": {
+        "specificType": "reverse_tap",
+        "generatorId": "2a337e1d9569d805c09ffd20a86d1677"
+      },
+      "indicatorType": "HARD_CHALLENGE"
+    }
+  ],
+  "mistakesReplacementChallenges": [],
+  "adaptiveInterleavedChallenges": {
+    "challenges": [
+      {
+        "prompt": "chá",
+        "choices": [
+          "please",
+          "tea",
+          "and"
+        ],
+        "correctIndex": 1,
+        "options": [
+          {
+            "text": "please",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/418800edd9afc7e8fa4c950f61b93c38"
+          },
+          {
+            "text": "tea",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/5a642b17f3d75eebbfcdb07b26327b6c"
+          },
+          {
+            "text": "and",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/miranda/3642ddb2554e44e12cf7136989720ec6"
+          }
+        ],
+        "type": "assist",
+        "id": "d1ed0548bae64a99938fb516375db238",
+        "challengeResponseTrackingProperties": {
+          "level_session_index": 0,
+          "generation_timestamp": 1673124421519,
+          "is_v2": true,
+          "tagged_kc_ids": [
+            "7c502d3e0f614b3ba48987bea06790e0"
+          ]
+        },
+        "metadata": {
+          "challenge_construction_insights": {},
+          "highlight": [
+            "tea"
+          ],
+          "learning_language": "en",
+          "other_options": [
+            "please",
+            "and"
+          ],
+          "solution_key": "7c502d3e0f614b3ba48987bea06790e0",
+          "translation": "chá",
+          "ui_language": "pt",
+          "word": "tea",
+          "language": "en",
+          "specific_type": "assist",
+          "lexeme_ids_to_update": [
+            "7c502d3e0f614b3ba48987bea06790e0"
+          ],
+          "type": "assist",
+          "lexemes_to_update": [
+            "7c502d3e0f614b3ba48987bea06790e0"
+          ],
+          "generic_lexeme_map": {},
+          "num_comments": 0,
+          "from_language": "pt"
+        },
+        "newWords": [
+          "tea"
+        ],
+        "progressUpdates": [],
+        "challengeGeneratorIdentifier": {
+          "specificType": "assist",
+          "generatorId": "7c502d3e0f614b3ba48987bea06790e0"
+        }
+      },
+      {
+        "prompt": "Coffee.",
+        "correctSolutions": [
+          "Café."
+        ],
+        "compactTranslations": [
+          "Café.",
+          "[Um/] café."
+        ],
+        "correctTokens": [
+          "Café"
+        ],
+        "wrongTokens": [
+          "chá",
+          "adeus",
+          "obrigado",
+          "por favor"
+        ],
+        "choices": [
+          {
+            "text": "Café"
+          },
+          {
+            "text": "chá"
+          },
+          {
+            "text": "adeus"
+          },
+          {
+            "text": "obrigado"
+          },
+          {
+            "text": "por favor"
+          }
+        ],
+        "correctIndices": [
+          0
+        ],
+        "sourceLanguage": "en",
+        "targetLanguage": "pt",
+        "grader": {
+          "version": 0,
+          "vertices": [
+            [
+              {
+                "to": 1,
+                "lenient": ""
+              }
+            ],
+            [
+              {
+                "to": 2,
+                "lenient": ""
+              },
+              {
+                "to": 3,
+                "lenient": "um",
+                "orig": "Um"
+              },
+              {
+                "to": 5,
+                "lenient": "café",
+                "orig": "Café."
+              },
+              {
+                "to": 3,
+                "lenient": "1",
+                "auto": true
+              }
+            ],
+            [
+              {
+                "to": 5,
+                "lenient": "café",
+                "orig": "café."
+              }
+            ],
+            [
+              {
+                "to": 4,
+                "lenient": " "
+              }
+            ],
+            [
+              {
+                "to": 5,
+                "lenient": "café",
+                "orig": "café."
+              }
+            ],
+            []
+          ],
+          "language": "pt",
+          "whitespaceDelimited": true
+        },
+        "taggedKcIds": [
+          {
+            "legacyId": "6038e9e38135d6b7920f57303400e321",
+            "kcTypeStr": "lex"
+          }
+        ],
+        "tokens": [
+          {
+            "value": "Coffee",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/30ec7d09b0b9555e6db6a8e8abe85620",
+            "hintTable": {
+              "headers": [],
+              "rows": [
+                [
+                  {
+                    "colspan": 1,
+                    "hint": "café"
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "value": "."
+          }
+        ],
+        "tts": "https://d1vq87e9lcf771.cloudfront.net/oscaren/3d15f7c90784e6779e8aab0c05e6c4b3",
+        "character": {
+          "url": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+          "image": {
+            "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/1d4af8ffd16389a7c68b88b0d358ce92",
+            "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/f4639160abfb44c54829ebeb62c0542d"
+          },
+          "gender": "MALE",
+          "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Oscar_CORRECT_Cropped_Hair.json",
+          "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Mo_INCORRECT_Cropped.json",
+          "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Oscar_IDLE_Cropped.json"
+        },
+        "type": "translate",
+        "id": "f96761bbc7c640ef83b970e511fc6662",
+        "challengeResponseTrackingProperties": {
+          "level_session_index": 0,
+          "grading_graph_size": 349,
+          "num_tap_distractors": 4,
+          "num_correct_answer_tokens": 1,
+          "generation_timestamp": 1673124421519,
+          "is_v2": true,
+          "tagged_kc_ids": [
+            "6038e9e38135d6b7920f57303400e321"
+          ]
+        },
+        "metadata": {
+          "challenge_construction_insights": {
+            "num_tap_distractors": 4,
+            "num_correct_answer_tokens": 1
+          },
+          "highlight": [
+            "Coffee"
+          ],
+          "sentence": "Coffee.",
+          "solution_key": "f38ef08b603e77fd2bdfba8af6b08e4e",
+          "source_language": "en",
+          "target_language": "pt",
+          "tokens": [
+            "Café"
+          ],
+          "translation": "Café.",
+          "wrong_tokens": [
+            "chá",
+            "adeus",
+            "obrigado",
+            "por favor"
+          ],
+          "text": "Coffee.",
+          "specific_type": "tap",
+          "lexeme_ids_to_update": [
+            "6038e9e38135d6b7920f57303400e321"
+          ],
+          "type": "translate",
+          "lexemes_to_update": [
+            "6038e9e38135d6b7920f57303400e321"
+          ],
+          "generic_lexeme_map": {},
+          "num_comments": 0,
+          "learning_language": "en",
+          "from_language": "pt"
+        },
+        "newWords": [
+          "Coffee"
+        ],
+        "progressUpdates": [],
+        "sentenceDiscussionId": "f38ef08b603e77fd2bdfba8af6b08e4e",
+        "challengeGeneratorIdentifier": {
+          "specificType": "tap",
+          "generatorId": "f38ef08b603e77fd2bdfba8af6b08e4e"
+        }
+      },
+      {
+        "prompt": "Hello.",
+        "correctSolutions": [
+          "Olá."
+        ],
+        "compactTranslations": [
+          "Olá.",
+          "[Olá/Oi/Ei/Alô]."
+        ],
+        "correctTokens": [
+          "Olá"
+        ],
+        "wrongTokens": [
+          "adeus",
+          "café",
+          "sim",
+          "por favor"
+        ],
+        "choices": [
+          {
+            "text": "Olá"
+          },
+          {
+            "text": "adeus"
+          },
+          {
+            "text": "café"
+          },
+          {
+            "text": "sim"
+          },
+          {
+            "text": "por favor"
+          }
+        ],
+        "correctIndices": [
+          0
+        ],
+        "sourceLanguage": "en",
+        "targetLanguage": "pt",
+        "grader": {
+          "version": 0,
+          "vertices": [
+            [
+              {
+                "to": 1,
+                "lenient": ""
+              }
+            ],
+            [
+              {
+                "to": 2,
+                "lenient": "alô",
+                "orig": "Alô."
+              },
+              {
+                "to": 2,
+                "lenient": "ei",
+                "orig": "Ei."
+              },
+              {
+                "to": 2,
+                "lenient": "oi",
+                "orig": "Oi."
+              },
+              {
+                "to": 2,
+                "lenient": "olá",
+                "orig": "Olá."
+              }
+            ],
+            []
+          ],
+          "language": "pt",
+          "whitespaceDelimited": true
+        },
+        "taggedKcIds": [
+          {
+            "legacyId": "764e3dc3b4ba7256526f0b66c33d778d",
+            "kcTypeStr": "lex"
+          }
+        ],
+        "tokens": [
+          {
+            "value": "Hello",
+            "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/52141b34f2b5eeb982cc4331b11a5155",
+            "hintTable": {
+              "headers": [],
+              "rows": [
+                [
+                  {
+                    "colspan": 1,
+                    "hint": "olá"
+                  }
+                ],
+                [
+                  {
+                    "colspan": 1,
+                    "hint": "oi"
+                  }
+                ],
+                [
+                  {
+                    "colspan": 1,
+                    "hint": "alô"
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "value": "."
+          }
+        ],
+        "tts": "https://d1vq87e9lcf771.cloudfront.net/zarien/955c705e46bca9bcd396bde2afd19190",
+        "character": {
+          "url": "https://d2pur3iezf4d1j.cloudfront.net/images/3f4adf80c0b6e9a0dc438f3ba8119703",
+          "image": {
+            "pdf": "https://d2pur3iezf4d1j.cloudfront.net/images/3f4adf80c0b6e9a0dc438f3ba8119703",
+            "svg": "https://d2pur3iezf4d1j.cloudfront.net/images/6d99bc8306bdaacc3c8acc911214c557"
+          },
+          "gender": "FEMALE",
+          "correctAnimation": "https://simg-ssl.duolingo.com/lottie/Zari_CORRECT_Cropped_Spin.json",
+          "incorrectAnimation": "https://simg-ssl.duolingo.com/lottie/Pink_INCORRECT_Cropped.json",
+          "idleAnimation": "https://simg-ssl.duolingo.com/lottie/Zari_IDLE_Cropped.json"
+        },
+        "type": "translate",
+        "id": "048a2f2a5d0049ada6c68ded6d41d81d",
+        "challengeResponseTrackingProperties": {
+          "level_session_index": 0,
+          "grading_graph_size": 254,
+          "num_tap_distractors": 4,
+          "num_correct_answer_tokens": 1,
+          "generation_timestamp": 1673124421519,
+          "is_v2": true,
+          "tagged_kc_ids": [
+            "764e3dc3b4ba7256526f0b66c33d778d"
+          ]
+        },
+        "metadata": {
+          "challenge_construction_insights": {
+            "num_tap_distractors": 4,
+            "num_correct_answer_tokens": 1
+          },
+          "highlight": [
+            "Hello"
+          ],
+          "sentence": "Hello.",
+          "solution_key": "32be3690a6da9b630dc977062a99af66",
+          "source_language": "en",
+          "target_language": "pt",
+          "tokens": [
+            "Olá"
+          ],
+          "translation": "Olá.",
+          "wrong_tokens": [
+            "adeus",
+            "café",
+            "sim",
+            "por favor"
+          ],
+          "text": "Hello.",
+          "specific_type": "tap",
+          "lexeme_ids_to_update": [
+            "764e3dc3b4ba7256526f0b66c33d778d"
+          ],
+          "type": "translate",
+          "lexemes_to_update": [
+            "764e3dc3b4ba7256526f0b66c33d778d"
+          ],
+          "generic_lexeme_map": {},
+          "num_comments": 0,
+          "learning_language": "en",
+          "from_language": "pt"
+        },
+        "newWords": [
+          "Hello"
+        ],
+        "progressUpdates": [],
+        "sentenceDiscussionId": "32be3690a6da9b630dc977062a99af66",
+        "challengeGeneratorIdentifier": {
+          "specificType": "tap",
+          "generatorId": "32be3690a6da9b630dc977062a99af66"
+        }
+      }
+    ],
+    "harderComboConsecutives": 5,
+    "easierComboConsecutives": 1,
+    "harderChallengeReplacementIndices": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "easierChallengeReplacementIndices": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "speakOrListenReplacementIndices": [
+      null,
+      null,
+      0,
+      1,
+      null,
+      null,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "metadata": {
+    "id": "hOlpdCzd3PtlI3fT",
+    "checkpoint_quiz_elements": [],
+    "type": "lesson",
+    "target_lexeme_ids": [
+      "764e3dc3b4ba7256526f0b66c33d778d",
+      "6038e9e38135d6b7920f57303400e321",
+      "f18f17117af199ac619fe968c4cd22b2",
+      "0d9244f805fd55af1281a1bcb1a2cba6",
+      "7c502d3e0f614b3ba48987bea06790e0",
+      "e5db04b6bb2aec22dca1d08fa02dcfef",
+      "ee83763629a0d5a538c07e65bfd65593"
+    ],
+    "teaches_lexeme_ids": [
+      "7c502d3e0f614b3ba48987bea06790e0",
+      "6038e9e38135d6b7920f57303400e321",
+      "f18f17117af199ac619fe968c4cd22b2",
+      "e5db04b6bb2aec22dca1d08fa02dcfef",
+      "764e3dc3b4ba7256526f0b66c33d778d",
+      "ee83763629a0d5a538c07e65bfd65593",
+      "0d9244f805fd55af1281a1bcb1a2cba6"
+    ],
+    "kc_strength_model_version": 2,
+    "pass_strength": 2.0819028705188845,
+    "min_strength_increment": 0.1,
+    "min_strength_decrement": 0.075,
+    "mixture_models": {
+      "7c502d3e0f614b3ba48987bea06790e0": {},
+      "e5db04b6bb2aec22dca1d08fa02dcfef": {},
+      "764e3dc3b4ba7256526f0b66c33d778d": {},
+      "f18f17117af199ac619fe968c4cd22b2": {},
+      "ee83763629a0d5a538c07e65bfd65593": {},
+      "6038e9e38135d6b7920f57303400e321": {},
+      "0d9244f805fd55af1281a1bcb1a2cba6": {}
+    },
+    "language": "en",
+    "from_language": "pt",
+    "ui_language": "pt",
+    "language_string": "English",
+    "tts_enabled": true,
+    "skill_id": "7034054383c98893a79e38d9be357fd3",
+    "skill_tree_id": "6115140c83e9ee166a3e9bdf5f45ad5e",
+    "skill_tree_level": 1,
+    "skill_name": "Introdução",
+    "skill_title": "Introdução",
+    "skill_index": 2,
+    "skill_color": "red",
+    "beginner": true,
+    "lesson_number": 1,
+    "first_lesson": true,
+    "level_index": 0,
+    "level_session_index": 0,
+    "hints_url": "d2.duolingo.com/api/1/dictionary/hints",
+    "experiments": [
+      "linfra_cds_built_assist_v2",
+      "linfra_cds_built_summ_reverse_tap_v1"
+    ],
+    "experiments_with_treatment_contexts": {
+      "linfra_cds_built_assist_v2": [
+        null
+      ],
+      "linfra_cds_built_summ_reverse_tap_v1": [
+        "postFilter",
+        "preFilter"
+      ]
+    },
+    "is_restore": false,
+    "session_construction_insights": {
+      "rejected_challenges_info": [],
+      "num_challenges_after_default_quality_score_filtering": 35,
+      "picked_challenges_info": {
+        "challenges": [],
+        "parent_target_kcids": {},
+        "num_challenges": 0
+      }
+    },
+    "is_monolingual": false
+  },
+  "ttsAnnotations": {
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/fee3f656e8582b3a119f1311e80aa05b": {
+      "visemes": "118\t96\t148\n112\t244\t156\n109\t400\t109\n105\t510\t164\n102\t674\t39\n105\t713\t70\n105\t783\t31\n105\t814\t78\n105\t892\t437\n100\t1340\t723"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/a35e931141b8ca879d0e0b448eb6b67c": {
+      "visemes": "107\t128\t132\n108\t260\t85\n105\t346\t296\n113\t643\t335\n100\t989\t210"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/3d15f7c90784e6779e8aab0c05e6c4b3": {
+      "visemes": "118\t128\t109\n112\t237\t171\n109\t409\t109\n105\t518\t328\n100\t856\t751"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/3ea16dc739c37faffd849d7557d72f7f": {
+      "visemes": "105\t128\t132\n105\t260\t460\n100\t731\t732"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/beaen/57d53fc1017d148b77875df7c12186b0": {
+      "visemes": "107\t128\t117\n108\t245\t46\n105\t292\t242\n113\t534\t281\n100\t825\t734"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/linen/15db9f72310e77908429e736029e8c7d": {
+      "visemes": "118\t128\t148\n112\t276\t226\n109\t503\t125\n105\t628\t351\n100\t989\t762"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/dcb367d7b1af457e9a68e9d393d298b9": {
+      "visemes": "102\t0\t281\n101\t281\t125\n108\t406\t156\n104\t562\t31\n100\t603\t116"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/linen/7d23ef54184aecaaf539f15ea1e7b818": {
+      "visemes": "107\t128\t187\n108\t315\t46\n105\t362\t429\n113\t792\t312\n100\t1114\t709"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/8eff9a0dc6c96cd19937a7c4c995c133": {
+      "visemes": "103\t0\t164\n101\t164\t156\n113\t320\t398\n100\t728\t87"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/dae4083ad057e929d1fc2016786293d7": {
+      "visemes": "102\t128\t179\n101\t307\t187\n105\t495\t351\n100\t856\t751"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/lilyen/9d229a4566739ed7f811dec171cf8eaf": {
+      "visemes": "107\t128\t125\n108\t253\t39\n105\t292\t390\n113\t682\t265\n100\t958\t721"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/884cd3c643f18082cf71259e6c4504ab": {
+      "visemes": "107\t128\t85\n108\t213\t70\n105\t284\t289\n113\t573\t375\n100\t958\t745"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/beaen/c61275f591b9ca5f6de11f9276eb3747": {
+      "visemes": "105\t128\t101\n105\t229\t398\n100\t638\t753"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/955c705e46bca9bcd396bde2afd19190": {
+      "visemes": "102\t128\t85\n101\t213\t234\n108\t448\t23\n104\t471\t218\n100\t700\t739"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/8e242ea330707892ebdf4ead2a9cd3a1": {
+      "visemes": "102\t128\t93\n101\t221\t23\n108\t245\t101\n104\t346\t546\n115\t893\t218\n104\t1112\t140\n108\t1253\t46\n103\t1299\t109\n102\t1409\t335\n100\t1755\t236"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/5658bb6937b73d77d677ddc38d5fac27": {
+      "visemes": "102\t128\t23\n101\t151\t93\n108\t245\t101\n104\t346\t406\n100\t763\t269"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/68544a04ae4502ac014342338234ebd4": {
+      "visemes": "102\t0\t164\n101\t164\t46\n108\t210\t93\n104\t304\t351\n100\t666\t125"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/fafac37dbe23c702c19a5a508ae77d57": {
+      "visemes": "116\t128\t171\n101\t299\t93\n118\t393\t101\n118\t495\t39\n103\t534\t132\n104\t667\t312\n100\t989\t714"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/52141b34f2b5eeb982cc4331b11a5155": {
+      "visemes": "102\t128\t93\n101\t221\t46\n108\t268\t164\n104\t432\t351\n100\t794\t741"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/11685cd7e20d99284ce7064c0f58206d": {
+      "visemes": "105\t128\t164\n105\t292\t187\n105\t479\t335\n100\t825\t278"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/vikramen/1d1cd0a9a8695e2b9551cf6eaea3997e": {
+      "visemes": "102\t128\t148\n101\t276\t46\n108\t323\t101\n104\t424\t328\n100\t763\t797"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/213353ff7f5c63e6e963919b73981557": {
+      "visemes": "110\t0\t156\n104\t156\t93\n105\t250\t132\n100\t382\t335\n100\t728\t111"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/d20f8298a95dc91df62b03c41c045084": {
+      "visemes": "101\t96\t335\n105\t431\t156\n105\t588\t226\n100\t824\t735"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/7826259ded480105cc492703ef9ed674": {
+      "visemes": "105\t128\t109\n105\t237\t484\n100\t731\t732"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/7179abd9bf5397ba1867f1bea6f75f7a": {
+      "visemes": "102\t0\t320\n101\t320\t31\n108\t351\t203\n104\t554\t453\n100\t1017\t158"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/29b9951c35c7d3b7fec0164ea6973d38": {
+      "visemes": "118\t128\t117\n112\t245\t171\n109\t417\t54\n105\t471\t70\n101\t542\t140\n105\t682\t93\n105\t776\t31\n105\t807\t70\n105\t878\t453\n100\t1341\t746"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/30ec7d09b0b9555e6db6a8e8abe85620": {
+      "visemes": "118\t128\t109\n112\t237\t171\n109\t409\t109\n105\t518\t328\n100\t856\t751"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/be547ad7bdb1b6863e2864bb75a0ffa4": {
+      "visemes": "103\t96\t164\n104\t260\t54\n120\t314\t23\n110\t338\t125\n101\t463\t23\n108\t486\t101\n118\t588\t101\n102\t689\t78\n107\t767\t273\n100\t1051\t700"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/lilyen/8c15267e6f9c9e204b89d1bbf6c6e7a1": {
+      "visemes": "107\t128\t125\n108\t253\t39\n105\t292\t390\n113\t682\t265\n100\t958\t721"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/5c26d4d3b38b26d9df32616651b0d39a": {
+      "visemes": "118\t128\t117\n112\t245\t148\n109\t393\t93\n105\t487\t296\n100\t794\t741"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/9fdbb4ede9f6e6fd7908138701eef163": {
+      "visemes": "105\t0\t148\n104\t148\t414\n100\t572\t123"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/e93a91d1c806f2b6fc10827f09ad06b1": {
+      "visemes": "104\t96\t289\n120\t385\t304\n100\t699\t332"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/979fda9bbda1239c35a6b9e416c50f92": {
+      "visemes": "105\t128\t125\n105\t253\t460\n107\t713\t179\n108\t893\t54\n105\t948\t304\n113\t1253\t398\n100\t1661\t738"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/vikramen/a444e4d9d9c0cb1d2702ee2aa909970e": {
+      "visemes": "102\t128\t132\n101\t260\t23\n108\t284\t85\n104\t370\t445\n100\t825\t758"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/b75e35d331576eab9b747992628cc40f": {
+      "visemes": "105\t128\t296\n105\t424\t296\n100\t731\t732"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/zarien/fc4745d46396483301cb4224870ead20": {
+      "visemes": "102\t128\t304\n105\t432\t140\n105\t573\t179\n100\t763\t749"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/miranda/f874fb5e233c75cb93d9224d658d77ac": {
+      "visemes": "115\t0\t210\n104\t210\t117\n118\t328\t54\n100\t382\t335\n100\t728\t111"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/b7d90f9eee9a4eb3e16c37d02d82955d": {
+      "visemes": "115\t128\t226\n104\t354\t93\n108\t448\t85\n103\t534\t109\n102\t643\t367\n100\t1020\t275"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/eddyen/49422585d72dd90dd0c9d9087c3be046": {
+      "visemes": "105\t96\t148\n105\t244\t195\n101\t439\t179\n105\t619\t101\n105\t721\t23\n118\t744\t85\n112\t830\t164\n109\t994\t101\n105\t1096\t234\n100\t1340\t771"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/beaen/d88f37560278567805e9cc4b20f97c18": {
+      "visemes": "105\t128\t156\n105\t284\t367\n107\t651\t226\n108\t878\t39\n105\t917\t242\n113\t1159\t296\n100\t1466\t741"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/eddyen/37a5d19960f33d6f3f4c9c51719592d1": {
+      "visemes": "118\t96\t140\n104\t236\t156\n109\t392\t109\n105\t502\t312\n100\t824\t735"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/linen/7f3a7d1d31a86a8ee9d253842a144d53": {
+      "visemes": "118\t128\t148\n112\t276\t187\n109\t463\t101\n105\t565\t140\n107\t706\t156\n108\t862\t70\n105\t932\t390\n113\t1323\t296\n100\t1630\t769"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/oscaren/8cacffb45a1ce2f342e58389e576bc6a": {
+      "visemes": "116\t128\t164\n120\t292\t117\n105\t409\t343\n100\t763\t725"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/eddyen/f8bbe7530cfb5e8dbaf1ad18c2a005d0": {
+      "visemes": "102\t96\t335\n105\t431\t117\n105\t549\t234\n100\t793\t694"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/eddyen/583f299988a289dc687a96665bfeecdb": {
+      "visemes": "105\t96\t164\n105\t260\t460\n100\t731\t757"
+    },
+    "https://d1vq87e9lcf771.cloudfront.net/falstaffen/6d3e79ae98ecb09d49b2a13edc61270b": {
+      "visemes": "110\t128\t195\n104\t323\t140\n105\t463\t31\n100\t495\t351\n100\t856\t319"
+    }
+  },
+  "trackingProperties": {
+    "percent_target_kc_coverage": 1,
+    "skill_x_coord": 1,
+    "skill_tree_id": "6115140c83e9ee166a3e9bdf5f45ad5e",
+    "data_version": "default",
+    "max_repeated_challenge_type_count": 7,
+    "tree_level": 1,
+    "lexemes_were_reordered": false,
+    "num_adaptive_challenges_gt_reverse_tap": 2,
+    "uses_birdbrain_sorting": true,
+    "type": "lesson",
+    "num_challenges_generated": 15,
+    "is_shorter_than_expected": false,
+    "num_challenges_gt_assist": 3,
+    "uses_birdbrain_picking": false,
+    "num_challenges_after_failure_rate_filter": 35,
+    "learning_language": "en",
+    "num_challenges_gt_tap": 7,
+    "num_challenges_with_challenge_stats": 15,
+    "max_repeated_challenge_type": "tap",
+    "generation_timestamp": 1673124421519,
+    "max_repeated_sentence_count": 1,
+    "max_repeated_challenge_count": 1,
+    "max_repeated_undirected_sentence_count": 1,
+    "num_low_quality_challenges": 1,
+    "sentences_count": 8,
+    "num_challenges_gt": 15,
+    "num_sensitive_content_filtered": 0,
+    "distinct_sentences_count": 8,
+    "num_adaptive_challenges_generated": 2,
+    "num_challenges_gt_listen_tap": 1,
+    "max_repeated_sentence": "441b0d80198b82dbb19b6f215c596be2",
+    "uses_birdbrain": true,
+    "read_from_cache": false,
+    "num_adaptive_challenges_gt": 2,
+    "from_language": "pt",
+    "percent_low_quality_challenges": 0.06666666666666667,
+    "sum_content_length": 120,
+    "percent_kc_coverage": 1,
+    "max_consecutive_challenge_type_count": 3,
+    "expected_length": 15,
+    "offline": false,
+    "num_interleaved_adaptive_challenges_gt": 0,
+    "activity_uuid": "915a063a-f762-4f0d-9e70-4f8e7e9836bc",
+    "num_sensitivity_labels_of_user": 0,
+    "level_index": 0,
+    "avg_content_length": 8,
+    "level_session_index": 0,
+    "generation_app_version": "5.0",
+    "num_challenges_gt_select_transcription": 2,
+    "max_consecutive_challenge_type": "tap",
+    "max_repeated_undirected_sentence": "441b0d80198b82dbb19b6f215c596be2",
+    "skill_name": "Introdução",
+    "distinct_undirected_sentences_count": 8,
+    "skill_id": "7034054383c98893a79e38d9be357fd3",
+    "grading_graph_sizes_sum": 11292,
+    "num_challenges_gt_name_example": 2,
+    "lesson_number": 1
+  },
+  "beginner": true,
+  "skillId": "7034054383c98893a79e38d9be357fd3",
+  "sessionStartExperiments": [
+    "linfra_cds_built_assist_v2",
+    "linfra_cds_built_summ_reverse_tap_v1"
+  ],
+  "lessonIndex": 0,
+  "levelIndex": 0,
+  "levelSessionIndex": 0,
+  "preSessionScreens": [],
+  "challengeTimeTakenCutoff": 60000,
+  "explanations": {},
+  "progressUpdates": [],
+  "isV2": true,
+  "isMonolingual": false
+}

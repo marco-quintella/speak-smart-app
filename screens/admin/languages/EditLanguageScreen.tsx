@@ -4,7 +4,7 @@ import { Box, Button, FormControl, HStack, Input, ScrollView, Switch, Text, VSta
 import { useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
-import { db } from '../../../plugins';
+import { db } from '../../../plugins/firebase';
 import { Language } from '../../../types';
 
 export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;

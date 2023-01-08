@@ -1,13 +1,14 @@
 
-import { Button, Image, Text, View } from 'native-base';
+import { Box, Button, Image, Text, View } from 'native-base';
 import { GestureResponderEvent } from 'react-native';
-import { G, Path, Svg } from 'react-native-svg';
-import type { Lesson, UserLesson } from '../types';
-import { PathImages } from '../utils';
+import { G, Path, Svg, SvgUri } from 'react-native-svg';
+import type { Level, Unit } from '../types';
+import { SkillIconUrl } from '../utils';
+import { capitalize } from '../utils/strings';
 
 export default function PathItem (props: {
-  lesson: Lesson;
-  userLesson?: UserLesson;
+  unit: Unit;
+  level: Level;
   onPress?: ((event: GestureResponderEvent) => void);
 }) {
   const size = 80;
@@ -16,8 +17,8 @@ export default function PathItem (props: {
   const iconSize = 50;
   const initialAngle = 135;
 
-  const steps = props.lesson.steps[props.userLesson?.level ?? 0];
-  const completedSteps = props.userLesson?.step ?? 0;
+  const totalSessions = props.level.totalSessions ?? 0;
+  const finishedSessions = 0;
 
   function polarToCartesian (centerX: number, centerY: number, radius: number, angleInDegrees: number) {
     var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
@@ -36,9 +37,9 @@ export default function PathItem (props: {
   }
 
   const backgroundPath = () => {
-    const step = 360 / steps;
+    const step = 360 / totalSessions;
     const paths = [];
-    for (let i = 0; i < steps; i++) {
+    for (let i = 0; i < totalSessions; i++) {
       paths.push(<Path
         key={i}
         d={circlePath(sizeWithPadding / 2, sizeWithPadding / 2, size / 2, i * step + 10, (i + 1) * step - 10)}
@@ -53,9 +54,9 @@ export default function PathItem (props: {
   };
 
   const filledPath = () => {
-    const step = 360 / steps;
+    const step = 360 / totalSessions;
     const paths = [];
-    for (let i = 0; i < completedSteps; i++) {
+    for (let i = 0; i < finishedSessions; i++) {
       paths.push(<Path
         key={i}
         d={circlePath(sizeWithPadding / 2, sizeWithPadding / 2, size / 2, i * step + 10, (i + 1) * step - 10)}
@@ -70,31 +71,41 @@ export default function PathItem (props: {
   };
 
   return (
-    <Button variant='ghost' onPress={props.onPress}>
+    <Box alignItems='center' mt={props.level.index === 0 ? 4 : 0}>
       <Svg width={sizeWithPadding} height={sizeWithPadding}>
         <G>
           {backgroundPath()}
           {filledPath()}
         </G>
       </Svg>
-      <View style={{
-        position: 'absolute',
-        width: sizeWithPadding,
-        height: sizeWithPadding,
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <Image alt='Path Icon' source={PathImages[props.lesson.icon]} style={{ width: iconSize, height: iconSize }} />
+      <View
+        w={sizeWithPadding}
+        h={sizeWithPadding}
+        position='absolute'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Button
+          rounded='full'
+          w={16}
+          h={16}
+          onPress={props.onPress}
+          flexDirection='column'
+          alignItems='center'
+          justifyContent='center'
+        >
+          <SvgUri uri={SkillIconUrl} style={{ width: iconSize, height: iconSize }} />
+        </Button>
+        <View
+          style={{
+            position: 'absolute',
+            left: size - 20,
+            top: size - 20,
+          }}>
+          <Image alt='Streak Icon' source={require('../assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
+        </View>
       </View>
-      <View style={{
-        position: 'absolute',
-        left: size - 20,
-        top: size - 20,
-      }}>
-        <Image alt='Streak Icon' source={require('../assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
-      </View>
-      <Text style={{ textAlign: 'center', marginTop: 4 }}>{props.lesson.title}</Text>
-    </Button>
+      <Text style={{ textAlign: 'center', marginTop: 4 }}>{capitalize(props.level.teachingObjective, { start: true })}</Text>
+    </Box>
   );
 }

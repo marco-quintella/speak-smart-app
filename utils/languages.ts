@@ -1,25 +1,28 @@
 import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../plugins/firebase';
-import { useAppDispatch } from '../store/hooks';
-import { setCurrentLanguage } from '../store/language.reducer';
-import { Language } from '../types/language';
+import type { Language } from '../types/language';
 
 
-export const defaultLanguageId = 'ADgfHLvXBaAJzzZaQiHX';
+export const defaultLanguageId = 'pt-br';
+export const defaultCourseId = 'en_pt-br';
 
-export const setLanguage = async (id: string = defaultLanguageId) => {
-  const dispatch = useAppDispatch();
+export const languagesCollection = collection(db, 'languages');
 
-  const docRef = doc(db, 'languages', id);
-  const snapshot = await getDoc(docRef);
-  const language = snapshot.data();
-
-  dispatch(setCurrentLanguage({
-    id: snapshot.id,
-    name: language?.name,
-    flag: language?.flag,
-  }));
-};
+export async function fetchLanguageById (languageId: string) {
+  const _doc = doc(languagesCollection, languageId);
+  const snapshot = await getDoc(_doc);
+  if (!snapshot.exists()) {
+    console.error('No matching documents on fetchLanguageById.', {
+      languageId
+    });
+    return;
+  }
+  const data = snapshot.data();
+  return {
+    ...data as Language,
+    id: data.id,
+  };
+}
 
 export async function fetchLanguages () {
   const ref = collection(db, 'languages');

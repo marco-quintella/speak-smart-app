@@ -1,13 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import languageReducer from './language.reducer';
-import lessonsReducer from './lessons.reducer';
+import pathReducer from './path.reducer';
 import userReducer from './user.reducer';
 
 export const store = configureStore({
   reducer: {
     user: userReducer,
     language: languageReducer,
-    lessons: lessonsReducer,
+    path: pathReducer,
   }
 });
 
@@ -18,6 +18,6 @@ export type AppDispatch = typeof store.dispatch;
 
 export * from './hooks';
 export * from './language.reducer';
-export * from './lessons.reducer';
+export * from './path.reducer';
 export * from './user.reducer';
 

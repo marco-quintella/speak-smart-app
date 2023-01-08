@@ -6,10 +6,25 @@ export interface FirebaseUser {
 }
 
 export interface UserData {
-  currentLanguage?: string;
-  stars?: Record<number, number>;
-  streak?: number;
-  apples?: number;
-  displayName?: string;
-  isAdmin?: boolean;
+  currentLanguage: string;
+  currentCourse: string;
+  courses: {
+    [key: string]: {
+      stars: number;
+      max_tree_level: number;
+      levels: {
+        id: string;
+        finishedSessions: number;
+        level: string;
+        state: 'active' | 'locked';
+      }[];
+    };
+  };
+  stars: {
+    [key: number]: number;
+  };
+  streak: number;
+  apples: number;
+  displayName: string;
+  isAdmin: boolean;
 }
