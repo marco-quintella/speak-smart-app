@@ -1,6 +1,6 @@
 import { AppNavigatorParamList } from '../navigation';
 
-export * from './courses';
+export * from './course';
 export * from './env';
 export * from './language';
 export * from './level';

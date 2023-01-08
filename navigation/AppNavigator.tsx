@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { ActivityScreen, LanguageSelectionScreen, StartScreen } from '../screens';
 import AdminHomeScreen from '../screens/admin/AdminHomeScreen';
+import AdminCoursesScreen from '../screens/admin/courses/AdminCoursesScreen';
 import AdminLanguagesScreen from '../screens/admin/languages/AdminLanguagesScreen';
 import EditLanguagesScreen from '../screens/admin/languages/EditLanguageScreen';
 import AdminLessonsListScreen from '../screens/admin/lessons/AdminLessonsList';
@@ -35,6 +36,7 @@ export type AppNavigatorParamList = {
     edit?: boolean;
     language?: Language;
   };
+  AdminCoursesScreen: undefined;
 };
 
 const Stack = createNativeStackNavigator<AppNavigatorParamList>();
@@ -49,6 +51,7 @@ export default function AppNavigator () {
         <Stack.Screen key="AdminHomeScreen" name="AdminHomeScreen" component={AdminHomeScreen} />,
         <Stack.Screen key="AdminLanguagesScreen" name="AdminLanguagesScreen" component={AdminLanguagesScreen} />,
         <Stack.Screen key="EditLanguagesScreen" name="EditLanguagesScreen" component={EditLanguagesScreen} />,
+        <Stack.Screen key="AdminCoursesScreen" name="AdminCoursesScreen" component={AdminCoursesScreen} />,
         <Stack.Screen key="AdminLessonsSelectLanguage" name="AdminLessonsSelectLanguage" component={AdminLessonsSelectLanguage} />,
         <Stack.Screen key="AdminLessonsListScreen" name="AdminLessonsListScreen" component={AdminLessonsListScreen} />,
         <Stack.Screen key="EditLessonsScreen" name="EditLessonsScreen" component={EditLessonsScreen} />,
