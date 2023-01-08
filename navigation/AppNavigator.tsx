@@ -6,9 +6,6 @@ import AdminCoursesScreen from '../screens/admin/courses/AdminCoursesScreen';
 import EditCoursesScreen from '../screens/admin/courses/EditCoursesScreen';
 import AdminLanguagesScreen from '../screens/admin/languages/AdminLanguagesScreen';
 import EditLanguagesScreen from '../screens/admin/languages/EditLanguageScreen';
-import AdminLessonsListScreen from '../screens/admin/lessons/AdminLessonsList';
-import AdminLessonsSelectLanguage from '../screens/admin/lessons/AdminLessonsSelectLanguage';
-import EditLessonsScreen from '../screens/admin/lessons/EditLessonsScreen';
 import PathScreen from '../screens/tabs/PathScreen';
 import { useAppSelector } from '../store/hooks';
 import type { Course, Language } from '../types';
@@ -28,14 +25,6 @@ export type AppNavigatorParamList = {
     edit?: boolean;
     language?: Language;
     languages?: Language[];
-  };
-  AdminLessonsSelectLanguage: undefined;
-  AdminLessonsListScreen: {
-    language: Language;
-  };
-  EditLessonsScreen: {
-    edit?: boolean;
-    language?: Language;
   };
   AdminCoursesScreen: undefined;
   EditCoursesScreen: {
@@ -58,9 +47,6 @@ export default function AppNavigator () {
         <Stack.Screen key="EditLanguagesScreen" name="EditLanguagesScreen" component={EditLanguagesScreen} />,
         <Stack.Screen key="AdminCoursesScreen" name="AdminCoursesScreen" component={AdminCoursesScreen} />,
         <Stack.Screen key="EditCoursesScreen" name="EditCoursesScreen" component={EditCoursesScreen} />,
-        <Stack.Screen key="AdminLessonsSelectLanguage" name="AdminLessonsSelectLanguage" component={AdminLessonsSelectLanguage} />,
-        <Stack.Screen key="AdminLessonsListScreen" name="AdminLessonsListScreen" component={AdminLessonsListScreen} />,
-        <Stack.Screen key="EditLessonsScreen" name="EditLessonsScreen" component={EditLessonsScreen} />,
       ]
       : null;
   }
