@@ -7,6 +7,7 @@ import { setLanguages } from '../../../store';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { Language } from '../../../types';
 import { capitalize, fetchLanguages } from '../../../utils';
+
 export type AdminLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLanguagesScreen'>;
 
 export default function AdminLanguagesScreen ({ navigation, route }: AdminLanguagesScreenProps) {
