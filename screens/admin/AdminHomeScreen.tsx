@@ -1,7 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, ScrollView, VStack } from 'native-base';
-import { Header } from '../../components';
-import BottomNav from '../../components/BottomNav';
+import { BottomNav, Header } from '../../components';
 import { AppNavigatorParamList } from '../../navigation/AppNavigator';
 
 export type AdminHomeScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminHomeScreen'>;
@@ -22,6 +21,7 @@ export default function AdminHomeScreen ({ navigation, route }: AdminHomeScreenP
           <Button onPress={() => navigation.navigate('AdminLanguagesScreen')}>Languages</Button>
           <Button onPress={() => navigation.navigate('AdminCoursesScreen')}>Courses</Button>
           <Button onPress={() => navigation.navigate('AdminUnitsCourseSelectScreen')}>Units</Button>
+          <Button onPress={() => navigation.navigate('AdminLevelCourseSelectScreen')}>Levels</Button>
         </VStack>
       </ScrollView>
       <BottomNav />

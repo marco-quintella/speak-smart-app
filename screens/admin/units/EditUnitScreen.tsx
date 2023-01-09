@@ -4,16 +4,12 @@ import { Box, Button, FormControl, Input, ScrollView, VStack } from 'native-base
 import { useState } from 'react';
 import { Header } from '../../../components';
 import { AppNavigatorParamList } from '../../../navigation';
-import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { Unit } from '../../../types';
 import { unitsCollection } from '../../../utils/units';
 
 export type EditUnitsScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditUnitScreen'>;
 
 export default function EditUnitsScreen ({ navigation, route }: EditUnitsScreenProps) {
-  const dispatch = useAppDispatch();
-  const languageStore = useAppSelector(state => state.language);
-
   const { edit: editProp, unit: unitProp, course: courseProp } = route.params;
 
   const [unit, setUnit] = useState<Partial<Unit>>(
@@ -36,12 +32,12 @@ export default function EditUnitsScreen ({ navigation, route }: EditUnitsScreenP
   }
 
   function setNumber (key: keyof Unit, value: string) {
-    setUnit(Object.assign({}, unit, { [key]: parseInt(value) }));
+    const n = parseInt(value);
+    setUnit(Object.assign({}, unit, { [key]: !isNaN(n) ? n : undefined }));
   }
 
   async function onSave () {
     try {
-      console.log(unit);
       if (!unit) return;
 
       const errors = {
@@ -56,7 +52,6 @@ export default function EditUnitsScreen ({ navigation, route }: EditUnitsScreenP
         const { id, ..._ } = unit;
         await updateDoc(docRef, _);
       } else {
-        console.log('addDoc', unit);
         await addDoc(unitsCollection, unit);
       }
 
