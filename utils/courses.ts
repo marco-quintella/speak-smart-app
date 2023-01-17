@@ -1,6 +1,6 @@
-import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
-import { db } from '../plugins/firebase';
-import type { Course } from '../types/course';
+import { collection, doc, getDoc, getDocs, orderBy, query } from 'firebase/firestore';
+import { db } from '~/plugins/firebase';
+import type { Course } from '~/types';
 
 export const coursesCollection = collection(db, 'courses');
 
@@ -30,4 +30,17 @@ export async function fetchCourseById (courseId: string) {
     ...data as Course,
     id: snapshot.id,
   };
+}
+
+export async function fetchCoursesSortedByLanguage () {
+  const _query = query(coursesCollection, orderBy('fromLanguageId', 'asc'));
+  const snapshot = await getDocs(_query);
+  if (snapshot.empty) {
+    console.error('No matching documents in fetchCoursesSortedByLanguage.');
+    return;
+  }
+  return snapshot.docs.map((doc) => ({
+    ...doc.data() as Course,
+    id: doc.id,
+  }));
 }

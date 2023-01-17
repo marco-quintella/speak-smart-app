@@ -1,11 +1,11 @@
 import AdminLanguagesScreen from './AdminLanguagesScreen';
-import EditLanguageScreen from './EditLanguageScreen';
+import EditLanguagesScreen from './EditLanguageScreen';
 
 export * from './AdminLanguagesScreen';
 export * from './EditLanguageScreen';
 export {
   AdminLanguagesScreen,
-  EditLanguageScreen
+  EditLanguagesScreen
 };
 
 

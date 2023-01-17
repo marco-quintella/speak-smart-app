@@ -1,10 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import { BottomNav, Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { Unit } from '../../../types';
-import { capitalize, fetchUnitsByCourse } from '../../../utils';
+import { BottomNav, Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { Unit } from '~/types';
+import { capitalize, fetchUnitsByCourse } from '~/utils';
 
 export type AdminUnitsScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminUnitsScreen'>;
 

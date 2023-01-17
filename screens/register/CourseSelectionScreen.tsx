@@ -2,38 +2,36 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, ScrollView, Text, View, VStack } from 'native-base';
 import { useContext, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Header } from '../../components';
-import { AppNavigatorParamList } from '../../navigation';
-import { AuthContext } from '../../plugins';
-import { setCurrentLanguage } from '../../store/language.reducer';
-import type { Language } from '../../types/language';
-import { fetchLearningLanguages } from '../../utils/languages';
-import { capitalize } from '../../utils/strings';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { AuthContext } from '~/plugins';
+import { setCurrentLanguage } from '~/store';
+import type { Course } from '~/types';
+import { capitalize, fetchCoursesSortedByLanguage } from '~/utils';
 
-export type LanguageSelectionScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'LanguageSelectionScreen'>;
+export type CourseSelectionScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'CourseSelectionScreen'>;
 
-export default function LanguageSelectionScreen ({ navigation }: LanguageSelectionScreenProps) {
-  const [languages, setLanguages] = useState<Language[]>([]);
-  const [selectedLanguage, setSelectedLanguage] = useState<Language>();
-  const [userInfo, setUserInfo] = useState<any>(null);
+export default function CourseSelectionScreen ({ navigation }: CourseSelectionScreenProps) {
+  const [courses, serCourses] = useState<Course[]>([]);
+  const [selectedCourse, setSelectedCourse] = useState<Course>();
 
   const authContext = useContext(AuthContext);
   const dispatch = useDispatch();
 
-  async function fetchLanguages () {
-    const languages = await fetchLearningLanguages();
-    if (!languages) return;
-    setLanguages(languages);
+  async function fetchCourses () {
+    const courses = await fetchCoursesSortedByLanguage();
+    if (!courses) return;
+    serCourses(courses);
   }
 
   useEffect(() => {
-    fetchLanguages();
+    fetchCourses();
   }, []);
 
   const onSave = () => {
     try {
-      if (selectedLanguage) {
-        dispatch(setCurrentLanguage(selectedLanguage));
+      if (selectedCourse) {
+        dispatch(setCurrentLanguage(selectedCourse));
         authContext?.promptAsync && authContext.promptAsync();
       };
     } catch (error) {
@@ -43,14 +41,14 @@ export default function LanguageSelectionScreen ({ navigation }: LanguageSelecti
 
   function languageList () {
     return (
-      languages.map((language) =>
+      courses.map((course) =>
         <Button
-          key={language.name}
-          opacity={!!selectedLanguage?.id ? selectedLanguage?.id === language.id ? 1 : 0.7 : 1}
-          onPress={() => { setSelectedLanguage(language); }}
+          key={course.title}
+          opacity={!!selectedCourse?.id ? selectedCourse?.id === course.id ? 1 : 0.7 : 1}
+          onPress={() => { setSelectedCourse(course); }}
         >
           <Text fontSize={16} fontWeight='semibold' color='white'>
-            {capitalize(language.name)}
+            {capitalize(course.title)}
           </Text>
         </Button>)
     );

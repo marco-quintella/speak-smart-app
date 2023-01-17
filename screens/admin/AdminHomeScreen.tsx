@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, ScrollView, VStack } from 'native-base';
-import { BottomNav, Header } from '../../components';
-import { AppNavigatorParamList } from '../../navigation/AppNavigator';
+import { BottomNav, Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
 
 export type AdminHomeScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminHomeScreen'>;
 

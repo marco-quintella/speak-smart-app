@@ -2,9 +2,8 @@
 import { Box, Button, Image, Text, View } from 'native-base';
 import { GestureResponderEvent } from 'react-native';
 import { G, Path, Svg, SvgUri } from 'react-native-svg';
-import type { Level, Unit } from '../types';
-import { SkillIconUrl } from '../utils';
-import { capitalize } from '../utils/strings';
+import type { Level, Unit } from '~/types';
+import { capitalize, SkillIconUrl } from '~/utils';
 
 export default function PathItem (props: {
   unit: Unit;
@@ -102,7 +101,7 @@ export default function PathItem (props: {
             left: size - 20,
             top: size - 20,
           }}>
-          <Image alt='Streak Icon' source={require('../assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
+          <Image alt='Streak Icon' source={require('~/assets/icons/explosion.png')} style={{ width: 24, height: 24 }} />
         </View>
       </View>
       <Text style={{ textAlign: 'center', marginTop: 4 }}>{capitalize(props.level.teachingObjective, { start: true })}</Text>

@@ -1,6 +1,6 @@
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Center, HStack, Image, Pressable } from 'native-base';
-import { useAppSelector } from '../store/hooks';
+import { useAppSelector } from '~/store/hooks';
 
 export default function BottomNav () {
   const userStore = useAppSelector(state => state.user);

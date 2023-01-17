@@ -1,12 +1,12 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import { Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { setCourses } from '../../../store';
-import { useAppDispatch, useAppSelector } from '../../../store/hooks';
-import { Course } from '../../../types';
-import { capitalize, fetchCourses } from '../../../utils';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { setCourses } from '~/store';
+import { useAppDispatch, useAppSelector } from '~/store/hooks';
+import { Course } from '~/types';
+import { capitalize, fetchCourses } from '~/utils';
 
 export type AdminUnitsCourseSelectScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminUnitsCourseSelectScreen'>;
 

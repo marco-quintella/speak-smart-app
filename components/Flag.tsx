@@ -1,13 +1,13 @@
 import { Button, Image, View } from 'native-base';
 import { useEffect, useState } from 'react';
-import { useAppSelector } from '../store';
-import type { Language } from '../types';
-import { capitalize } from '../utils';
+import { useAppSelector } from '~/store';
+import type { Language } from '~/types';
+import { capitalize } from '~/utils';
 
 const images: Record<string, NodeRequire> = {
-  us: require('../assets/flags/united-states-of-america.png'),
-  brazil: require('../assets/flags/brazil.png'),
-  spain: require('../assets/flags/spain.png'),
+  us: require('~/assets/flags/united-states-of-america.png'),
+  brazil: require('~/assets/flags/brazil.png'),
+  spain: require('~/assets/flags/spain.png'),
 };
 
 export default function Flag ({ button = true, language }: {

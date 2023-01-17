@@ -2,10 +2,10 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { addDoc, doc, updateDoc } from 'firebase/firestore';
 import { Box, Button, FormControl, Input, ScrollView, Switch, VStack } from 'native-base';
 import { useState } from 'react';
-import { Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { Level } from '../../../types';
-import { levelsCollection } from '../../../utils';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { Level } from '~/types';
+import { levelsCollection } from '~/utils';
 
 export type EditLevelScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLevelScreen'>;
 

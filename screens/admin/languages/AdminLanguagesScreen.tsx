@@ -1,12 +1,12 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Box, Button, HStack, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import { BottomNav, Flag, Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { setLanguages } from '../../../store';
-import { useAppDispatch, useAppSelector } from '../../../store/hooks';
-import { Language } from '../../../types';
-import { capitalize, fetchLanguages } from '../../../utils';
+import { BottomNav, Flag, Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { setLanguages } from '~/store';
+import { useAppDispatch, useAppSelector } from '~/store/hooks';
+import { Language } from '~/types';
+import { capitalize, fetchLanguages } from '~/utils';
 
 export type AdminLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminLanguagesScreen'>;
 

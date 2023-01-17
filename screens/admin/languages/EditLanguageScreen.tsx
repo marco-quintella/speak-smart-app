@@ -2,13 +2,13 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 import { Box, Button, FormControl, Input, ScrollView, Text, VStack } from 'native-base';
 import { useState } from 'react';
-import { Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { db } from '../../../plugins/firebase';
-import { setLanguages } from '../../../store';
-import { useAppDispatch } from '../../../store/hooks';
-import { Language } from '../../../types';
-import { fetchLanguages } from '../../../utils';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { db } from '~/plugins/firebase';
+import { setLanguages } from '~/store';
+import { useAppDispatch } from '~/store/hooks';
+import { Language } from '~/types';
+import { fetchLanguages } from '~/utils';
 
 export type EditLanguagesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditLanguagesScreen'>;
 

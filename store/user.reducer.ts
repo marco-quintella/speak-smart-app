@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { User } from 'firebase/auth';
-import { UserData } from '../types/user';
+import { UserData } from '~/types';
 
 const initialState: {
   user?: User;

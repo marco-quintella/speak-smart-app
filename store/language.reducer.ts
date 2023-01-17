@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { Course } from '../types/course';
-import type { Language } from '../types/language';
+import type { Course, Language } from '~/types';
 
 const initialState: {
   currentLanguage?: Language;

@@ -1,5 +1,5 @@
 import { Button, HStack, Image, Text } from 'native-base';
-import { useAppSelector } from '../store';
+import { useAppSelector } from '~/store';
 
 export default function Apples () {
   const userStore = useAppSelector(state => state.user);

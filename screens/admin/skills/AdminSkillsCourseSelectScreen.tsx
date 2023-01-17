@@ -3,18 +3,17 @@ import { Box, Button, ScrollView, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
 import { Header } from '~/components';
 import { AppNavigatorParamList } from '~/navigation';
-import { setCourses, useAppDispatch } from '~/store';
-import { useAppSelector } from '~/store/hooks';
+import { setCourses } from '~/store';
+import { useAppDispatch, useAppSelector } from '~/store/hooks';
 import { Course } from '~/types';
 import { capitalize, fetchCourses } from '~/utils';
 
-export type AdminCoursesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminCoursesScreen'>;
+export type AdminSkillsCourseSelectScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminSkillsCourseSelectScreen'>;
 
-export default function AdminCoursesScreen ({ navigation }: AdminCoursesScreenProps) {
-  const dispatch = useAppDispatch();
+export default function AdminSkillsCourseSelectScreen ({ navigation, route }: AdminSkillsCourseSelectScreenProps) {
   const languageStore = useAppSelector(state => state.language);
-
-  const [courses, _setCourses] = useState<Course[]>(languageStore?.courses ?? []);
+  const dispatch = useAppDispatch();
+  const [courses, _setCourses] = useState<Course[]>([]);
 
   async function getCourses () {
     const _courses = await fetchCourses();
@@ -26,41 +25,30 @@ export default function AdminCoursesScreen ({ navigation }: AdminCoursesScreenPr
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       _setCourses(languageStore?.courses ?? []);
-      if (!courses || courses.length === 0) getCourses();
+      (!courses || courses.length === 0) && getCourses();
     });
     return unsubscribe;
-  });
+  }, []);
 
   function coursesList () {
-    const add = <Button
-      key='add'
-      h='12'
-      onPress={() => navigation.navigate('EditCoursesScreen', { edit: false })}
-    >
-      New Course
-    </Button>;
-
-    return [add, ...courses.map((course, index) => {
+    return courses.map((course, index) => {
       return (
         <Button
           key={index}
           h='12'
-          onPress={() => navigation.navigate('EditCoursesScreen', { edit: true, course })}
+          onPress={() => navigation.navigate('AdminUnitsScreen', { course })}
         >
-          <Text color='white'>
-            {course.id} - {capitalize(course.title)}
-          </Text>
-        </Button>
-      );
-    })];
+          <Text color='white'>{course.id} - {capitalize(course?.title)}</Text>
+        </Button>);
+    });
   }
 
   return (
-    <Box safeArea height='100%'>
+    <Box safeArea h='100%'>
       <Header
         icon='chevron-left'
         onPress={() => navigation.goBack()}
-        title='Courses'
+        title='Units - Select Course'
       />
       <ScrollView>
         <VStack space={2} p={4}>

@@ -2,10 +2,10 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { addDoc, doc, updateDoc } from 'firebase/firestore';
 import { Box, Button, FormControl, Input, ScrollView, VStack } from 'native-base';
 import { useState } from 'react';
-import { Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { Unit } from '../../../types';
-import { unitsCollection } from '../../../utils/units';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { Unit } from '~/types';
+import { unitsCollection } from '~/utils/units';
 
 export type EditUnitsScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditUnitScreen'>;
 

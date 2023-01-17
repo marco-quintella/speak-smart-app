@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { Unit } from '../types';
+import type { Unit } from '~/types';
 
 const initialState: {
   units?: Unit[];

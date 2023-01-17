@@ -5,11 +5,10 @@ import * as WebBrowser from 'expo-web-browser';
 import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import React, { ReactNode, useEffect } from 'react';
-import { setAuthentication, setCurrentCourse, setCurrentLanguage, setUser, setUserData } from '../store';
-import { useAppDispatch } from '../store/hooks';
-import { UserData } from '../types';
-import { defaultCourseId, defaultLanguageId, fetchLanguageById, fillNewData, getFirebaseUser, getNewUserData } from '../utils';
-import { fetchCourseById } from '../utils/courses';
+import { setAuthentication, setCurrentCourse, setCurrentLanguage, setUser, setUserData } from '~/store';
+import { useAppDispatch } from '~/store/hooks';
+import { UserData } from '~/types';
+import { defaultCourseId, defaultLanguageId, fetchCourseById, fetchLanguageById, fillNewData, getFirebaseUser, getNewUserData } from '~/utils';
 import { auth, db } from './firebase';
 
 export const AuthContext = React.createContext<{

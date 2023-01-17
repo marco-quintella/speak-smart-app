@@ -1,6 +1,7 @@
-import LanguageSelectionScreen from './LanguageSelectionScreen';
+import CourseSelectionScreen from './CourseSelectionScreen';
 
-export * from './LanguageSelectionScreen';
+export * from './CourseSelectionScreen';
 export {
-  LanguageSelectionScreen
+  CourseSelectionScreen
 };
+

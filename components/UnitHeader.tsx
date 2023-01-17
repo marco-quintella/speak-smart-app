@@ -1,9 +1,8 @@
 import { Box, Center, Flex, Text, VStack } from 'native-base';
 import { useEffect, useState } from 'react';
-import type { Level, Unit } from '../types';
-import { fetchLevelsByUnit } from '../utils/levels';
-import { capitalize } from '../utils/strings';
-import PathItem from './PathItem';
+import { PathItem } from '~/components';
+import type { Level, Unit } from '~/types';
+import { capitalize, fetchLevelsByUnit } from '~/utils';
 
 export default function UnitHeader ({ unit }: { unit: Unit; }) {
   const [levels, setLevels] = useState<Level[]>([]);

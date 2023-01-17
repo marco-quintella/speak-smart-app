@@ -2,13 +2,12 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { doc, setDoc, updateDoc } from 'firebase/firestore';
 import { Box, Button, FormControl, Input, ScrollView, Select, VStack } from 'native-base';
 import { useState } from 'react';
-import { Header } from '../../../components';
-import { AppNavigatorParamList } from '../../../navigation';
-import { setCourses, useAppSelector } from '../../../store';
-import { useAppDispatch } from '../../../store/hooks';
-import { Course } from '../../../types';
-import { coursesCollection, fetchCourses } from '../../../utils';
-import { capitalize } from '../../../utils/strings';
+import { Header } from '~/components';
+import { AppNavigatorParamList } from '~/navigation';
+import { setCourses, useAppSelector } from '~/store';
+import { useAppDispatch } from '~/store/hooks';
+import { Course } from '~/types';
+import { capitalize, coursesCollection, fetchCourses } from '~/utils';
 
 export type EditCoursesScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'EditCoursesScreen'>;
 
