@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { ActivityScreen, AdminCoursesScreen, AdminHomeScreen, AdminLanguagesScreen, AdminLevelCourseSelectScreen, AdminLevelScreen, AdminLevelUnitSelectScreen, AdminSkillsCourseSelectScreen, AdminUnitsCourseSelectScreen, AdminUnitsScreen, CourseSelectionScreen, EditCoursesScreen, EditLanguagesScreen, EditLevelScreen, EditUnitsScreen, PathScreen, StartScreen } from '~/screens';
+import { ActivityScreen, AdminCoursesScreen, AdminHomeScreen, AdminLanguagesScreen, AdminLevelCourseSelectScreen, AdminLevelScreen, AdminLevelUnitSelectScreen, AdminSkillCourseSelectScreen, AdminSkillLevelSelectScreen, AdminSkillSelectScreen, AdminSkillUnitSelectScreen, AdminUnitsCourseSelectScreen, AdminUnitsScreen, CourseSelectionScreen, EditCoursesScreen, EditLanguagesScreen, EditLevelScreen, EditSkillScreen, EditUnitsScreen, PathScreen, StartScreen } from '~/screens';
 import { useAppSelector } from '~/store/hooks';
-import type { Course, Language, Level, Unit } from '~/types';
+import type { Course, Language, Level, Skill, Unit } from '~/types';
 
 const screenOptions = {
   headerShown: false,
@@ -54,7 +54,21 @@ export type AppNavigatorParamList = {
     level?: Level;
   };
 
-  AdminSkillsCourseSelectScreen: undefined;
+  AdminSkillCourseSelectScreen: undefined;
+  AdminSkillUnitSelectScreen: {
+    course?: Course;
+  };
+  AdminSkillLevelSelectScreen: {
+    unit?: Unit;
+  };
+  AdminSkillSelectScreen: {
+    level?: Level;
+  };
+  EditSkillScreen: {
+    edit?: boolean;
+    level?: Level;
+    skill?: Skill;
+  };
 };
 
 const Stack = createNativeStackNavigator<AppNavigatorParamList>();
@@ -83,7 +97,11 @@ export default function AppNavigator () {
         <Stack.Screen key="AdminLevelScreen" name="AdminLevelScreen" component={AdminLevelScreen} />,
         <Stack.Screen key="EditLevelScreen" name="EditLevelScreen" component={EditLevelScreen} />,
 
-        <Stack.Screen key="AdminSkillsCourseSelectScreen" name="AdminSkillsCourseSelectScreen" component={AdminSkillsCourseSelectScreen} />,
+        <Stack.Screen key="AdminSkillCourseSelectScreen" name="AdminSkillCourseSelectScreen" component={AdminSkillCourseSelectScreen} />,
+        <Stack.Screen key="AdminSkillUnitSelectScreen" name="AdminSkillUnitSelectScreen" component={AdminSkillUnitSelectScreen} />,
+        <Stack.Screen key="AdminSkillLevelSelectScreen" name="AdminSkillLevelSelectScreen" component={AdminSkillLevelSelectScreen} />,
+        <Stack.Screen key="AdminSkillSelectScreen" name="AdminSkillSelectScreen" component={AdminSkillSelectScreen} />,
+        <Stack.Screen key="EditSkillScreen" name="EditSkillScreen" component={EditSkillScreen} />,
       ]
       : null;
   }

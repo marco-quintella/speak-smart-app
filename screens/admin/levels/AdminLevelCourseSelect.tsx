@@ -48,7 +48,7 @@ export default function AdminLevelCourseSelectScreen ({ navigation, route }: Adm
       <Header
         icon='chevron-left'
         onPress={() => navigation.goBack()}
-        title='Units - Select Course'
+        title='Levels - Select Course'
       />
       <ScrollView>
         <VStack space={2} p={4}>

@@ -8,9 +8,9 @@ import { useAppDispatch, useAppSelector } from '~/store/hooks';
 import { Course } from '~/types';
 import { capitalize, fetchCourses } from '~/utils';
 
-export type AdminSkillsCourseSelectScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminSkillsCourseSelectScreen'>;
+export type AdminSkillCourseSelectScreenProps = NativeStackScreenProps<AppNavigatorParamList, 'AdminSkillCourseSelectScreen'>;
 
-export default function AdminSkillsCourseSelectScreen ({ navigation, route }: AdminSkillsCourseSelectScreenProps) {
+export default function AdminSkillCourseSelectScreen ({ navigation, route }: AdminSkillCourseSelectScreenProps) {
   const languageStore = useAppSelector(state => state.language);
   const dispatch = useAppDispatch();
   const [courses, _setCourses] = useState<Course[]>([]);
@@ -36,7 +36,7 @@ export default function AdminSkillsCourseSelectScreen ({ navigation, route }: Ad
         <Button
           key={index}
           h='12'
-          onPress={() => navigation.navigate('AdminUnitsScreen', { course })}
+          onPress={() => navigation.navigate('AdminSkillUnitSelectScreen', { course })}
         >
           <Text color='white'>{course.id} - {capitalize(course?.title)}</Text>
         </Button>);

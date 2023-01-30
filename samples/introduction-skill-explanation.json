@@ -1,0 +1,2729 @@
+{
+  "elements": [
+    {
+      "element": 15,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 0
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "examples": [
+          {
+            "subtext": {
+              "hints": {
+                "hintLinks": [],
+                "hints": []
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 0,
+                    "to": 4
+                  }
+                ],
+                "text": "Ol\u00e1!"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            "text": {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 5,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "ol\u00e1"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 6
+                  }
+                ],
+                "text": "Hello!"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 5,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/2ba848a92fc0bc56119496ac6dd4cf68"
+                  }
+                ]
+              }
+            },
+            "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/2ba848a92fc0bc56119496ac6dd4cf68"
+          }
+        ],
+        "image": {
+          "url": "https://d1btvuu4dwu627.cloudfront.net/650db3317fc7d0eec046cd41af665846/3f0010d3db4a426de664d3a7c8e8f14d/images/371654fad9ae4e8c8bf43b2cba23b368.svg"
+        },
+        "layout": "wideImageWithTextBelow"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 0
+      },
+      "type": "exampleCaptionedImage"
+    },
+    {
+      "element": 36,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 1
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 25,
+                "fontWeight": "bold",
+                "lineSpacing": 4,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 12
+            }
+          ],
+          "text": "Boas vindas!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 1
+      },
+      "type": "text"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 1
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 163
+            }
+          ],
+          "text": "Voc\u00ea sabia que no mundo existem mais estrangeiros que falam ingl\u00eas do que pessoas cuja l\u00edngua materna \u00e9 o ingl\u00eas? Em breve, voc\u00ea ser\u00e1 um deles! Ent\u00e3o, m\u00e3os \u00e0 obra!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 1
+      },
+      "type": "text"
+    },
+    {
+      "element": 36,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 2
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 25,
+                "fontWeight": "bold",
+                "lineSpacing": 4,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 15
+            }
+          ],
+          "text": "Ser ou n\u00e3o ser?"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 2
+      },
+      "type": "text"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 2
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [
+            {
+              "index": 0,
+              "rangeEnd": 105,
+              "rangeStart": 100
+            }
+          ],
+          "hints": [
+            "Um verbo expressa uma a\u00e7\u00e3o (\u201cLu\u00eds cozinha todos os dias\u201d) ou um estado (\u201cEu estou doente\u201d)."
+          ]
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 26
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 26,
+              "to": 32
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 32,
+              "to": 33
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 33,
+              "to": 35
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 35,
+              "to": 43
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 43,
+              "to": 44
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 44,
+              "to": 46
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 46,
+              "to": 53
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 53,
+              "to": 57
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 57,
+              "to": 123
+            }
+          ],
+          "text": "Em portugu\u00eas, n\u00f3s dizemos eu falo, voc\u00ea fala, n\u00f3s falamos, etc., mas, em ingl\u00eas, as termina\u00e7\u00f5es dos verbos n\u00e3o mudam tanto."
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 2
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 3
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [
+            {
+              "index": 0,
+              "rangeEnd": 26,
+              "rangeStart": 22
+            }
+          ],
+          "hints": [
+            "ser / estar"
+          ]
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 22
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 22,
+              "to": 27
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 27,
+              "to": 49
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 49,
+              "to": 52
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 52,
+              "to": 58
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 58,
+              "to": 63
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 63,
+              "to": 64
+            }
+          ],
+          "text": "Uma exce\u00e7\u00e3o \u00e9 o verbo to be, que significa tanto ser como estar."
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": [
+            {
+              "endIndex": 26,
+              "startIndex": 22,
+              "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/c6c0b74b765a6f033f425e344c681691"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 3
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 4
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "cells": [
+          [
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 6,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "O sujeito de uma frase \u00e9 a pessoa, lugar, coisa ou ideia que est\u00e1 fazendo ou sendo alguma coisa."
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 2,
+                      "textColor": "777777"
+                    },
+                    "from": 0,
+                    "to": 7
+                  }
+                ],
+                "text": "sujeito"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 4,
+                    "rangeStart": 0
+                  },
+                  {
+                    "index": 1,
+                    "rangeEnd": 11,
+                    "rangeStart": 7
+                  }
+                ],
+                "hints": [
+                  "Um verbo expressa uma a\u00e7\u00e3o (\u201cLu\u00eds cozinha todos os dias\u201d) ou um estado (\u201cEu estou doente\u201d).",
+                  "ser / estar"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 2,
+                      "textColor": "777777"
+                    },
+                    "from": 0,
+                    "to": 13
+                  }
+                ],
+                "text": "verbo (to be)"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 11,
+                    "startIndex": 7,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/c6c0b74b765a6f033f425e344c681691"
+                  }
+                ]
+              }
+            }
+          ],
+          [
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 0,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "eu"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 1
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 1,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 2,
+                    "to": 4
+                  }
+                ],
+                "text": "I\neu"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 0,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/a231e9c1b7af4add805d82b7f8d0ebb8"
+                  }
+                ]
+              }
+            },
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 1,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "sou / estou"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 0,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 2,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 3,
+                    "to": 14
+                  }
+                ],
+                "text": "am\nsou / estou"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 1,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/79ec34f19062f90f6405a222b0725313"
+                  }
+                ]
+              }
+            }
+          ],
+          [
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 1,
+                    "rangeStart": 0
+                  },
+                  {
+                    "index": 1,
+                    "rangeEnd": 2,
+                    "rangeStart": 2
+                  }
+                ],
+                "hints": [
+                  "tu / voc\u00ea",
+                  "tu / voc\u00ea / o senhor / a senhora"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 3,
+                    "to": 4
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 4,
+                    "to": 11
+                  }
+                ],
+                "text": "you\ntu\nvoc\u00ea"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 2,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/2d6d4817bd008af18563b0497c5c3114"
+                  }
+                ]
+              }
+            },
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 2,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "\u00e9s / est\u00e1s / \u00e9 / est\u00e1"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 0,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 3,
+                    "to": 4
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 4,
+                    "to": 23
+                  }
+                ],
+                "text": "are\n\u00e9s / est\u00e1s\n\u00e9 / est\u00e1"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 2,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/60f6eadf86e02a515e5792636bb619bc"
+                  }
+                ]
+              }
+            }
+          ],
+          [
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 1,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "ele"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 2,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 3,
+                    "to": 6
+                  }
+                ],
+                "text": "he\nele"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 1,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/5e63d829b4a3f57c66ded0ce48cf7cb3"
+                  }
+                ]
+              }
+            },
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 1,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "\u00e9 / est\u00e1"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 0,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 2,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 3,
+                    "to": 11
+                  }
+                ],
+                "text": "is\n\u00e9 / est\u00e1"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 1,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/8902328c60caccdb8ac7a1c7164f7937"
+                  }
+                ]
+              }
+            }
+          ],
+          [
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 2,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "ela"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 3,
+                    "to": 4
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 4,
+                    "to": 7
+                  }
+                ],
+                "text": "she\nela"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 2,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/1ecd1ee47d2c76b0f9e4c4f9deea5f8c"
+                  }
+                ]
+              }
+            },
+            {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 1,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "\u00e9 / est\u00e1"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 0,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 2,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "left",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 3,
+                    "to": 11
+                  }
+                ],
+                "text": "is\n\u00e9 / est\u00e1"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 1,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/8902328c60caccdb8ac7a1c7164f7937"
+                  }
+                ]
+              }
+            }
+          ]
+        ],
+        "hasShadedHeader": true
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 4
+      },
+      "type": "table"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 5
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 46
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 46,
+              "to": 62
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 62,
+              "to": 75
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 75,
+              "to": 88
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 88,
+              "to": 115
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 115,
+              "to": 117
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 117,
+              "to": 120
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 120,
+              "to": 124
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 124,
+              "to": 148
+            }
+          ],
+          "text": "Mesmo que, em portugu\u00eas, possamos dizer tanto Eu sou um menino como apenas Sou um menino, em ingl\u00eas, palavras como eu e voc\u00ea s\u00e3o sempre necess\u00e1rias."
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 5
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 6
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "examples": [
+          {
+            "subtext": {
+              "hints": {
+                "hintLinks": [],
+                "hints": []
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 0,
+                    "to": 2
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 2,
+                    "to": 3
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 3,
+                    "to": 17
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 17,
+                    "to": 18
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 18,
+                    "to": 22
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 22,
+                    "to": 23
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 23,
+                    "to": 36
+                  }
+                ],
+                "text": "Eu sou um menino. Voc\u00ea \u00e9 uma menina."
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            "text": {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 10,
+                    "rangeStart": 0
+                  },
+                  {
+                    "index": 1,
+                    "rangeEnd": 26,
+                    "rangeStart": 12
+                  }
+                ],
+                "hints": [
+                  "eu sou um menino",
+                  "voc\u00ea \u00e9 uma menina"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 8,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 0,
+                    "to": 1
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 1,
+                    "to": 12
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 8,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 12,
+                    "to": 15
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 15,
+                    "to": 27
+                  }
+                ],
+                "text": "I am a boy. You are a girl."
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 26,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/8e04e9fddbd594de8090fa742f0d7820"
+                  }
+                ]
+              }
+            },
+            "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/8e04e9fddbd594de8090fa742f0d7820"
+          }
+        ],
+        "image": {
+          "url": "https://d1btvuu4dwu627.cloudfront.net/650db3317fc7d0eec046cd41af665846/3f0010d3db4a426de664d3a7c8e8f14d/images/ea809a1408a3452fb1d6f5a156d02a2b.svg"
+        },
+        "layout": "wideImageWithTextBelow"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 6
+      },
+      "type": "exampleCaptionedImage"
+    },
+    {
+      "element": 36,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 7
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 25,
+                "fontWeight": "bold",
+                "lineSpacing": 4,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 8
+            }
+          ],
+          "text": "Ah, n\u00e3o!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 7
+      },
+      "type": "text"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 7
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [
+            {
+              "index": 0,
+              "rangeEnd": 58,
+              "rangeStart": 56
+            },
+            {
+              "index": 1,
+              "rangeEnd": 74,
+              "rangeStart": 70
+            }
+          ],
+          "hints": [
+            "n\u00e3o",
+            "Um verbo expressa uma a\u00e7\u00e3o (\u201cLu\u00eds cozinha todos os dias\u201d) ou um estado (\u201cEu estou doente\u201d)."
+          ]
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 11
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 11,
+              "to": 13
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 13,
+              "to": 14
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 14,
+              "to": 17
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 17,
+              "to": 18
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 18,
+              "to": 21
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 21,
+              "to": 25
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 25,
+              "to": 29
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 29,
+              "to": 30
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 30,
+              "to": 33
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 33,
+              "to": 34
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 34,
+              "to": 35
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 35,
+              "to": 56
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "1CB0F6"
+              },
+              "from": 56,
+              "to": 59
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 59,
+              "to": 76
+            }
+          ],
+          "text": "Para dizer eu n\u00e3o sou ou voc\u00ea n\u00e3o \u00e9 em ingl\u00eas, adicione not depois do verbo!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": [
+            {
+              "endIndex": 58,
+              "startIndex": 56,
+              "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/0c2c84c90cf9d200ed687cd1a9aae021"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 7
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 8
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "examples": [
+          {
+            "subtext": {
+              "hints": {
+                "hintLinks": [],
+                "hints": []
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 0,
+                    "to": 18
+                  }
+                ],
+                "text": "Voc\u00ea \u00e9 o Stephen.\u200b"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            "text": {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 16,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "voc\u00ea \u00e9 o Stephen"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 17
+                  }
+                ],
+                "text": "You are Stephen.\u200b"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 15,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/727489d54e6a1d890424250baec7eba2"
+                  }
+                ]
+              }
+            },
+            "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/727489d54e6a1d890424250baec7eba2"
+          }
+        ],
+        "image": {
+          "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/2a8ff5588d6c45b8b2652b97002c8c4b.svg"
+        },
+        "layout": "wideImageWithTextBelow"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 8
+      },
+      "type": "exampleCaptionedImage"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 9
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "examples": [
+          {
+            "subtext": {
+              "hints": {
+                "hintLinks": [],
+                "hints": []
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 0,
+                    "to": 4
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 4,
+                    "to": 5
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 5,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 5,
+                    "to": 8
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 8,
+                    "to": 9
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 9,
+                    "to": 22
+                  }
+                ],
+                "text": "Voc\u00ea n\u00e3o \u00e9 o Stephen!\u200b"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            "text": {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 20,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "voc\u00ea n\u00e3o \u00e9 o Stephen"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 8
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "bold",
+                      "lineSpacing": 8,
+                      "textColor": "1CB0F6"
+                    },
+                    "from": 8,
+                    "to": 11
+                  },
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 11,
+                    "to": 21
+                  }
+                ],
+                "text": "You are not Stephen!\u200b"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 19,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/b8b6c0c4e92bd16f7faf2b1e0236805b"
+                  }
+                ]
+              }
+            },
+            "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/b8b6c0c4e92bd16f7faf2b1e0236805b"
+          }
+        ],
+        "image": {
+          "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/3869c7f7bc0c4b89b60fc66086aceb27.svg"
+        },
+        "layout": "wideImageWithTextBelow"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 9
+      },
+      "type": "exampleCaptionedImage"
+    },
+    {
+      "element": 36,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 10
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 25,
+                "fontWeight": "bold",
+                "lineSpacing": 4,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 12
+            }
+          ],
+          "text": "Pergunta a\u00ed!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 10
+      },
+      "type": "text"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 10
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [
+            {
+              "index": 0,
+              "rangeEnd": 42,
+              "rangeStart": 38
+            }
+          ],
+          "hints": [
+            "ser / estar"
+          ]
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 38
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "bold",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 38,
+              "to": 43
+            },
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 43,
+              "to": 78
+            }
+          ],
+          "text": "Se voc\u00ea quer fazer uma pergunta com o to be, apenas mude a ordem das palavras!"
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": [
+            {
+              "endIndex": 42,
+              "startIndex": 38,
+              "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/c6c0b74b765a6f033f425e344c681691"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 10
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 11
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "subtext": {
+          "hints": {
+            "hintLinks": [],
+            "hints": []
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "AFAFAF"
+                },
+                "from": 0,
+                "to": 18
+              }
+            ],
+            "text": "Voc\u00ea \u00e9 do Brasil.\u200b"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": []
+          }
+        },
+        "text": {
+          "hints": {
+            "hintLinks": [
+              {
+                "index": 0,
+                "rangeEnd": 19,
+                "rangeStart": 0
+              }
+            ],
+            "hints": [
+              "voc\u00ea \u00e9 do Brasil"
+            ]
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "bold",
+                  "lineSpacing": 5,
+                  "textColor": "1CB0F6"
+                },
+                "from": 0,
+                "to": 3
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 3,
+                "to": 20
+              }
+            ],
+            "text": "You are from Brazil."
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": [
+              {
+                "endIndex": 19,
+                "startIndex": 0,
+                "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/6b3e816ec7cf45e3ea342fbd76c97d30"
+              }
+            ]
+          }
+        },
+        "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/6b3e816ec7cf45e3ea342fbd76c97d30"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 11
+      },
+      "type": "example"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 12
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "subtext": {
+          "hints": {
+            "hintLinks": [],
+            "hints": []
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "AFAFAF"
+                },
+                "from": 0,
+                "to": 18
+              }
+            ],
+            "text": "Voc\u00ea \u00e9 do Brasil?\u200b"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": []
+          }
+        },
+        "text": {
+          "hints": {
+            "hintLinks": [
+              {
+                "index": 0,
+                "rangeEnd": 5,
+                "rangeStart": 0
+              },
+              {
+                "index": 1,
+                "rangeEnd": 10,
+                "rangeStart": 6
+              },
+              {
+                "index": 2,
+                "rangeEnd": 19,
+                "rangeStart": 11
+              }
+            ],
+            "hints": [
+              "tu \u00e9s do Brasil / voc\u00ea \u00e9 do Brasil",
+              "voc\u00ea \u00e9 do Brasil",
+              "tu \u00e9s do Brasil / voc\u00ea \u00e9 do Brasil"
+            ]
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 0,
+                "to": 4
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "bold",
+                  "lineSpacing": 5,
+                  "textColor": "1CB0F6"
+                },
+                "from": 4,
+                "to": 7
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 7,
+                "to": 20
+              }
+            ],
+            "text": "Are you from Brazil?"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": [
+              {
+                "endIndex": 19,
+                "startIndex": 0,
+                "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/ba441cb521267e7a7f304b63618924e2"
+              }
+            ]
+          }
+        },
+        "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/ba441cb521267e7a7f304b63618924e2"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 12
+      },
+      "type": "example"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 13
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "subtext": {
+          "hints": {
+            "hintLinks": [],
+            "hints": []
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "AFAFAF"
+                },
+                "from": 0,
+                "to": 16
+              }
+            ],
+            "text": "Ele \u00e9 do Brasil."
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": []
+          }
+        },
+        "text": {
+          "hints": {
+            "hintLinks": [
+              {
+                "index": 0,
+                "rangeEnd": 17,
+                "rangeStart": 0
+              }
+            ],
+            "hints": [
+              "ele \u00e9 do Brasil"
+            ]
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "bold",
+                  "lineSpacing": 5,
+                  "textColor": "1CB0F6"
+                },
+                "from": 0,
+                "to": 2
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 2,
+                "to": 19
+              }
+            ],
+            "text": "He is from Brazil.\u200b"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": [
+              {
+                "endIndex": 17,
+                "startIndex": 0,
+                "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/168b81e5472619ae265ea8f74f5a9122"
+              }
+            ]
+          }
+        },
+        "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/168b81e5472619ae265ea8f74f5a9122"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 13
+      },
+      "type": "example"
+    },
+    {
+      "element": 12,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 14
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "subtext": {
+          "hints": {
+            "hintLinks": [],
+            "hints": []
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "AFAFAF"
+                },
+                "from": 0,
+                "to": 17
+              }
+            ],
+            "text": "Ele \u00e9 do Brasil?\u200b"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": []
+          }
+        },
+        "text": {
+          "hints": {
+            "hintLinks": [
+              {
+                "index": 0,
+                "rangeEnd": 17,
+                "rangeStart": 0
+              }
+            ],
+            "hints": [
+              "ele \u00e9 do Brasil"
+            ]
+          },
+          "styledString": {
+            "styling": [
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 0,
+                "to": 3
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "bold",
+                  "lineSpacing": 5,
+                  "textColor": "1CB0F6"
+                },
+                "from": 3,
+                "to": 5
+              },
+              {
+                "attributes": {
+                  "alignment": "left",
+                  "fontSize": 19,
+                  "fontWeight": "normal",
+                  "lineSpacing": 5,
+                  "textColor": "4B4B4B"
+                },
+                "from": 5,
+                "to": 19
+              }
+            ],
+            "text": "Is he from Brazil?\u200b"
+          },
+          "tokenTTS": {
+            "tokenTTSCollection": [
+              {
+                "endIndex": 17,
+                "startIndex": 0,
+                "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/5a2144a3e67219540a51533340267926"
+              }
+            ]
+          }
+        },
+        "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/5a2144a3e67219540a51533340267926"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 14
+      },
+      "type": "example"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 15
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "hints": {
+          "hintLinks": [],
+          "hints": []
+        },
+        "styledString": {
+          "styling": [
+            {
+              "attributes": {
+                "alignment": "left",
+                "fontSize": 19,
+                "fontWeight": "normal",
+                "lineSpacing": 5,
+                "textColor": "4B4B4B"
+              },
+              "from": 0,
+              "to": 181
+            }
+          ],
+          "text": "Pode ser que voc\u00ea ou\u00e7a uma pergunta em que a ordem das palavras n\u00e3o mudou. Normalmente, isso quer dizer que a pessoa fazendo a pergunta ficou surpresa ou n\u00e3o acredita na informa\u00e7\u00e3o."
+        },
+        "tokenTTS": {
+          "tokenTTSCollection": []
+        }
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 15
+      },
+      "type": "text"
+    },
+    {
+      "element": 24,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 16
+      },
+      "type": "verticalSpace"
+    },
+    {
+      "element": {
+        "examples": [
+          {
+            "subtext": {
+              "hints": {
+                "hintLinks": [],
+                "hints": []
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 8,
+                      "textColor": "AFAFAF"
+                    },
+                    "from": 0,
+                    "to": 20
+                  }
+                ],
+                "text": "Voc\u00ea n\u00e3o \u00e9 o David?!"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": []
+              }
+            },
+            "text": {
+              "hints": {
+                "hintLinks": [
+                  {
+                    "index": 0,
+                    "rangeEnd": 18,
+                    "rangeStart": 0
+                  }
+                ],
+                "hints": [
+                  "voc\u00ea n\u00e3o \u00e9 o David"
+                ]
+              },
+              "styledString": {
+                "styling": [
+                  {
+                    "attributes": {
+                      "alignment": "center",
+                      "fontSize": 19,
+                      "fontWeight": "normal",
+                      "lineSpacing": 5,
+                      "textColor": "4B4B4B"
+                    },
+                    "from": 0,
+                    "to": 20
+                  }
+                ],
+                "text": "You are not David?!\u200b"
+              },
+              "tokenTTS": {
+                "tokenTTSCollection": [
+                  {
+                    "endIndex": 18,
+                    "startIndex": 0,
+                    "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/3afcbff85798e8cda8a6f3e5eefe03e2"
+                  }
+                ]
+              }
+            },
+            "ttsURL": "https://d1vq87e9lcf771.cloudfront.net/harrison/3afcbff85798e8cda8a6f3e5eefe03e2"
+          }
+        ],
+        "image": {
+          "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/993769212e4045f88f7234ae501423b4.svg"
+        },
+        "layout": "wideImageWithTextBelow"
+      },
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 16
+      },
+      "type": "exampleCaptionedImage"
+    },
+    {
+      "element": 15,
+      "meta": {
+        "autoPlayableTTS": [],
+        "backgroundColor": null,
+        "sectionIndex": 16
+      },
+      "type": "verticalSpace"
+    }
+  ],
+  "intro": null,
+  "resourcesToPrefetch": [
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/5a2144a3e67219540a51533340267926"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/79ec34f19062f90f6405a222b0725313"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/ba441cb521267e7a7f304b63618924e2"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/0c2c84c90cf9d200ed687cd1a9aae021"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/2ba848a92fc0bc56119496ac6dd4cf68"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/5e63d829b4a3f57c66ded0ce48cf7cb3"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/c6c0b74b765a6f033f425e344c681691"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/1ecd1ee47d2c76b0f9e4c4f9deea5f8c"
+    },
+    {
+      "required": true,
+      "type": "svg",
+      "url": "https://d1btvuu4dwu627.cloudfront.net/650db3317fc7d0eec046cd41af665846/3f0010d3db4a426de664d3a7c8e8f14d/images/ea809a1408a3452fb1d6f5a156d02a2b.svg"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/8902328c60caccdb8ac7a1c7164f7937"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/b8b6c0c4e92bd16f7faf2b1e0236805b"
+    },
+    {
+      "required": true,
+      "type": "svg",
+      "url": "https://d1btvuu4dwu627.cloudfront.net/650db3317fc7d0eec046cd41af665846/3f0010d3db4a426de664d3a7c8e8f14d/images/371654fad9ae4e8c8bf43b2cba23b368.svg"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/a231e9c1b7af4add805d82b7f8d0ebb8"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/6b3e816ec7cf45e3ea342fbd76c97d30"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/2d6d4817bd008af18563b0497c5c3114"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/727489d54e6a1d890424250baec7eba2"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/8e04e9fddbd594de8090fa742f0d7820"
+    },
+    {
+      "required": true,
+      "type": "svg",
+      "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/2a8ff5588d6c45b8b2652b97002c8c4b.svg"
+    },
+    {
+      "required": true,
+      "type": "svg",
+      "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/3869c7f7bc0c4b89b60fc66086aceb27.svg"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/60f6eadf86e02a515e5792636bb619bc"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/3afcbff85798e8cda8a6f3e5eefe03e2"
+    },
+    {
+      "required": false,
+      "type": "mp3",
+      "url": "https://d1vq87e9lcf771.cloudfront.net/harrison/168b81e5472619ae265ea8f74f5a9122"
+    },
+    {
+      "required": true,
+      "type": "svg",
+      "url": "https://d1btvuu4dwu627.cloudfront.net/f4b7634399037aa4227bb89dba0ca249/c796eab5a72dd5c83670aa63876020c5/images/993769212e4045f88f7234ae501423b4.svg"
+    }
+  ],
+  "skillID": "7034054383c98893a79e38d9be357fd3",
+  "title": "Introdu\u00e7\u00e3o"
+}

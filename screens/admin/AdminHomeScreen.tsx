@@ -22,6 +22,8 @@ export default function AdminHomeScreen ({ navigation, route }: AdminHomeScreenP
           <Button onPress={() => navigation.navigate('AdminCoursesScreen')}>Courses</Button>
           <Button onPress={() => navigation.navigate('AdminUnitsCourseSelectScreen')}>Units</Button>
           <Button onPress={() => navigation.navigate('AdminLevelCourseSelectScreen')}>Levels</Button>
+          <Button onPress={() => navigation.navigate('AdminSkillCourseSelectScreen')}>Skills</Button>
+
         </VStack>
       </ScrollView>
       <BottomNav />
